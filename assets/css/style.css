@@ -1,0 +1,229 @@
+/* تم هکری */
+body {
+  background-color: #0a0a0a;
+  color: #2dd4bf; /* teal-400 */
+  font-family: "Fira Code", "Courier New", monospace;
+}
+
+/* لینک‌ها */
+a {
+  color: #2dd4bf; /* teal-400 */
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+a:hover {
+  color: #0ea5e9; /* sky-500 */
+  text-shadow: 0 0 5px #0ea5e9;
+}
+
+/* تیترها */
+h1, h2, h3, h4, h5, h6 {
+  color: #34d399; /* emerald-400 */
+}
+
+/* دکمه‌ها */
+button, .btn, a.btn, .buy-btn {
+  background: linear-gradient(to right, #34d399, #2dd4bf, #0ea5e9);
+  color: #000;
+  font-weight: bold;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px #0ea5e933;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+button:hover, .btn:hover, a.btn:hover, .buy-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 24px #0ea5e9aa;
+}
+
+/* باکس‌ها و کارت‌ها */
+.card, .box, .article, .faq-box, .shop-card {
+  background: #0f172a; /* slate-900 */
+  border: 1px solid #0ea5e9; /* sky-500 */
+  border-radius: 1rem;
+  color: #2dd4bf;
+  box-shadow: 0 2px 16px #0ea5e933;
+}
+
+/* انیمیشن تایپ افکت */
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #34d399;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #34d399; }
+}
+
+/* افکت گلیچ */
+.glitch {
+  position: relative;
+  color: #34d399;
+  text-shadow: 2px 2px #0ea5e9, -2px -2px #2dd4bf;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #0ea5e9, -2px -2px #2dd4bf; }
+  50% { text-shadow: -2px -2px #0ea5e9, 2px 2px #2dd4bf; }
+  100% { text-shadow: 2px 2px #0ea5e9, -2px -2px #2dd4bf; }
+}
+
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 10px #2dd4bf, 0 0 20px #0ea5e9, 0 0 30px #34d399; }
+  50% { box-shadow: 0 0 20px #2dd4bf, 0 0 40px #0ea5e9, 0 0 60px #34d399; }
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+.animate-blink { animation: blink 1s step-start infinite; }
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+.animate-pulse-slow { animation: pulse-slow 6s infinite; }
+
+/* ورودی ترمینال */
+input[type="text"], input[type="search"] {
+  color: #2dd4bf;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+input[type="text"]::placeholder, input[type="search"]::placeholder {
+  color: #0ea5e9;
+  opacity: 0.7;
+}
+
+/* خطوط و حاشیه‌ها */
+hr, .border, .bordered {
+  border-color: #0ea5e9 !important;
+}
+
+
+/* ...existing code... */
+/* فهرست مطالب کتاب - همه فصل‌ها در یک باکس */
+
+.toc-list {
+  padding: 1em 0.7em;
+  margin: 0;
+  background: none;
+  border-radius: 1.2em;
+  box-shadow: 0 6px 32px #0ea5e933;
+  overflow-x: auto;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.toc-chapter {
+  margin-bottom: 1.2em;
+  padding: 0.7em 1em 0.7em 0.7em;
+  background: transparent;
+  border-radius: 0.5em;
+  color: #34d399;
+  font-weight: 700;
+  font-size: 1.08rem;
+  position: relative;
+  box-shadow: none;
+  border: none;
+  transition: color 0.2s;
+}
+.toc-chapter::before {
+  content: "فصل";
+  position: absolute;
+  left: 1em;
+  top: 0.7em;
+  font-size: 0.85em;
+  color: #0ea5e9;
+  font-weight: 900;
+  opacity: 0.7;
+  letter-spacing: 0.1em;
+}
+.toc-chapter:hover {
+  color: #0ea5e9;
+}
+.toc-chapter > ul {
+  margin-top: 0.7em;
+  padding-right: 0.5em;
+}
+.toc-subchapter {
+  background: #181f2a;
+  border-right: 3px solid #34d399;
+  border-radius: 0.5em;
+  margin: 0.7em 0 0.7em 0;
+  padding: 0.7em 1.2em 0.7em 0.5em;
+  color: #a5f3fc;
+  font-weight: 400;
+  font-size: 0.98rem;
+  box-shadow: 0 2px 8px #0ea5e922;
+  list-style: disc;
+}
+.toc-subchapter li {
+  margin-bottom: 0.3em;
+  font-size: 0.97em;
+  padding-right: 0.7em;
+  position: relative;
+}
+.toc-subchapter li::before {
+  content: "•";
+  color: #0ea5e9;
+  font-size: 1.2em;
+  position: absolute;
+  right: -1.1em;
+  top: 0.1em;
+}
+
+/* ...existing code... */
+
+/* استایل حرفه‌ای برای تب‌ها */
+#tabs .tab-btn {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  border-radius: 0.5em 0.5em 0 0;
+  background: transparent;
+  transition: color 0.2s, border-bottom-color 0.2s, background 0.2s;
+}
+#tabs .tab-btn.active-tab {
+  color: #34d399 !important;
+  border-bottom-color: #34d399 !important;
+  background: rgba(52,211,153,0.07);
+}
+
+/* این کلاس را به استایل‌های خود اضافه کنید */
+.image-ribbon-container {
+  position: relative;
+  overflow: hidden; /* این خط بسیار مهم است */
+  border-radius: 12px; /* همانند border-radius تصویر */
+}
+
+.ribbon {
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: -50px;
+  background-color: #e53e3e; /* رنگ پس‌زمینه روبان */
+  color: white; /* رنگ متن */
+  text-align: center;
+  line-height: 30px;
+  font-family: 'Vazirmatn', sans-serif; /* یک فونت فارسی مناسب */
+  font-size: 14px;
+  transform: rotate(-45deg); /* چرخش روبان به اندازه ۴۵- درجه */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* سایه برای برجستگی */
+}

@@ -1,0 +1,157 @@
+<!-- محتوا برای بارگذاری در index.html -->
+<div class="container mx-auto py-12 px-4">
+  <div class="grid lg:grid-cols-3 gap-12 items-start">
+    <!-- بخش تصویر و مشخصات کتاب -->
+    <div class="lg:col-span-1 flex flex-col items-center">
+      <img src="assets/images/Malware-Analysis-Introduction.png" alt="مقدمه‌ای بر توسعه تهاجمی برای ویندوز" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full rounded-xl shadow-2xl mb-6 border-4 border-slate-900" style="object-fit:cover;">
+
+      <div class="w-full mb-4 p-4 rounded-xl bg-slate-900 border flex flex-col sm:flex-row items-center justify-between gap-4" style="border-color:#0ea5e9;">
+        <span class="text-emerald-400 font-bold text-base">قیمت نسخه چاپی کتاب</span>
+        <div class="flex items-center gap-2">
+          <span class="text-slate-400 text-sm line-through">1,000,000 تومان</span>
+          <span class="text-emerald-400 font-bold text-base">800,000 تومان</span>
+          <span class="text-xs text-slate-500">(با تخفیف 20%)</span>
+        </div>
+      </div>
+      <div class="w-full bg-slate-900 rounded-xl p-4 border mb-4" style="border-color:#0ea5e9;">
+        <p class="font-semibold mb-1"><span style="color:#34d399;">نویسنده:</span> تیم سایبر شلف</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">ناشر:</span> تیم سایبر شلف</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">سال انتشار:</span>  1404</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">نوبت چاپ:</span> 1</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">تعداد صفحات:</span> 299</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">قطع:</span> وزیری</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">مناسب برای:</span> برنامه‌نویسان و علاقه‌مندان به عملیات تیم قرمز از مبتدی تا حرفه‌ای</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">زبان:</span> فارسی</p>
+      </div>
+    </div>
+
+    <!-- بخش تب‌ها -->
+    <div class="lg:col-span-2">
+      <h2 class="text-2xl font-bold mb-4" style="color:#34d399;">معرفی و مطالعه کتاب</h2>
+      <div class="mb-6">
+        <div class="flex border-b border-slate-700 mb-4 gap-2" id="tabs">
+          <button class="tab-btn px-4 py-2 font-bold text-slate-300 hover:text-emerald-400 transition border-b-2 border-transparent focus:outline-none" data-tab="about">درباره کتاب</button>
+          <button class="tab-btn px-4 py-2 font-bold text-slate-300 hover:text-emerald-400 transition border-b-2 border-transparent focus:outline-none" data-tab="toc">سرفصل‌ها</button>          
+        </div>
+
+        <div id="tab-about" class="tab-content">
+          <div class="toc-list list-none pl-0 mb-4" style="color:#2dd4bf; font-size:15px; overflow-x:auto; word-break:break-word; direction:rtl; text-align:justify; max-width:100%; box-sizing:border-box; padding-left:0;">
+            <p class="mb-4" style="color:#2dd4bf; font-size:15px; margin:0;">
+              کتاب «مقدمه‌ای بر توسعه تهاجمی برای ویندوز» حاصل تجربه و مطالعه در حوزه امنیت سایبری و عملیات تیم قرمز است. هدف من از نگارش این اثر، فراهم کردن منبعی جامع و کاربردی برای دانشجویان و علاقه‌مندان به امنیت تهاجمی است تا با مبانی فنی، ابزارها و تاکتیک‌های پیشرفته در محیط ویندوز آشنا شوند.
+              <br><br>
+              این کتاب با آموزش اصولی برنامه‌نویسی ++C آغاز می‌شود و خواننده را قدم‌به‌قدم با Windows API، عملیات تیم قرمز، طراحی و راه‌اندازی زیرساخت‌های C2 و اصول امنیت عملیاتی همراه می‌سازد. سپس به موضوعات پیشرفته‌تری چون توسعه بدافزار، تکنیک‌های فرار از شناسایی، اجرای شل‌کُد، دست‌کاری syscall ها، دور زدن مکانیزم‌های امنیتی و درنهایت مباحث x64 Assembly می‌پردازد.
+              <br><br>
+              هر فصل علاوه بر مباحث نظری، با مثال‌های عملی، تمرین‌ها و سناریوهای واقعی همراه است تا دانش به‌دست‌آمده در محیط‌های کنترل‌شده تثبیت شود. این رویکرد تعادلی میان تئوری و عمل ایجاد می‌کند و مسیر یادگیری را مؤثرتر می‌سازد.
+              <br><br>
+              نکته‌ای که مایلم با شفافیت بیان کنم این است که بخش مهمی از محتوای کتاب با کمک یک مدل زبان بزرگ (LLM) آماده و سپس بازبینی و تکمیل‌شده است؛ موضوعی که فرصتی برای سرعت بخشیدن به تولید محتوا فراهم کرد و نشان می‌دهد چگونه می‌توان از فناوری‌های نوین در خدمت یادگیری بهره گرفت.
+              <br><br>
+              امیدوارم مطالعه این کتاب برای شما الهام‌بخش باشد و در مسیر حرفه‌ای‌تان در حوزه امنیت تهاجمی، دیدگاهی تازه و مهارت‌هایی عملی به ارمغان بیاورد.
+              <br>
+              با احترام،<br>
+              تیم سایبر شلف
+            </p>
+          </div>
+        </div>
+
+        <div id="tab-toc" class="tab-content hidden">
+          <ul class="toc-list list-none pl-0 mb-4" style="color:#2dd4bf; font-size:15px;">
+            <li class="toc-chapter">
+              فصل اول  مبانی ++C برای حمله
+              <ul class="toc-subchapter mt-1">
+                <li>درباره‌ی C++</li>
+                <li>ساخت و اجرای پروژه در ویژوال استودیو</li>
+                <li>ایجاد و اجرای پروژه در ترمینال لینوکس</li>
+                <li>مفاهیم C++</li>
+                <li>گام بعدی</li>
+                <li>مثال‌های عملی C++ برای مبتدیان</li>
+                <li>مثال‌های عملی C++ برای سطح متوسط</li>
+                <li>مثال‌های عملی C++ در سطح پیشرفته</li>
+                <li>مقدمه‌ای بر برنامه‌نویسی Windows API با C++</li>
+                <li>مثال‌های سطح متوسط</li>
+                <li>مثال‌های پیشرفته در برنامه‌نویسی با Windows API</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل دوم  مبانی تیم قرمز
+              <ul class="toc-subchapter mt-1">
+                <li>تیم قرمز یا Red Teaming چیست؟</li>
+                <li>چارچوب‌های تیم قرمز</li>
+                <li>TTP ها چیست‌اند؟</li>
+                <li>شبیه‌سازی مهاجم (Adversary Simulation) در مقابل تقلید مهاجم (Adversary Emulation)</li>
+                <li>(Red Team Tradecraft) تاکتیک‌ها و روش‌های تیم قرمز و امنیت عملیاتی (OpSec) چیست؟</li>
+                <li>قوانین درگیر شدن(ROE) در عملیات تیم قرمز چیست؟</li>
+                <li>زیرساخت C2 و تیم قرمز</li>
+                <li>معماری C2 و لایه‌ها (Tier ها)</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل سوم اصول پایه و مبانی روش‌های توسعه بدافزار
+              <ul class="toc-subchapter mt-1">
+                <li>EDR در برابر آنتی‌ویروس: تفاوت‌ها را بشناسید</li>
+                <li>۲۵ تکنیک برای دور زدن آنتی‌ویروس و EDR</li>
+                <li>مفهوم سیستم کال‌های مستقیم و غیرمستقیم</li>
+                <li>مبانی اجرای شِل‌کُد</li>
+                <li>رمزگذاری شِل‌کُد با XOR و اجرای آن در حافظه</li>
+                <li>مثال سوءاستفاده از درایورهای آسیب‌پذیر</li>
+                <li>توسعه یک Dropper ساده با C++</li>
+                <li>خلاصه اسکرین‌شات</li>
+                <li>دراپر بدون فایل با PowerShell</li>
+                <li>اجرای شِل‌کُد با استفاده از VBA در اسناد مخرب</li>
+                <li>تکنیک DLL Hijacking (ربایش DLL)</li>
+                <li>ربودن نخ از راه دور (Remote Thread Hijacking)</li>
+                <li>نمای کلی تکنیک HookChain</li>
+                <li>مروری بر باج‌افزار (Ransomware Overview)</li>
+                <li>تخلیه حافظه LSASS با استفاده از PssCaptureSnapshot و MiniDumpWriteDump</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل چهارم مبانی دور زدن سندباکس و نرم‌افزارهای امنیتی
+              <ul class="toc-subchapter mt-1">
+                <li>مروری بر دور زدن AMSI</li>
+                <li>دور زدن SmartScreen و MOTW (Mark of the Web)</li>
+                <li>اجرای PowerShell بدون powershell.exe با استفاده از DLL</li>
+                <li>مرور تکنیک‌های ضد Sandbox (Anti-Sandboxing)</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل پنجم آموزش مقدماتی توسعه/برنامه‌نویسی اسمبلی
+              <ul class="toc-subchapter mt-1">
+                <li>مبانی اسمبلی x64</li>
+                <li>پیکربندی و کار با کامپایلر (همراه با مثال)</li>
+                <li>سلام دنیا</li>
+                <li>ورودی و خروجی پایه‌ای</li>
+                <li>اجرای فایل‌های باینری cmd.exe و calc.exe</li>
+                <li>اسمبل، استخراج و اجرای شل‌کد</li>
+                <li>توسعه‌ی شل‌کد نمونه – آسیب‌پذیری CVE-2025-0401 شوخی آوریل</li>
+                <li>نتیجه‌گیری و نکات پایانی</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// تب‌بندی حرفه‌ای: همه تب‌ها استایل یکسان دارند و تب فعال با رنگ و بردر متمایز می‌شود
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active-tab');
+      b.style.color = '';
+      b.style.borderBottomColor = 'transparent';
+      b.style.background = '';
+    });
+    this.classList.add('active-tab');
+    this.style.color = '#34d399';
+    this.style.borderBottomColor = '#34d399';
+    this.style.background = 'rgba(52,211,153,0.07)';
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+    document.getElementById('tab-' + this.dataset.tab).classList.remove('hidden');
+  });
+});
+// نمایش تب اول به صورت پیش‌فرض
+document.querySelector('.tab-btn[data-tab=about]').click();
+</script>

@@ -1,0 +1,22 @@
+<section id="terminal-hero" class="flex flex-col items-center justify-center bg-slate-950 px-4 relative overflow-hidden py-16" dir="rtl">
+  <!-- افکت خطوط نوری پس‌زمینه -->
+  <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-950 opacity-50 animate-pulse-slow"></div>
+
+  <div class="relative z-10 w-full max-w-3xl text-center mb-6">
+    <h2 class="text-lg md:text-xl font-bold mb-2 animate-pulse" style="color:#34d399;">
+      مرجع کتاب‌های تخصصی برنامه‌نویسی — برای هکرهای واقعی
+    </h2>
+  </div>
+
+  <div class="relative z-10 w-full max-w-3xl flex flex-row-reverse items-start gap-6">
+
+    <div class="bg-slate-900/95 rounded-2xl p-4 font-mono shadow-lg flex-1" style="color:#2dd4bf; border:1px solid #0ea5e9;">
+      <div id="terminal-output" class="space-y-1 h-48 overflow-y-auto"></div>
+      <div class="flex gap-2 mt-2 items-center">
+        <span style="color:#34d399;">$</span>
+        <input id="terminal-input" type="text" class="flex-1 bg-transparent outline-none placeholder:text-teal-400" style="color:#2dd4bf;">
+        <span id="cursor" class="ml-1 animate-blink" style="color:#0ea5e9;">█</span>
+      </div>
+    </div>
+  </div>
+</section>
