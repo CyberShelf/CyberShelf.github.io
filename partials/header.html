@@ -1,0 +1,40 @@
+<header class="sticky top-0 z-50 border-b border-slate-800/60 bg-black/70 backdrop-blur supports-[backdrop-filter]:bg-black/40">
+  <div class="max-w-7xl mx-auto flex items-center justify-between py-3 px-4 md:px-6">
+    <!-- برند -->
+    <a href="#hero" class="flex items-center gap-2 font-bold text-lg text-emerald-400 hover:text-emerald-300 transition">
+      <!-- آیکن ساده <> -->
+      <svg width="18" height="18" viewBox="0 0 24 24" class="opacity-90" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10 6L4 12L10 18" />
+        <path d="M14 6L20 12L14 18" />
+      </svg>
+      سایبر شلف
+    </a>
+
+    <!-- ناوبری دسکتاپ -->
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#hero" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">خانه</a>
+      <a href="#shop" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">فروشگاه</a>
+      <!-- <a href="#articles" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">مقالات</a> -->
+      <a href="#faq" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">سوالات متداول</a>
+      <a href="#contact" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">تماس</a>
+    </nav>
+
+    <!-- دکمه منوی موبایل -->
+    <button id="menuBtn" class="md:hidden p-2 rounded-xl ring-1 ring-slate-700 hover:bg-slate-800 transition" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="pointer-events-none">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- منوی موبایل -->
+  <div id="mobileMenu" class="md:hidden hidden border-t border-slate-800">
+    <nav class="px-4 py-3 flex flex-col gap-3 text-sm">
+      <a href="#hero" class="py-2 text-slate-200 hover:text-emerald-400 transition">خانه</a>
+      <a href="#shop" class="py-2 text-slate-200 hover:text-emerald-400 transition">فروشگاه</a>
+      <!-- <a href="#articles" class="py-2 text-slate-200 hover:text-emerald-400 transition">مقالات</a> -->
+      <a href="#faq" class="py-2 text-slate-200 hover:text-emerald-400 transition">سوالات متداول</a>
+      <a href="#contact" class="py-2 text-slate-200 hover:text-emerald-400 transition">تماس</a>
+    </nav>
+  </div>
+</header>

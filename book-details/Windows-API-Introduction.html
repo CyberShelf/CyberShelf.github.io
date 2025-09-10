@@ -1,0 +1,160 @@
+<!-- محتوا برای بارگذاری در index.html -->
+<div class="container mx-auto py-12 px-4">
+  <div class="grid lg:grid-cols-3 gap-12 items-start">
+    <!-- بخش تصویر و مشخصات کتاب -->
+    <div class="lg:col-span-1 flex flex-col items-center">
+      <!-- <img src="assets/images/Windows-API-Introduction.png" alt="کتاب مقدمه‌ای بر توسعه API ویندوز  برای تیم قرمز" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full rounded-xl shadow-2xl mb-6 border-4 border-slate-900" style="object-fit:cover;"> -->
+
+      <div class="image-ribbon-container w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full mb-6">
+        <img src="assets/images/Windows-API-Introduction.png" alt="کتاب مقدمه‌ای بر توسعه API ویندوز  برای تیم قرمز" class="w-full h-full rounded-xl shadow-2xl border-4 border-slate-900" style="object-fit:cover;">
+        <div class="ribbon">
+          <span>دانلود اریگان</span>
+        </div>
+      </div>
+
+      <div class="w-full mb-4 p-4 rounded-xl bg-slate-900 border flex flex-col sm:flex-row items-center justify-between gap-4" style="border-color:#0ea5e9;">
+        <p class="mb-2 sm:mb-0" style="color:#2dd4bf; font-size:16px;">دانلود نسخه PDF کتاب</p>
+        <a href="assets/files/Windows-API-Introduction.pdf" download
+          class="mt-2 inline-block bg-gradient-to-r from-emerald-400 via-teal-400 to-sky-500 text-black font-bold py-2 px-6 rounded-lg shadow-lg hover:scale-105 transition">
+          دانلود  
+        </a>
+      </div>
+      <div class="w-full bg-slate-900 rounded-xl p-4 border mb-4" style="border-color:#0ea5e9;">
+        <p class="font-semibold mb-1"><span style="color:#34d399;">نویسنده:</span> تیم سایبر شلف</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">ناشر:</span> تیم سایبر شلف</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">سال انتشار:</span>  1404</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">نوبت چاپ:</span> 1</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">تعداد صفحات:</span> 276</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">قطع:</span> وزیری</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">مناسب برای:</span> برنامه‌نویسان و علاقه‌مندان به عملیات تیم قرمز از مبتدی تا حرفه‌ای</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">زبان:</span> فارسی</p>
+      </div>
+    </div>
+
+    <!-- بخش تب‌ها -->
+    <div class="lg:col-span-2">
+      <h2 class="text-2xl font-bold mb-4" style="color:#34d399;">معرفی و مطالعه کتاب</h2>
+      <div class="mb-6">
+        <div class="flex border-b border-slate-700 mb-4 gap-2" id="tabs">
+          <button class="tab-btn px-4 py-2 font-bold text-slate-300 hover:text-emerald-400 transition border-b-2 border-transparent focus:outline-none" data-tab="about">درباره کتاب</button>
+          <button class="tab-btn px-4 py-2 font-bold text-slate-300 hover:text-emerald-400 transition border-b-2 border-transparent focus:outline-none" data-tab="toc">سرفصل‌ها</button>          
+        </div>
+
+        <div id="tab-about" class="tab-content">
+          <div class="toc-list list-none pl-0 mb-4" style="color:#2dd4bf; font-size:15px;">
+            <p class="mb-4" style="color:#2dd4bf; font-size:15px;">
+به کتاب «مقدمه‌ای بر توسعه API ویندوز برای تیم قرمز» خوش آمدید. </br>
+در دنیای پویا و پیچیده امنیت سایبری، تیم‌های قرمز برای شبیه‌سازی تهدیدات واقعی و ارزیابی مقاومت سیستم‌ها، نیازمند عمیق‌ترین درک ممکن از محیط‌های هدف هستند. قلب تپنده سیستم عامل ویندوز، که همچنان یکی از گسترده‌ترین پلتفرم‌های هدف است، در Windows API نهفته است. تسلط بر این رابط برنامه‌نویسی، کلید دستیابی به قدرت، پنهانکاری و کارایی در عملیات تهاجمی است.
+<br><br>
+این کتاب برای پر کردن شکاف بین تئوری و عمل طراحی شده است. ما از مبانی ساده تعامل با WinAPI در ++C شروع می‌کنیم و گام به گام به سوی تکنیک‌های پیشرفته‌ای پیش می‌رویم که هسته اصلی بسیاری از ابزارهای تهاجمی مدرن را تشکیل می‌دهند. شما به صورت عملی با مفاهیمی مانند دست‌کاری syscallها، رفع hook از توابع API و اجرای کد مستقیم در حافظه (In-Memory Execution) آشنا خواهید شد. این دانش به شما توانایی توسعه ابزارهای سفارشی و مخفی را می‌دهد که می‌توانند از دید راهکارهای امنیتی مبتنی بر نشانه‌گذاری (Signature-based) پنهان بمانند.
+<br><br>
+در طول این مسیر، با سناریوهای کاربردی واقعی از جمله استخراج ایمن اطلاعات از پردازش LSASS و استفاده از مکانیزم‌های مستقیم و غیرمستقیم فراخوانی syscall برای دور زدن هوک‌های کاربردی (User-land Hooks) روبرو خواهید شد. هدف نهایی این است که شما نه تنها به عنوان یک کاربر، بلکه به عنوان یک خالق، از قابلیت‌های بومی ویندوز برای طراحی و اجرای عملیات‌های مؤثر و نامرئی بهره ببرید.
+توجه: این کتاب با همکاری یک مدل زبان بزرگ (LLM) تهیه شده است. این همکاری امکان گردآوری، ساختاربندی و ارائه این حجم از اطلاعات تخصصی به شیوه‌ای منسجم و کاربردی را فراهم کرده است. تمامی مطالب با دقت بازبینی و هدف آن ارائه یک راهنمای عملی و قابل اعتماد برای جامعه امنیت سایبری است.
+<br><br>
+توجه: این کتاب با همکاری یک مدل زبان بزرگ (LLM) تهیه شده است. این همکاری امکان گردآوری، ساختاربندی و ارائه این حجم از اطلاعات تخصصی به شیوه‌ای منسجم و کاربردی را فراهم کرده است. تمامی مطالب با دقت بازبینی و هدف آن ارائه یک راهنمای عملی و قابل اعتماد برای جامعه امنیت سایبری است.
+<br><br>
+امیدوارم این کتاب منبع ارزشمندی برای شما باشد و درک شما از معماری ویندوز و توانایی‌های شما در حوزه امنیت تهاجمی را متحول کند.
+<br><br>
+با اشتیاق،
+<br>تیم سایبر شلف
+            </p>
+          </div>
+        </div>
+
+        <div id="tab-toc" class="tab-content hidden">
+          <ul class="toc-list list-none pl-0 mb-4" style="color:#2dd4bf; font-size:15px;">
+            <li class="toc-chapter">
+              فصل اول   خوش آمدگویی
+              <ul class="toc-subchapter mt-1">
+                <li>آزمایشگاه</li>
+                <li>رابط برنامه‌نویسی ویندوز برای تیم قرمز - مقدمه</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل دوم مقدمه‌ای بر API ویندوز
+              <ul class="toc-subchapter mt-1">
+                <li>مفهوم Windows API</li>
+                <li>مفهوم Windows API بخش ۲</li>
+                <li>مفاهیم Syscall</li>
+                <li>مفاهیم Syscall مستقیم و غیرمستقیم</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل سوم  مبانی C++ برای کار با رابط برنامه‌نویسی ویندوز
+              <ul class="toc-subchapter mt-1">
+                <li>فصل سوم  مبانی C++ برای کار با رابط برنامه‌نویسی ویندوز</li>
+                <li>مقدمه‌ای بر زبان C++</li>
+                <li>مفاهیم C++</li>
+                <li>ایجاد پروژه در Visual Studio</li>
+                <li>مثال‌های ابتدایی برنامه‌نویسی در C++</li>
+                <li>مثال‌های متوسط برنامه‌نویسی در C++</li>
+                <li>مثال‌های پیشرفته در C++</li>                                            
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل چهارم  برنامه‌نویسی و توسعه نرم‌افزار با رابط برنامه‌نویسی ویندوز
+              <ul class="toc-subchapter mt-1">
+                <li>توابع Windows API برای تست نفوذ و تیم قرمز	</li>
+                <li>مثال‌هایی از توابع Windows API</li>
+                <li>نمونه‌های عملی - توابع MessageBox، CreateProcess و VirtualAlloc</li>
+                <li>مثال‌های کاربردی – توابع OpenProcess، ReadProcessMemory و WriteProcessMemory</li>
+                <li>مثال‌های کاربردی – توابع NtQueryInformationProcess، IsDebuggerPresent و EnumWindows</li>
+                <li>مثال‌های کاربردی – توابع GetUserName / GetUserNameEx</li>
+                <li>مثال‌های کاربردی – تابع NetSessionEnum</li>
+                <li>مثال‌های کاربردی – توابع GetAdaptersInfo و GetIpAddrTable	</li>
+                <li>مثال‌های کاربردی – EnumServicesStatusEx</li>
+                <li>مثال‌های کاربردی - RegOpenKeyEx / RegQueryValueEx</li>
+                <li>مثال‌های کاربردی - LoadLibraryA / LoadLibraryW</li>
+                <li>مثال‌های کاربردی - NetUserEnum / NetUserGetInfo</li>
+                <li>مثال‌های کاربردی  - NtMapViewOfSection / NtUnmapViewOfSection</li>
+                <li>مثال‌های کاربردی  - SetThreadContext / GetThreadContext</li>                   
+                <li>مثال‌های کاربردی  - CryptUnprotectData</li>
+                <li>مثال‌های کاربردی  - LsaEnumerateLogonSessions / LsaGetLogonSessionData	</li>                   
+                <li>مرور کلی  بر MalAPI</li> 
+                <li>API Ordinal در ویندوز – راهنمای آموزشی</li>                   
+                <li>هش‌کردن API ویندوز</li> 
+                                                                                                                                          
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل پنجم   تکنیک‌های پایه تهاجمی در کار با API
+              <ul class="toc-subchapter mt-1">
+                <li>رمزگذاری شل‌کد با XOR و اجرای آن در حافظه</li>                   
+                <li>بازگردانی unhook کردن NTDLL با بازیابی بخش .text از روی دیسک</li> 
+                <li>تشخیص Syscallهای Hook شده در NTDLL از طریق بررسی Prologue درون‌خطی</li>                   
+                <li>Dump گرفتن از LSASS با استفاده از MiniDumpWriteDump</li>                   
+                <li>Dump گرفتن از LSASS با استفاده از PssCaptureSnapshot و MiniDumpWriteDump</li> 
+                <li>مثال Direct Syscall</li>                   
+                <li>مثال Indirect Syscall</li>                                 
+                <li>نتیجه‌گیری</li> 
+              </ul>
+            </li>    
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// تب‌بندی حرفه‌ای: همه تب‌ها استایل یکسان دارند و تب فعال با رنگ و بردر متمایز می‌شود
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active-tab');
+      b.style.color = '';
+      b.style.borderBottomColor = 'transparent';
+      b.style.background = '';
+    });
+    this.classList.add('active-tab');
+    this.style.color = '#34d399';
+    this.style.borderBottomColor = '#34d399';
+    this.style.background = 'rgba(52,211,153,0.07)';
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+    document.getElementById('tab-' + this.dataset.tab).classList.remove('hidden');
+  });
+});
+// نمایش تب اول به صورت پیش‌فرض
+document.querySelector('.tab-btn[data-tab=about]').click();
+</script>

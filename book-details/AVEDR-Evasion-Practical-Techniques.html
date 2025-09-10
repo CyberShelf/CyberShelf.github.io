@@ -1,0 +1,199 @@
+<!-- محتوا برای بارگذاری در index.html -->
+<div class="container mx-auto py-12 px-4">
+  <div class="grid lg:grid-cols-3 gap-12 items-start">
+    <!-- بخش تصویر و مشخصات کتاب -->
+    <div class="lg:col-span-1 flex flex-col items-center">
+      <img src="assets/images/AVEDR-Evasion-Practical-Techniques.png" alt="تکنیک‌های عملی فرار از AV/EDR" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full rounded-xl shadow-2xl mb-6 border-4 border-slate-900" style="object-fit:cover;">
+
+      <div class="w-full mb-4 p-4 rounded-xl bg-slate-900 border flex flex-col sm:flex-row items-center justify-between gap-4" style="border-color:#0ea5e9;">
+        <span class="text-emerald-400 font-bold text-base">قیمت نسخه چاپی کتاب</span>
+        <div class="flex items-center gap-2">
+          <span class="text-slate-400 text-sm line-through">1,200,000 تومان</span>
+          <span class="text-emerald-400 font-bold text-base">960,000 تومان</span>
+          <span class="text-xs text-slate-500">(با تخفیف 20%)</span>
+        </div>
+      </div>
+      <div class="w-full bg-slate-900 rounded-xl p-4 border mb-4" style="border-color:#0ea5e9;">
+        <p class="font-semibold mb-1"><span style="color:#34d399;">نویسنده:</span> تیم سایبر شلف</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">ناشر:</span> تیم سایبر شلف</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">سال انتشار:</span>  1404</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">نوبت چاپ:</span> 1</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">تعداد صفحات:</span> 454</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">قطع:</span> وزیری</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">مناسب برای:</span> برنامه‌نویسان و علاقه‌مندان به عملیات تیم قرمز از مبتدی تا حرفه‌ای</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">زبان:</span> فارسی</p>
+      </div>
+    </div>
+
+    <!-- بخش تب‌ها -->
+    <div class="lg:col-span-2">
+      <h2 class="text-2xl font-bold mb-4" style="color:#34d399;">معرفی و مطالعه کتاب</h2>
+      <div class="mb-6">
+        <div class="flex border-b border-slate-700 mb-4 gap-2" id="tabs">
+          <button class="tab-btn px-4 py-2 font-bold text-slate-300 hover:text-emerald-400 transition border-b-2 border-transparent focus:outline-none" data-tab="about">درباره کتاب</button>
+          <button class="tab-btn px-4 py-2 font-bold text-slate-300 hover:text-emerald-400 transition border-b-2 border-transparent focus:outline-none" data-tab="toc">سرفصل‌ها</button>          
+        </div>
+
+        <div id="tab-about" class="tab-content">
+          <div class="toc-list list-none pl-0 mb-4" style="color:#2dd4bf; font-size:15px; overflow-x:auto; word-break:break-word; direction:rtl; text-align:justify; max-width:100%; box-sizing:border-box; padding-left:0;">
+            <p class="mb-4" style="color:#2dd4bf; font-size:15px; margin:0;">
+              در سال‌های اخیر، راهکارهای دفاعی مانند آنتی‌ویروس‌های نسل جدید (AV) و سامانه‌های شناسایی و پاسخ به تهدید در سطح میزبان (EDR) به بخش جدایی‌ناپذیر زیرساخت‌های امنیتی سازمان‌ها تبدیل شده‌اند. این فناوری‌ها با تکیه بر تحلیل‌های رفتاری، شناسایی مبتنی بر امضا، روش‌های اکتشافی و حتی الگوریتم‌های یادگیری ماشین، توانسته‌اند سطح شناسایی تهدیدات را به‌طور چشمگیری افزایش دهند. اما در مقابل، مهاجمان و پژوهشگران امنیتی نیز همواره در تلاش‌اند با به‌کارگیری روش‌های خلاقانه و پیچیده، این سامانه‌ها را دور بزنند.
+              <br><br>
+              کتاب حاضر با عنوان «تکنیک‌های عملی فرار از AV/EDR» به‌طور تخصصی و عمیق به بررسی همین موضوع می‌پردازد. هدف اصلی این اثر، آموزش روش‌های امنیت تهاجمی پیشرفته است که در سناریوهای واقعی برای فرار از شناسایی توسط ابزارهای مدرن دفاعی به کار می‌روند. محتوای کتاب کاملاً عملی، آزمایش‌محور و کاربردی بوده و بدون پرداختن به مباحث غیرضروری، شما را مستقیماً با تکنیک‌ها و ابزارهایی آشنا می‌سازد که در عملیات تیم قرمز، توسعه بدافزار و تست نفوذ پیشرفته مورد استفاده قرار می‌گیرند.
+              <br><br>
+              در طول مطالعه، با مفاهیم کلیدی همچون مکانیزم‌های شناسایی AV/EDR، مبانی داخلی ویندوز و دور زدن syscalls، پیاده‌سازی‌های سفارشی NTDLL، تزریق شل‌کد و فرآیند، رمزگذاری و کاهش آنتروپی، تکنیک‌های ضدتحلیل، و حتی فرار در سطح کرنل آشنا خواهید شد. همچنین، آزمایشگاه‌های عملی طراحی شده‌اند تا شما بتوانید این مفاهیم را به‌صورت عملی با payloadهای C/C++، syscallهای مستقیم و غیرمستقیم، و لودرهای مخفی تجربه کنید.
+              <br><br>
+              این کتاب نه‌تنها برای متخصصان تیم قرمز و تست‌کنندگان نفوذ، بلکه برای پژوهشگران امنیتی و حتی مدافعان سایبری که می‌خواهند دید عمیق‌تری نسبت به تاکتیک‌های مهاجمان داشته باشند، منبعی ارزشمند محسوب می‌شود. مطالعه این اثر به شما کمک خواهد کرد تا در یک محیط کنترل‌شده و ایمن، توانایی‌های خود را در زمینه فرار از سامانه‌های شناسایی پیشرفته ارتقا دهید و به درک بهتری از نبرد پنهان میان مهاجم و مدافع دست یابید.
+              <br><br>
+              نکته‌ای که مایلم با شفافیت بیان کنم این است که بخش مهمی از محتوای کتاب با کمک یک مدل زبان بزرگ (LLM) آماده و سپس بازبینی و تکمیل‌شده است؛ موضوعی که فرصتی برای سرعت بخشیدن به تولید محتوا فراهم کرد و نشان می‌دهد چگونه می‌توان از فناوری‌های نوین در خدمت یادگیری بهره گرفت.
+              <br><br>
+              امیدوارم مطالعه این کتاب برای شما الهام‌بخش باشد و در مسیر حرفه‌ای‌تان در حوزه امنیت تهاجمی، دیدگاهی تازه و مهارت‌هایی عملی به ارمغان بیاورد.
+              <br>
+              با احترام،<br>
+              تیم سایبر شلف
+            </p>
+          </div>
+        </div>
+
+        <div id="tab-toc" class="tab-content hidden">
+          <ul class="toc-list list-none pl-0 mb-4" style="color:#2dd4bf; font-size:15px;">   
+            <li class="toc-chapter">
+              فصل اول  تکنیک‌های عملی فرار از AV/EDR
+              <ul class="toc-subchapter mt-1">
+                <li>انواع روش‌های شناسایی: امضایی، اکتشافی، رفتاری و یادگیری ماشینی</li>
+                <li>اجزای اصلی یک EDR: حسگر، درایور کرنل، مؤلفه‌های یوزرلند، بک‌اند و فضای ابری</li>
+                <li>تشخیص در زمان واقعی در برابر تشخیص پس از رویداد</li>
+                <li>پایش API و System Call</li>
+                <li>Hooking در Userland و Kernelland</li>
+                <li>نظارت بر جریان اجرای برنامه (ETW، Syscalls، Callbacks)</li>
+                <li>ارتباط داده‌ای بین عامل (Agent) و فضای ابری (Agent ↔ Cloud)</li>
+                <li>بردارهای رایج در آنتی‌ویروس/EDR: تله‌متری، لاگ‌ها، بافرها و ردیابی Syscall</li>
+                <li>محدودیت‌های راهکارهای سنتی آنتی‌ویروس (AV)</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل دوم  C/C++ برای فرار از حملات
+              <ul class="toc-subchapter mt-1">
+                <li>چرا از C/C++ برای دور زدن (Evasion) استفاده می‌کنیم</li>
+                <li>جلوگیری از شناسایی ایستا (بر اساس امضا)</li>
+                <li>مبهم سازی شاخص‌های آلودگی (IOCs)</li>
+                <li>حل دستی جدول آدرس واردات (IAT) و پیونددهی پویا</li>
+                <li>تکنیک‌های مستقیم فراخوان سیستمی (Direct Syscall Techniques)</li>
+                <li>حذف هوک‌های ntdll.dll در زمان اجرا</li>
+                <li>فراخوانی سیستم مستقیم و غیرمستقیم برای فرار از شناسایی</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل سوم رابط‌های داخلی ویندوز و API برای فرار از حملات
+              <ul class="toc-subchapter mt-1">
+                <li>درک بخش‌هایPE (.text,.data,.rdata) درزمینهٔ دور زدن سیستم‌های امنیتی</li>
+                <li>میزبانی و اجرای از راه دور پیلود (Payload)</li>
+                <li>پنهان‌سازی پیلود در فایل‌های تصویری با استفاده از ImgPayload</li>
+                <li>تکنیک‌های OPSEC در تحویل و اجرای شل‌کد</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل چهارم شل‌کد و پیلود: ساختار بخش‌های PE، میزبانی راه‌دور پیلود و تزریق مبتنی بر تصویر
+              <ul class="toc-subchapter mt-1">
+                <li>4.1 - درک بخش‌هایPE  (.text, .data, .rdata) در زمینه دور زدن سیستم‌های امنیتی</li>
+                <li>4.2 - میزبانی و اجرای از راه دور پیلود (Payload)</li>
+                <li>4.3 – پنهان‌سازی پیلود در فایل‌های تصویری با استفاده از ImgPayload</li>
+                <li>4.4 – تکنیک‌های OPSEC در تحویل و اجرای شل‌کد</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل پنجم رمزگذاری و مبهم سازی Payload
+              <ul class="toc-subchapter mt-1">
+                <li>رمزگذاری XOR برای پنهان‌سازی شل‌کد (Shellcode Obfuscation)</li>
+                <li>رمزگذاری RC4 برای مبهم سازی payload</li>
+                <li>رمزنگاری و اجرای Payload با AES</li>
+                <li>مبهم سازی با XOR و تغییر کلید (Key Mutation) و چندریختی (Polymorphism)</li>
+                <li>مبهم سازی شل‌کد با UUID، آدرس MAC و فرمت IPv6</li>
+                <li>مبهم سازی پیشرفته شل‌کد با استفاده از رمزگذاری ترکیبی و رمزگشایی در زمان اجرا</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل ششم تکنیک‌های تزریق فرآیند
+              <ul class="toc-subchapter mt-1">
+                <li>تزریق کلاسیک با استفاده از CreateRemoteThread</li>
+                <li>تزریق Early Bird (تکنیک پیشرفته تزریق به فرآیند)</li>
+                <li>ربایش نخ (Manipulation یا تغییر زمینه‌ی اجرای نخ از راه دور)</li>
+                <li>تزریق APC (تزریق فراخوانی رویه‌ی غیرهمزمان)</li>
+                <li>تزریق Early Bird</li>
+                <li>جایگزینی فرآیند (Process Replacement) و تهی سازی فرآیند (Process Hollowing)</li>
+                <li>جعل شناسه والد (PPID Spoofing)</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل هفتم ضدتحلیل و روش‌های پیشرفته دور زدن
+              <ul class="toc-subchapter mt-1">
+                <li>تکنیک‌های ضد دیباگ (Anti-Debugging Techniques)</li>
+                <li>تکنیک‌های ضد سندباکس</li>
+                <li>تکنیک‌های تشخیص ضد ماشین مجازی (VM)</li>
+                <li>تشخیص پلتفرم‌های تحلیل خودکار (مثل Hybrid Analysis، Any.Run، Cuckoo و غیره)</li>
+                <li>کاهش آنتروپی و بسته‌بندهای سفارشی (Custom Packers)</li>
+                <li>شناسایی و فرار از نقاط توقف سخت‌افزاری</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل هشتم فراخوانی‌های سیستمی، هسته ویندوز و روش‌های دور زدن EDR
+              <ul class="toc-subchapter mt-1">
+                <li>دور زدن ETW (پچ EtwEventWrite، صفر کردن ETW)</li>
+                <li>کال‌بک‌های کرنل در EDR</li>
+                <li>دامپ کردن LSASS محافظت‌شده توسط LSA</li>
+                <li>کشتن EDR با BYOVD (Bring Your Own Vulnerable Driver)</li>
+                <li>دور زدن محافظت LSA (PPL) از طریق پچ کردن ساختار EPROCESS در کرنل</li>
+                <li>پیاده‌سازی مجدد توابع NTDLL از ابتدا (NTDLL Stubs سفارشی)</li>
+                <li>شناسایی و دور زدن Hook-ها (Inline Hooks، IAT Hooks و غیره)</li>
+                <li>جعل Handle و دست‌کاری Access Token</li>
+                <li>استفاده از Breakpoint سخت‌افزاری برای دور زدن Hook-های سطح کاربر</li>
+                <li>ساخت یک PE Packer</li>
+                <li>تغییر پویا و تطبیقی شِل‌کد: تکنیک پیشرفته‌ی پنهان‌سازی از طریق تغییر در وضعیت حافظه</li>
+                <li>HookChain</li>
+                <li>مسلح سازی Windows Defender Application Control (WDAC)</li>
+                <li>ThreadlessInject: اجرای شِل‌کد بدون ایجاد نخ</li>
+              </ul>
+            </li>
+            <li class="toc-chapter">
+              فصل نهم روش‌های گریز از شناسایی رفتاری EDR پس از نفوذ اولیه
+              <ul class="toc-subchapter mt-1">
+                <li>تکنیک‌های فرار از شناسایی WMIC و PsExec</li>
+                <li>استگانوگرافی برای توزیع امن کلید در محیط سازمانی</li>
+                <li>تکنیک‌های اجتناب مستقیم از تشخیص دستورات PowerShell</li>
+                <li>PowerSploit و اجتناب از شناسایی در اجرای درون‌حافظه‌ای</li>
+                <li>WMIC و PsExec: تکنیک‌های اجتناب از شناسایی در جابجایی جانبی</li>
+                <li>تونل سازی، مبهم سازی و کانال‌های مخفی</li>
+                <li>استخراج پنهانی داده از طریق استگانوگرافی</li>
+                <li>تکنیک‌های رفتاری برای دور زدن EDR</li>
+                <li>جمع‌بندی و سخن پایانی</li>
+              </ul>
+            </li>
+          </ul>
+        </div>       
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// تب‌بندی حرفه‌ای: همه تب‌ها استایل یکسان دارند و تب فعال با رنگ و بردر متمایز می‌شود
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active-tab');
+      b.style.color = '';
+      b.style.borderBottomColor = 'transparent';
+      b.style.background = '';
+    });
+    this.classList.add('active-tab');
+    this.style.color = '#34d399';
+    this.style.borderBottomColor = '#34d399';
+    this.style.background = 'rgba(52,211,153,0.07)';
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+    document.getElementById('tab-' + this.dataset.tab).classList.remove('hidden');
+  });
+});
+// نمایش تب اول به صورت پیش‌فرض
+document.querySelector('.tab-btn[data-tab=about]').click();
+</script>
