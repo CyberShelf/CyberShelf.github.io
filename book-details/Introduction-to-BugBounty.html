@@ -1,0 +1,164 @@
+<!-- محتوا برای بارگذاری در index.html -->
+<div class="container mx-auto py-12 px-4">
+  <div class="grid lg:grid-cols-3 gap-12 items-start">
+    <!-- بخش تصویر و مشخصات کتاب -->
+    <div class="lg:col-span-1 flex flex-col items-center">
+      <img src="assets/images/Introduction-to-BugBounty.png" alt="مقدمه‌ای بر Bug Bountyاز مبتدی تا حرفه‌ای" class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full rounded-xl shadow-2xl mb-6 border-4 border-slate-900" style="object-fit:cover;">
+
+      <div class="w-full mb-4 p-4 rounded-xl bg-slate-900 border flex flex-col sm:flex-row items-center justify-between gap-4" style="border-color:#0ea5e9;">
+        <span class="text-emerald-400 font-bold text-base">قیمت نسخه چاپی کتاب</span>
+        <div class="flex items-center gap-2">
+          <span class="text-slate-400 text-sm line-through">1,000,000 تومان</span>
+          <span class="text-emerald-400 font-bold text-base">800,000 تومان</span>
+          <span class="text-xs text-slate-500">(با تخفیف 20%)</span>
+        </div>
+      </div>
+      <div class="w-full bg-slate-900 rounded-xl p-4 border mb-4" style="border-color:#0ea5e9;">
+        <p class="font-semibold mb-1"><span style="color:#34d399;">نویسنده:</span> تیم سایبر شلف</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">ناشر:</span> تیم سایبر شلف</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">سال انتشار:</span>  1404</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">نوبت چاپ:</span> 1</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">تعداد صفحات:</span> 246</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">قطع:</span> وزیری</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">مناسب برای:</span> برنامه‌نویسان و علاقه‌مندان به عملیات تیم قرمز از مبتدی تا حرفه‌ای</p>
+        <p class="font-semibold mb-1"><span style="color:#34d399;">زبان:</span> فارسی</p>
+      </div>
+    </div>
+
+    <!-- بخش تب‌ها -->
+    <div class="lg:col-span-2">
+      <h2 class="text-2xl font-bold mb-4" style="color:#34d399;">معرفی و مطالعه کتاب</h2>
+      <div class="mb-6">
+        <div class="flex border-b border-slate-700 mb-4 gap-2" id="tabs">
+          <button class="tab-btn px-4 py-2 font-bold text-slate-300 hover:text-emerald-400 transition border-b-2 border-transparent focus:outline-none" data-tab="about">درباره کتاب</button>
+          <button class="tab-btn px-4 py-2 font-bold text-slate-300 hover:text-emerald-400 transition border-b-2 border-transparent focus:outline-none" data-tab="toc">سرفصل‌ها</button>          
+        </div>
+
+        <div id="tab-about" class="tab-content">
+        <div class="toc-list list-none pl-0 mb-4" style="color:#2dd4bf; font-size:15px; overflow-x:auto; word-break:break-word; direction:rtl; text-align:justify; max-width:100%; box-sizing:border-box; padding-left:0;">
+            <p class="mb-4" style="color:#2dd4bf; font-size:15px; margin:0;">
+            کتاب "مقدمه‌ای بر Bug Bounty: از مبتدی تا حرفه‌ای" با هدف روشن کردن مسیر برای علاقه‌مندان به دنیای شکار باگ نوشته‌شده است. Bug Bounty یا برنامه‌های شکار باگ، فرصت‌هایی هستند که شرکت‌ها و سازمان‌ها برای شناسایی آسیب‌پذیری‌ها و نقاط ضعف امنیتی در محصولات و سرویس‌های خود ایجاد می‌کنند. در این برنامه‌ها، افرادی که موفق به کشف آسیب‌پذیری‌ها می‌شوند، پاداش دریافت کرده و شناخته می‌شوند. این مدل نه‌تنها برای شرکت‌ها مفید است، بلکه برای شرکت‌کنندگان نیز یک مسیر یادگیری عملی، تجربه واقعی و فرصت کسب درآمد فراهم می‌کند.
+            <br><br>
+            این کتاب راهنمایی است برای کسانی که می‌خواهند وارد این حوزه شوند و مسیر یادگیری خود را با درک اصول، ابزارها و تکنیک‌های پایه‌ای و متنوع آغاز کنند. در طول کتاب با روش‌ها و ابزارهایی آشنا می‌شویم که اساس یک شکار موفق را شکل می‌دهند و دید ما را نسبت به فرآیند کشف آسیب‌پذیری‌ها باز می‌کنند.
+            <br><br>
+            بااین‌حال، باید صریح بگوییم که هیچ کتابی نمی‌تواند به‌تنهایی ما را تبدیل به یک شکارچی باگ کند. موفقیت در این حوزه تنها با مطالعه به دست نمی‌آید؛ ما نیاز داریم که کنجکاو، خلاق و پشتکار بالا داشته باشیم. این کتاب مسیر را روشن می‌کند، اما حرکت در این مسیر و تبدیل‌شدن به یک شکارچی باگ واقعی، نیازمند تجربه عملی، تمرین مداوم و اشتیاقی است که از درون ما می‌آید.
+            <br><br>
+            هدف ما در این کتاب این است که با مبانی، روش‌ها و نمونه‌های عملی آشنا شویم تا بتوانیم با اعتمادبه‌نفس و درک درست، قدم در مسیر Bug Bounty بگذاریم. اگر با ذهنی باز و انگیزه‌ای قوی وارد این مسیر شویم، این کتاب می‌تواند چراغ راه ما باشد و به ما کمک کند تا قدم‌به‌قدم، از سطح مبتدی تا حرفه‌ای پیش برویم.
+            <br><br>
+            نکته‌ای که مایلم با شفافیت بیان کنم این است که بخش مهمی از محتوای کتاب با کمک یک مدل زبان بزرگ (LLM) آماده و سپس بازبینی و تکمیل‌شده است؛ موضوعی که فرصتی برای سرعت بخشیدن به تولید محتوا فراهم کرد و نشان می‌دهد چگونه می‌توان از فناوری‌های نوین در خدمت یادگیری بهره گرفت.
+            <br><br>
+            امیدوارم مطالعه این کتاب برای شما الهام‌بخش باشد و در مسیر حرفه‌ای‌تان در حوزه امنیت، دیدگاهی تازه و مهارت‌هایی عملی به ارمغان بیاورد.
+            <br>
+            با احترام،<br>
+            تیم سایبر شلف
+            </p>
+        </div>
+        </div>
+
+        <div id="tab-toc" class="tab-content hidden">
+        <ul class="toc-list list-none pl-0 mb-4" style="color:#2dd4bf; font-size:15px;">
+            <li class="toc-chapter">
+            فصل اول  درک چشم‌انداز Bug Bounty
+            <ul class="toc-subchapter mt-1">
+                <li>۱.۱ شکار باگ (Bug Bounty) چیست و چرا اهمیت دارد</li>
+                <li>۱.۲ ظهور امنیت مبتنی بر هکرها (Hacker-Powered Security)</li>
+                <li>۱.۳ پلتفرم‌های کلیدی: HackerOne، Bugcrowd، Intigriti، YesWeHack</li>
+                <li>۱.۴ چگونه برنامه‌های شکار باگ کار می‌کنند (از ابتدا تا انتها)</li>
+                <li>۱.۵ اعتبار پژوهشگر و Signal: چه چیزی یک شکارچی باگ خوب می‌سازد</li>
+                <li>۱.۶ برنامه‌های عمومی در مقابل برنامه‌های خصوصی</li>
+                <li>۱.۷ مرزهای قانونی، اخلاقی و ایمن در هک</li>
+                <li>۱.۸ ذهنیت هکر: کنجکاوی بر پیچیدگی برتری دارد</li>
+                <li>۱.۹ تعیین دامنه (Scoping): درک قوانین تعامل</li>
+                <li>۱.۱۰ پرداخت‌های شکار باگ و مکانیسم‌های پاداش و شناسایی</li>
+            </ul>
+            </li>
+            <li class="toc-chapter">
+            فصل دوم  شناسایی و جمع‌آوری اطلاعات
+            <ul class="toc-subchapter mt-1">
+                <li>۲.۱ ارزش شناسایی: تفکر مانند یک نقشه‌بردار</li>
+                <li>۲.۲ شمارش زیردامنه‌ها: ابزارها و روش‌های غیر خودکار</li>
+                <li>۲.۳ کشف دارایی‌ها: شناسایی سطح حمله</li>
+                <li>۲.۴ کشف محتوا: نقاط پایانی مخفی و دایرکتوری‌های حساس</li>
+                <li>۲.۵ اسکن پورت و سرویس‌ها: فراتر از HTTP</li>
+                <li>۲.۶ شناسایی ردپا و اثرانگشت فناوری و شناسایی استک</li>
+                <li>۲.۷ فایل‌های JavaScript و استخراج نقاط پایانی (Endpoint Mining)</li>
+                <li>۲.۸ پایش GitHub و دیگر مخازن عمومی</li>
+                <li>۲.۹ اسرار نشت‌کرده و ترکیب با OSINT</li>
+                <li>۲.۱۰ خودکارسازی شناسایی با Bash، Python و فریم‌ورک‌های Recon</li>
+                <li>2.11 دستورات یک‌خطی و تکنیک‌های شناسایی</li>
+            </ul>
+            </li>
+            <li class="toc-chapter">
+            فصل سوم  کلاس‌های آسیب‌پذیری که اغلب پاداش می‌گیرند
+            <ul class="toc-subchapter mt-1">
+                <li>3.1 (IDOR) ارجاع مستقیم ناامن به اشیاء: نقص‌های منطقی و دسترسی‌های نادرست</li>
+                <li>3.2 تزریق اسکریپت در سمت کاربر (XSS): انواع Reflected، Stored و DOM-Based</li>
+                <li>۳.۳ جعل درخواست سمت سرور (SSRF): اسکن پورت‌های داخلی، متادیتای AWS</li>
+                <li>۳.۴ تزریق SQL (SQLi): کور، مبتنی بر زمان، مبتنی بر خطا</li>
+                <li>۳.۵ جعل درخواست بین‌سایتی (Cross-Site Request Forgery — CSRF): حملاتِ وابسته به وضعیت کاربر و مستقل از وضعیت</li>
+                <li>۳.۶ ریدایرکت باز و دست‌کاری آدرس‌های URL</li>
+                <li>۳.۷ تصاحب زیردامنه: از پیکربندی نادرست DNS تا سوءاستفاده از سرویس‌های ابری</li>
+                <li>۳.۸ تزریق HTML و دست‌کاری رابط کاربری (Clickjacking)</li>
+                <li>3.9 Template Injection: سمت‌سرور و سمت‌کلاینت</li>
+                <li>3.10 خطاهای منطق برنامه و شکست فرآیندهای تجاری</li>
+            </ul>
+            </li>
+            <li class="toc-chapter">
+            فصل چهارم  روش های عملی آزمایش
+            <ul class="toc-subchapter mt-1">
+                <li>4.1 تست دستی در مقابل اسکن خودکار: نقاط قوت هر روش</li>
+                <li>4.2 استفاده کارآمد از Burp Suite برای تست برنامه‌های وب</li>
+                <li>4.3 فازینگ پارامترها، هدرها و رشته‌های پرس‌وجو</li>
+                <li>4.4 ساخت و ارائه Payload-های Proof of Concept (PoC)</li>
+                <li>4.5 شناسایی پارامترهای نامتداول و فیلدهای پنهان</li>
+                <li>4.6 سوءاستفاده از API-های با پیکربندی نادرست و JWT</li>
+                <li>4.7 کشف و سوءاستفاده از مشکلات کش (Web Cache Poisoning)</li>
+                <li>4.8 زنجیره‌های منطقی چندمرحله‌ای و موارد سوءاستفاده</li>
+                <li>4.9 جعبه‌ابزار: gau, waybackurls, ffuf, nuclei, httpx, subfinder</li>
+                <li>4.10 چه زمان عمیق بررسی کنیم و چه زمان به اهداف دیگر تغییر مسیر دهیم</li>
+            </ul>
+            </li>
+            <li class="toc-chapter">
+            فصل پنجم  گزارش دهی و رشد به‌عنوان یک شکارچی باگ
+            <ul class="toc-subchapter mt-1">
+                <li>۵.۱ نحوه نوشتن گزارش آسیب‌پذیری تأثیرگذار</li>
+                <li>۵.۲ بازتولید دقیق و مرحله‌به‌مرحله مشکل</li>
+                <li>۵.۳ نشان دادن تأثیر بدون اغراق</li>
+                <li>۵.۴ نگارش عنوان‌هایی که توجه جلب کنند، نه اینکه نادیده گرفته شوند</li>
+                <li>۵.۵ اشتباهات رایج در گزارش‌ها و نحوه اجتناب از آن‌ها</li>
+                <li>۵.۶ چه زمانی از تصاویر، ویدئوها و اسکریپت‌ها استفاده کنیم</li>
+                <li>۵.۷ برخورد با گزارش‌های تکراری و رد شده</li>
+                <li>۵.۸ ایجاد اعتبار و اعتماد در نگاه مالکان برنامه‌ها</li>
+                <li>۵.۹ مشارکت در نوشتارها و پروژه‌های جامعه</li>
+                <li>۵.۱۰ به‌روز ماندن و تکامل در اکوسیستم</li>
+            </ul>
+            </li>
+        </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// تب‌بندی حرفه‌ای: همه تب‌ها استایل یکسان دارند و تب فعال با رنگ و بردر متمایز می‌شود
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active-tab');
+      b.style.color = '';
+      b.style.borderBottomColor = 'transparent';
+      b.style.background = '';
+    });
+    this.classList.add('active-tab');
+    this.style.color = '#34d399';
+    this.style.borderBottomColor = '#34d399';
+    this.style.background = 'rgba(52,211,153,0.07)';
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+    document.getElementById('tab-' + this.dataset.tab).classList.remove('hidden');
+  });
+});
+// نمایش تب اول به صورت پیش‌فرض
+document.querySelector('.tab-btn[data-tab=about]').click();
+</script>
