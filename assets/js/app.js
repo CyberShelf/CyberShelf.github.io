@@ -125,7 +125,7 @@ function initHomeTerminal() {
 
 // مدیریت hash
 function handleHashChange() {
-  const sections = ['home', 'shop', 'faq', 'contact', 'about'];
+  const sections = ['home', 'shop', 'faq', 'contact', 'about', 'books-en'];
   const books = document.getElementById('books');
 
   const show = ids => ids.forEach(id => {
@@ -157,6 +157,7 @@ const init = async () => {
   await Promise.allSettled([
     loadPartial('home', 'partials/home.html'),
     loadPartial('shop', 'partials/shop.html'),
+    loadPartial('books-en', 'partials/books-en.html'),
     loadPartial('faq', 'partials/faq.html'),
     loadPartial('contact', 'partials/contact.html'),
     loadPartial('about', 'partials/about.html'), // 🔥 اضافه شد
