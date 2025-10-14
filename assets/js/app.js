@@ -1,4 +1,4 @@
-// بارگذاری partial ها
+// 📦 بارگذاری partialها
 const loadPartial = async (id, url) => {
   try {
     const el = document.getElementById(id);
@@ -23,7 +23,7 @@ const loadPartial = async (id, url) => {
   }
 };
 
-// منوی موبایل
+// 📱 منوی موبایل
 function initMobileMenu() {
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
@@ -35,7 +35,7 @@ function initMobileMenu() {
     menuBtn.setAttribute('aria-expanded', String(!isOpen));
 
     if (!isOpen) {
-      mobileMenu.classList.add('backdrop-blur-md', 'border-green-500', 'animate-pulse');
+      mobileMenu.classList.add('animate-pulse');
       setTimeout(() => mobileMenu.classList.remove('animate-pulse'), 300);
     }
   });
@@ -48,7 +48,7 @@ function initMobileMenu() {
   });
 }
 
-// دکمه Back to Top (با throttle ساده)
+// ⬆️ دکمه بازگشت به بالا
 function initBackToTop() {
   const btn = document.getElementById('backToTop');
   if (!btn) return;
@@ -69,17 +69,16 @@ function initBackToTop() {
   });
 }
 
-// ترمینال
+// 💻 ترمینال صفحه اصلی
 function initHomeTerminal() {
   const terminalOutput = document.getElementById('terminal-output');
-  const terminalInput = document.getElementById('terminal-input');
-  if (!terminalOutput || !terminalInput) return;
+  if (!terminalOutput) return;
 
   const commands = [
     { cmd: "whoami", output: "User: Hacker" },
     { cmd: "ls", output: "Windows-API-Introduction.pdf, AVEDR-Evasion-Practical-Techniques.pdf, Malware-Analysis-Introduction.pdf, Offensive-Development-Introduction.pdf" },
     { cmd: "pwd", output: "/home/hacker/CyberShelf" },
-    { cmd: "cat Windows-API-Introduction.pdf", output: "مجموعه کتاب های هک و امنیت برای هکرهای واقعی" },
+    { cmd: "cat Windows-API-Introduction.pdf", output: "مجموعه کتاب‌های امنیت و توسعه آفنسیو برای هکرهای واقعی" },
     { cmd: "echo 'Happy Hacking!'", output: "Happy Hacking!" }
   ];
 
@@ -88,7 +87,7 @@ function initHomeTerminal() {
   function typeCommand(command, callback) {
     let i = 0;
     const line = document.createElement('div');
-    line.style.direction = 'ltr'; 
+    line.style.direction = 'ltr';
     terminalOutput.appendChild(line);
 
     function typeChar() {
@@ -96,9 +95,7 @@ function initHomeTerminal() {
         line.textContent += command[i];
         i++;
         setTimeout(typeChar, 100);
-      } else {
-        callback();
-      }
+      } else callback();
     }
     typeChar();
   }
@@ -110,7 +107,7 @@ function initHomeTerminal() {
     typeCommand(`$ ${cmd}`, () => {
       if (output) {
         const outputLine = document.createElement('div');
-        outputLine.style.direction = 'ltr'; 
+        outputLine.style.direction = 'ltr';
         outputLine.textContent = output;
         terminalOutput.appendChild(outputLine);
       }
@@ -123,9 +120,9 @@ function initHomeTerminal() {
   setTimeout(executeNextCommand, 1000);
 }
 
-// مدیریت hash
+// 🔄 تغییر hash
 function handleHashChange() {
-  const sections = ['home', 'shop', 'faq', 'contact', 'about', 'books-en'];
+  const sections = ['home', 'shop', 'faq', 'contact', 'about', 'books-en', 'tools'];
   const books = document.getElementById('books');
 
   const show = ids => ids.forEach(id => {
@@ -149,18 +146,18 @@ function handleHashChange() {
   }
 }
 
-// شروع
-const init = async () => {
-  await loadPartial('header', 'partials/header.html');
-  initMobileMenu();
 
+// 🚀 شروع برنامه
+const init = async () => {
+   initMobileMenu();
   await Promise.allSettled([
     loadPartial('home', 'partials/home.html'),
     loadPartial('shop', 'partials/shop.html'),
     loadPartial('books-en', 'partials/books-en.html'),
+    loadPartial('tools', 'partials/tools.html'),
     loadPartial('faq', 'partials/faq.html'),
     loadPartial('contact', 'partials/contact.html'),
-    loadPartial('about', 'partials/about.html'), // 🔥 اضافه شد
+    loadPartial('about', 'partials/about.html'),
     loadPartial('footer', 'partials/footer.html')
   ]);
 
