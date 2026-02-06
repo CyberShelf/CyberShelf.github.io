@@ -12,15 +12,59 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- اسکریپت -->
-  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/partials.js" defer></script>
+  <script src="assets/js/mobile-menu.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/search.js" defer></script>
+  <script src="assets/js/terminal.js" defer></script>
+  <script src="assets/js/router.js" defer></script>
+  <script src="assets/js/telegram.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
   <meta name="google-site-verification" content="PjWqsk5vsh76351nxavo3PbSS3hrt1r_77w9H3eAcLg" />
 </head>
 <body class="dark:bg-slate-950">
+  <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:right-3 focus:z-[70] focus:rounded-full focus:bg-emerald-400 focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-black">Skip to content</a>
+
+  <div class="fixed top-0 left-0 right-0 z-[60] h-1 bg-slate-900/80">
+    <div id="scrollProgress" class="h-full w-0 bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 transition-[width] duration-150"></div>
+  </div>
+
+  <div id="announcementBar" class="announcement-bar hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3 px-4 py-2 text-sm">
+      <span>آپدیت جدید: منابع تازه به بخش فروشگاه اضافه شد.</span>
+      <button id="announcementClose" class="announcement-close" aria-label="بستن اعلان">✕</button>
+    </div>
+  </div>
 
   <!-- ===== هدر مستقیم ===== -->
   <header class="sticky top-0 z-50">
     <div class="bg-black/70 backdrop-blur-md border-b border-slate-800/60">
       <div class="max-w-7xl mx-auto flex items-center justify-between py-3 px-4 md:px-6">
+        <!-- ناوبری دسکتاپ -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#home" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">خانه</a>
+          <a href="#shop" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">فروشگاه</a>
+          <a href="#telegram" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">تلگرام</a>
+          <a href="#books-en" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">دانلود منابع تخصصی (انگلیسی)</a>
+          <a href="#tools" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">ابزارها</a>
+          <a href="#glossary" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">واژه‌نامه</a>
+          <a href="#faq" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">سوالات متداول</a>
+          <a href="#about" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">درباره ما</a>
+          <a href="#contact" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">تماس با ما</a>          
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <button id="searchOpen" class="w-10 h-10 p-2 rounded-xl ring-1 ring-slate-700 text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition flex items-center justify-center" aria-label="جستجو">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="11" cy="11" r="7" stroke-width="2"></circle>
+              <path d="M20 20l-3.5-3.5" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </button>
+          <button id="themeToggle" class="w-10 h-10 p-2 rounded-xl ring-1 ring-slate-700 text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition flex items-center justify-center" aria-label="تغییر حالت نمایش">
+            <span class="theme-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+
         <!-- برند -->
         <a href="#home" class="flex items-center gap-2 font-bold text-lg text-emerald-400 hover:text-emerald-300 transition">
           <svg width="18" height="18" viewBox="0 0 24 24" class="opacity-90" fill="none" stroke="currentColor" stroke-width="2">
@@ -29,18 +73,6 @@
           </svg>
           سایبر شلف
         </a>
-
-        <!-- ناوبری دسکتاپ -->
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#home" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">خانه</a>
-          <a href="#shop" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">فروشگاه</a>
-          <a href="#telegram" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">تلگرام</a>
-          <a href="#books-en" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">دانلود منابع تخصصی (انگلیسی)</a>
-          <a href="#tools" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">ابزارها</a>
-          <a href="#faq" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">سوالات متداول</a>
-          <a href="#about" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">درباره ما</a>
-          <a href="#contact" class="relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">تماس با ما</a>          
-        </nav>
 
         <!-- دکمه منوی موبایل -->
         <button id="menuBtn" class="md:hidden p-2 rounded-xl ring-1 ring-slate-700 hover:bg-slate-800 transition" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobileMenu">
@@ -55,17 +87,42 @@
     <div id="mobileMenu" class="md:hidden hidden fixed top-16 right-0 left-0 z-50 bg-black/80 backdrop-blur-md border-t border-slate-800">
 
       <nav class="px-4 py-3 flex flex-col gap-3 text-sm">
-        <a href="#home" class="py-2 text-slate-200 hover:text-emerald-400 transition">خانه</a>
-        <a href="#shop" class="py-2 text-slate-200 hover:text-emerald-400 transition">فروشگاه</a>
-        <a href="#telegram" class="py-2 text-slate-200 hover:text-emerald-400 transition">تلگرام</a>
-        <a href="#books-en" class="py-2 text-slate-200 hover:text-emerald-400 transition">دانلود منابع تخصصی (انگلیسی)</a>
-        <a href="#tools" class="py-2 text-slate-200 hover:text-emerald-400 transition">ابزارها</a>
-        <a href="#faq" class="py-2 text-slate-200 hover:text-emerald-400 transition">سوالات متداول</a>
-        <a href="#about" class="py-2 text-slate-200 hover:text-emerald-400 transition">درباره ما</a>
-        <a href="#contact" class="py-2 text-slate-200 hover:text-emerald-400 transition">تماس با ما</a>
+        <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
+          <button id="searchOpenMobile" class="flex-1 py-2 rounded-xl ring-1 ring-slate-700 text-slate-200 hover:text-emerald-400 hover:bg-slate-800 transition" aria-label="جستجو">
+            جستجو
+          </button>
+          <button id="themeToggleMobile" class="py-2 px-3 rounded-xl ring-1 ring-slate-700 text-slate-200 hover:text-emerald-400 hover:bg-slate-800 transition" aria-label="تغییر حالت نمایش">
+            ☀
+          </button>
+        </div>
+        <a href="#home" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">خانه</a>
+        <a href="#shop" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">فروشگاه</a>
+        <a href="#telegram" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">تلگرام</a>
+        <a href="#books-en" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">دانلود منابع تخصصی (انگلیسی)</a>
+        <a href="#tools" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">ابزارها</a>
+        <a href="#glossary" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">واژه‌نامه</a>
+        <a href="#faq" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">سوالات متداول</a>
+        <a href="#about" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">درباره ما</a>
+        <a href="#contact" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">تماس با ما</a>
       </nav>
     </div>
   </header>
+
+  <div id="searchModal" class="fixed inset-0 z-[80] hidden" aria-hidden="true">
+    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+    <div class="relative max-w-2xl mx-auto mt-24 bg-slate-900 border border-slate-700 rounded-2xl shadow-xl overflow-hidden">
+      <div class="flex items-center gap-2 px-4 py-3 border-b border-slate-700">
+        <span class="text-emerald-400 text-sm font-bold">جستجو</span>
+        <button id="searchClose" class="ms-auto text-slate-400 hover:text-emerald-400 transition" aria-label="بستن">
+          ✕
+        </button>
+      </div>
+      <div class="p-4">
+        <input id="searchInput" type="search" placeholder="عنوان، ابزار یا کتاب را جستجو کنید..." class="w-full rounded-xl border border-slate-700 bg-slate-950/70 px-4 py-3 text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+        <div id="searchResults" class="mt-4 space-y-3 max-h-[60vh] overflow-y-auto"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== بخش‌های اصلی ===== -->
   <section id="home"></section>
@@ -74,14 +131,17 @@
   <section id="books"></section>
   <section id="books-en"></section>
   <section id="tools"></section>
+  <section id="glossary"></section>
   <section id="faq"></section>
   <section id="about"></section>
   <section id="contact"></section>
   <footer id="footer"></footer>
 
   <!-- دکمه بازگشت به بالا -->
-  <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-emerald-400 via-teal-400 to-cyan-400 shadow-lg shadow-cyan-500/50 text-black text-xl opacity-0 pointer-events-none z-50 hover:scale-110 transition-transform duration-300">
+  <button id="backToTop" aria-label="Back to top" class="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-emerald-400 via-teal-400 to-cyan-400 shadow-lg shadow-cyan-500/50 text-black text-xl opacity-0 pointer-events-none z-50 hover:scale-110 transition-transform duration-300">
     ⬆
   </button>
-</body>
+  <button id="readerToggle" class="reader-toggle hidden" aria-label="???? ??????">
+    ???? ??????
+  </button></body>
 </html>

@@ -12,11 +12,14 @@
 
     <div class="bg-slate-900/95 rounded-2xl p-4 font-mono shadow-lg flex-1" style="color:#2dd4bf; border:1px solid #0ea5e9;">
       <div id="terminal-output" class="space-y-1 h-48 overflow-y-auto"></div>
-      <div class="flex gap-2 mt-2 items-center">
+      <div class="flex gap-2 mt-2 items-center justify-start" dir="ltr">
         <span style="color:#34d399;">$</span>
-        <input id="terminal-input" type="text" class="flex-1 bg-transparent outline-none placeholder:text-teal-400" style="color:#2dd4bf;">
-        <span id="cursor" class="ml-1 animate-blink" style="color:#0ea5e9;">█</span>
+        <span class="terminal-input-wrap">
+          <input id="terminal-input" type="text" dir="ltr" class="terminal-input bg-transparent outline-none placeholder:text-teal-400 text-left" style="color:#2dd4bf;">
+          <span id="cursor" class="terminal-cursor animate-blink" style="color:#0ea5e9;">█</span>
+        </span>
       </div>
     </div>
   </div>
+
 </section>
