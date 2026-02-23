@@ -1,4 +1,4 @@
-async function loadTelegramPosts() {
+﻿async function loadTelegramPosts() {
   const container = document.getElementById('telegram-posts');
   if (!container) return;
 
@@ -6,10 +6,10 @@ async function loadTelegramPosts() {
   const rssPath = rssUrl.replace(/^https?:\/\//, '');
   const sources = [
     rssUrl,
-    'https://r.jina.ai/http://' + rssPath,
     'https://corsproxy.io/?' + encodeURIComponent(rssUrl),
     'https://api.allorigins.win/raw?url=' + encodeURIComponent(rssUrl),
     'https://thingproxy.freeboard.io/fetch/' + rssUrl, // fallback proxy
+    'https://r.jina.ai/http://' + rssPath
   ];
   const fallbackImage = 'https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg';
   const allowedProtocols = new Set(['http:', 'https:']);
@@ -27,25 +27,26 @@ async function loadTelegramPosts() {
 
   try {
     // fetch with multiple sources (prefer direct, then proxies)
-    let res = null;
+    const parser = new DOMParser();
+    let items = [];
     for (const src of sources) {
       try {
-        res = await fetch(src);
-        if (res && res.ok) break;
+        const res = await fetch(src, { cache: 'no-store' });
+        if (!res || !res.ok) continue;
+        const text = await res.text();
+
+        let xml = parser.parseFromString(text, 'application/xml');
+        if (xml.querySelector('parsererror')) {
+          xml = parser.parseFromString(text, 'text/html');
+        }
+
+        items = Array.from(xml.querySelectorAll('item')).slice(0, 6);
+        if (items.length > 0) break;
       } catch (e) {
         // next source
       }
     }
-    if (!res || !res.ok) throw new Error('Failed to load Telegram posts.');
 
-    const text = await res.text();
-    const parser = new DOMParser();
-    let xml = parser.parseFromString(text, 'application/xml');
-    if (xml.querySelector('parsererror')) {
-      xml = parser.parseFromString(text, 'text/html');
-    }
-
-    const items = Array.from(xml.querySelectorAll('item')).slice(0, 6);
     if (items.length === 0) {
       container.innerHTML = '<div class="col-span-full min-h-[200px] flex items-center justify-center text-center text-slate-400">پستی یافت نشد.</div>';
       return;

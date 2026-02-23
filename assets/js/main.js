@@ -8,6 +8,7 @@ const init = async () => {
     loadPartial('home', 'partials/home.html'),
     loadPartial('shop', 'partials/shop.html'),
     loadPartial('telegram', 'partials/telegram.html'),
+    loadPartial('blog', 'partials/blog.html'),
     loadPartial('books-en', 'partials/books-en.html'),
     loadPartial('tools', 'partials/tools.html'),
     loadPartial('glossary', 'partials/glossary.html'),
@@ -16,6 +17,7 @@ const init = async () => {
     loadPartial('about', 'partials/about.html'),
     loadPartial('footer', 'partials/footer.html')
   ]);
+  await initBlogList();
   buildSearchIndex();
   initLazyImages();
 
