@@ -1,0 +1,62 @@
+[
+  {
+    "path": "blog-details/cybersecurity-what-is-2026.html",
+    "title": "امنیت سایبری چیست؟ راهنمای ۲۰۲۶",
+    "excerpt": "تعریف ساده امنیت سایبری، چرایی اهمیت آن و مسیرهای ورود برای کسب‌وکارها و کاربران عادی.",
+    "meta": "راهنمای پایه · مفاهیم"
+  },
+  {
+    "path": "blog-details/common-cybersecurity-mistakes.html",
+    "title": "۱۰ اشتباه رایج در امنیت سایبری",
+    "excerpt": "اشتباهاتی که بیشترین ریسک را ایجاد می‌کنند و راه‌حل‌های سریع برای پیشگیری از آن‌ها.",
+    "meta": "مدیریت ریسک · کسب‌وکار"
+  },
+  {
+    "path": "blog-details/social-media-account-security.html",
+    "title": "امنیت حساب‌های شبکه‌های اجتماعی",
+    "excerpt": "چک‌لیست کوتاه برای ایمن‌سازی حساب‌ها، جلوگیری از سرقت و بازیابی سریع.",
+    "meta": "اکانت‌سکیوریتی · کاربری عمومی"
+  },
+  {
+    "path": "blog-details/windows-linux-hardening-best-practices.html",
+    "title": "سخت‌سازی ویندوز و لینوکس",
+    "excerpt": "اقدام‌های کلیدی برای کاهش سطح حمله و افزایش تاب‌آوری سیستم‌ها.",
+    "meta": "هاردنینگ · عملیات"
+  },
+  {
+    "path": "blog-details/phishing-email-detection.html",
+    "title": "تشخیص ایمیل‌های فیشینگ",
+    "excerpt": "نشانه‌های رایج فیشینگ و روش‌های عملی برای تشخیص و گزارش سریع.",
+    "meta": "فیشینگ · آگاهی"
+  },
+  {
+    "path": "blog-details/cybersecurity-for-small-business.html",
+    "title": "امنیت سایبری برای کسب‌وکارهای کوچک",
+    "excerpt": "حداقل اقدام‌های ضروری با کمترین هزینه برای حفاظت از داده‌ها.",
+    "meta": "SMB · راهنمای عملی"
+  },
+  {
+    "path": "blog-details/malware-types-and-defense.html",
+    "title": "انواع بدافزار و روش‌های دفاع",
+    "excerpt": "آشنایی با گونه‌های بدافزار و گام‌های اولیه برای مقابله مؤثر.",
+    "meta": "بدافزار · دفاع"
+  },
+  {
+    "path": "blog-details/strong-passwords-guide.html",
+    "title": "راهنمای ساخت رمز عبور قوی",
+    "excerpt": "قواعد ساده برای ساخت رمزهای امن و مدیریت درست آن‌ها.",
+    "meta": "رمز عبور · بهداشت دیجیتال"
+  },
+  {
+    "path": "blog-details/common-cyber-attacks-iran.html",
+    "title": "حملات سایبری رایج در ایران",
+    "excerpt": "الگوهای پرتکرار حمله و توصیه‌های پیشگیرانه برای کاربران و سازمان‌ها.",
+    "meta": "تهدیدشناسی · منطقه‌ای"
+  },
+  {
+    "path": "blog-details/future-of-cybersecurity.html",
+    "title": "آینده امنیت سایبری",
+    "excerpt": "روندهای مهم سال‌های پیش‌رو و مهارت‌هایی که باید روی آن‌ها سرمایه‌گذاری کرد.",
+    "meta": "ترندها · چشم‌انداز"
+  }
+]
