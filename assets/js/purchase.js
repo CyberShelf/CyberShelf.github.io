@@ -1,6 +1,5 @@
 window.cyberShelfPurchase = Object.freeze({
-  contactUrl: 'https://t.me/cybershelf',
-  contactLabel: 'ثبت سفارش در تلگرام'
+  contactUrl: 'https://t.me/cybershelf'
 });
 
 window.initPurchaseFlow = function (root) {

@@ -17,12 +17,12 @@ const init = async () => {
     loadPartial('about', 'partials/about.html'),
     loadPartial('footer', 'partials/footer.html')
   ]);
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
   await initBlogList();
   buildSearchIndex();
   initLazyImages();
 
-  // اگر partial telegram دارید و آن را در لیست بالا اضافه کردید،
-  // می‌توانید قبل از این خط loadTelegramPosts را اجرا کنید.
   loadTelegramPosts().then(initLazyImages).catch(() => {});
 
   handleHashChange();
