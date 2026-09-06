@@ -1,25 +1,26 @@
-<section id="terminal-hero" class="flex flex-col items-center justify-center bg-slate-950 px-4 relative overflow-hidden py-16" dir="rtl">
-  <!-- افکت خطوط نوری پس‌زمینه -->
-  <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-950 opacity-50 animate-pulse-slow"></div>
-
-  <div class="relative z-10 w-full max-w-3xl text-center mb-6">
-    <h2 class="text-lg md:text-xl font-bold mb-2 animate-pulse" style="color:#34d399;">
-      مرجع کتاب‌های تخصصی برنامه‌نویسی — برای هکرهای واقعی
-    </h2>
-  </div>
-
-  <div class="relative z-10 w-full max-w-3xl flex flex-row-reverse items-start gap-6">
-
-    <div class="bg-slate-900/95 rounded-2xl p-4 font-mono shadow-lg flex-1" style="color:#2dd4bf; border:1px solid #0ea5e9;">
-      <div id="terminal-output" class="space-y-1 h-48 overflow-y-auto"></div>
-      <div class="flex gap-2 mt-2 items-center justify-start" dir="ltr">
-        <span style="color:#34d399;">$</span>
-        <span class="terminal-input-wrap">
-          <input id="terminal-input" type="text" dir="ltr" class="terminal-input bg-transparent outline-none placeholder:text-teal-400 text-left" style="color:#2dd4bf;">
-          <span id="cursor" class="terminal-cursor animate-blink" style="color:#0ea5e9;">█</span>
-        </span>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">// CYBERSHELF LEARNING SYSTEM</p>
+      <h1 id="hero-title">یادگیری امنیت سایبری را از مسیر درست شروع کن</h1>
+      <p class="hero-description">کتاب، مقاله، ابزار و منابع تخصصی برای Red Team، Malware Analysis، امنیت ویندوز و یادگیری عملی امنیت سایبری.</p>
+      <div class="hero-actions">
+        <a class="cta cta-primary" href="#learning-paths" data-analytics="click_learning_path">مسیر یادگیری من</a>
+        <a class="cta cta-secondary" href="#shop">مشاهده کتاب‌ها</a>
       </div>
+      <ul class="trust-list" aria-label="ویژگی‌های سایبر شلف"><li>کتاب‌های تخصصی فارسی</li><li>منابع رایگان</li><li>محتوای عملی</li><li>مسیرهای یادگیری</li></ul>
+    </div>
+    <div class="hero-terminal" aria-label="نمایی از موضوعات آموزشی سایبر شلف">
+      <div class="terminal-bar"><span></span><span></span><span></span><b>learning-path.sh</b></div>
+      <pre><code><span>$</span> cybershelf start
+
+✓ مبانی امنیت سایبری
+✓ سیستم‌عامل و شبکه
+✓ ابزارهای عملی
+→ انتخاب مسیر تخصصی
+  Red Team | Malware | Blue Team
+
+<span class="terminal-ready">ready_</span></code></pre>
     </div>
   </div>
-
 </section>

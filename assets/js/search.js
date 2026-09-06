@@ -82,7 +82,7 @@ function initSearch() {
 
       const meta = document.createElement('div');
       meta.className = 'text-xs text-slate-500 mt-2';
-      meta.textContent = item.section ? `بخش: ${item.section}` : '';
+      meta.textContent = item.section ? `نوع محتوا: ${item.section}` : '';
 
       card.appendChild(title);
       if (item.desc) card.appendChild(desc);

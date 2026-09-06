@@ -3,7 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>سایبر شلف — مرجع کتاب‌های تخصصی برنامه‌نویسی</title>
+  <title>سایبر شلف | مسیر یادگیری امنیت سایبری به زبان فارسی</title>
+  <meta name="description" content="مسیر یادگیری امنیت سایبری به زبان فارسی؛ کتاب، مقاله، ابزار و منابع تخصصی برای یادگیری عملی Red Team، تحلیل بدافزار و امنیت ویندوز.">
+  <link rel="canonical" href="https://cybershelf.github.io/">
+  <meta property="og:type" content="website"><meta property="og:locale" content="fa_IR">
+  <meta property="og:title" content="سایبر شلف | مسیر یادگیری امنیت سایبری">
+  <meta property="og:description" content="کتاب، مقاله، ابزار و منابع تخصصی فارسی برای یادگیری عملی امنیت سایبری.">
+  <meta property="og:url" content="https://cybershelf.github.io/">
+  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="سایبر شلف | مسیر یادگیری امنیت سایبری"><meta name="twitter:description" content="منابع فارسی و مسیرهای هدفمند یادگیری امنیت سایبری.">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -16,15 +23,16 @@
   <script src="assets/js/mobile-menu.js" defer></script>
   <script src="assets/js/ui.js" defer></script>
   <script src="assets/js/search.js" defer></script>
-  <script src="assets/js/terminal.js" defer></script>
   <script src="assets/js/router.js" defer></script>
   <script src="assets/js/telegram.js" defer></script>
   <script src="assets/js/blog.js" defer></script>
+  <script src="assets/js/analytics.js" defer></script>
+  <script src="assets/js/purchase.js" defer></script>
   <script src="assets/js/main.js" defer></script>
   <meta name="google-site-verification" content="PjWqsk5vsh76351nxavo3PbSS3hrt1r_77w9H3eAcLg" />
 </head>
 <body class="dark:bg-slate-950">
-  <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:right-3 focus:z-[70] focus:rounded-full focus:bg-emerald-400 focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-black">Skip to content</a>
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:right-3 focus:z-[70] focus:rounded-full focus:bg-emerald-400 focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-black">رفتن به محتوای اصلی</a>
 
   <div class="fixed top-0 left-0 right-0 z-[60] h-1 bg-slate-900/80">
     <div id="scrollProgress" class="h-full w-0 bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 transition-[width] duration-150"></div>
@@ -44,15 +52,10 @@
         <!-- ناوبری دسکتاپ -->
         <nav class="hidden md:flex items-center gap-6 text-sm">
           <a href="#home" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">خانه</a>
-          <a href="#shop" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">فروشگاه</a>
-          <a href="#telegram" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">تلگرام</a>
+          <a href="#learning-paths" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">مسیرهای یادگیری</a>
+          <a href="#shop" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">کتاب‌ها</a>
           <a href="#blog" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">وبلاگ</a>
-          <a href="#books-en" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">دانلود منابع تخصصی (انگلیسی)</a>
-          <a href="#tools" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">ابزارها</a>
-          <a href="#glossary" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">واژه‌نامه</a>
-          <a href="#faq" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">سوالات متداول</a>
-          <a href="#about" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">درباره ما</a>
-          <a href="#contact" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">تماس با ما</a>          
+          <details class="resource-menu"><summary>منابع</summary><div><a href="#tools">ابزارها</a><a href="#glossary">واژه‌نامه</a><a href="#books-en">منابع انگلیسی</a><a href="#telegram">تلگرام</a></div></details>
         </nav>
 
         <div class="hidden md:flex items-center gap-3">
@@ -98,15 +101,10 @@
           </button>
         </div>
         <a href="#home" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">خانه</a>
-        <a href="#shop" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">فروشگاه</a>
-        <a href="#telegram" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">تلگرام</a>
+        <a href="#learning-paths" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">مسیرهای یادگیری</a>
+        <a href="#shop" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">کتاب‌ها</a>
         <a href="#blog" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">وبلاگ</a>
-        <a href="#books-en" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">دانلود منابع تخصصی (انگلیسی)</a>
-        <a href="#tools" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">ابزارها</a>
-        <a href="#glossary" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">واژه‌نامه</a>
-        <a href="#faq" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">سوالات متداول</a>
-        <a href="#about" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">درباره ما</a>
-        <a href="#contact" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">تماس با ما</a>
+        <details class="mobile-resource-menu"><summary class="py-2">منابع</summary><div><a href="#books-en">منابع انگلیسی</a><a href="#tools">ابزارها</a><a href="#glossary">واژه‌نامه</a><a href="#telegram">تلگرام</a></div></details>
       </nav>
     </div>
   </header>
@@ -128,7 +126,28 @@
   </div>
 
   <!-- ===== بخش‌های اصلی ===== -->
-  <section id="home"></section>
+  <main id="main-content">
+  <section id="home" class="hero" aria-labelledby="hero-title">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">// CYBERSHELF LEARNING SYSTEM</p>
+        <h1 id="hero-title">یادگیری امنیت سایبری را از مسیر درست شروع کن</h1>
+        <p class="hero-description">کتاب، مقاله، ابزار و منابع تخصصی برای Red Team، Malware Analysis، امنیت ویندوز و یادگیری عملی امنیت سایبری.</p>
+        <div class="hero-actions"><a class="cta cta-primary" href="#learning-paths" data-analytics="click_learning_path">مسیر یادگیری من</a><a class="cta cta-secondary" href="#shop">مشاهده کتاب‌ها</a></div>
+        <ul class="trust-list" aria-label="ویژگی‌های سایبر شلف"><li>کتاب‌های تخصصی فارسی</li><li>منابع رایگان</li><li>محتوای عملی</li><li>مسیرهای یادگیری</li></ul>
+      </div>
+      <div class="hero-terminal" aria-label="نمایی از موضوعات آموزشی سایبر شلف"><div class="terminal-bar"><span></span><span></span><span></span><b>learning-path.sh</b></div><pre><code><span>$</span> cybershelf start
+
+✓ مبانی امنیت سایبری
+✓ سیستم‌عامل و شبکه
+✓ ابزارهای عملی
+→ انتخاب مسیر تخصصی
+  Red Team | Malware | Blue Team
+
+<span class="terminal-ready">ready_</span></code></pre></div>
+    </div>
+  </section>
+  <section id="learning-paths"></section>
   <section id="shop"></section>
   <section id="telegram"></section>
   <section id="blog"></section>
@@ -140,13 +159,14 @@
   <section id="faq"></section>
   <section id="about"></section>
   <section id="contact"></section>
+  </main>
   <footer id="footer"></footer>
 
   <!-- دکمه بازگشت به بالا -->
   <button id="backToTop" aria-label="Back to top" class="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-emerald-400 via-teal-400 to-cyan-400 shadow-lg shadow-cyan-500/50 text-black text-xl opacity-0 pointer-events-none z-50 hover:scale-110 transition-transform duration-300">
     ⬆
   </button>
-  <button id="readerToggle" class="reader-toggle hidden" aria-label="???? ??????">
-    ???? ??????
+  <button id="readerToggle" class="reader-toggle hidden" aria-label="حالت مطالعه">
+    حالت مطالعه
   </button></body>
 </html>

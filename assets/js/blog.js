@@ -13,27 +13,6 @@ async function initBlogList() {
     status.classList.toggle('hidden', !text);
   };
 
-  const extractTitle = html => {
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    const h1 = doc.querySelector('h1');
-    const title = (h1?.textContent || doc.title || '').trim();
-    return title;
-  };
-
-  const extractMeta = html => {
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    const header = doc.querySelector('header');
-    const meta = header?.querySelector('p')?.textContent?.trim();
-    return meta || '';
-  };
-
-  const extractExcerpt = html => {
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    const header = doc.querySelector('header');
-    const paragraphs = header ? Array.from(header.querySelectorAll('p')) : [];
-    const excerpt = paragraphs.length > 1 ? paragraphs[1].textContent.trim() : '';
-    return excerpt;
-  };
 
   const pageSize = 6;
   let currentPage = 1;
@@ -140,21 +119,6 @@ async function initBlogList() {
       if (!meta && fallback.meta) meta = fallback.meta;
       if (!excerpt && fallback.excerpt) excerpt = fallback.excerpt;
 
-      try {
-        const postRes = await fetch(path);
-        if (postRes.ok) {
-          const html = await postRes.text();
-          const fetchedTitle = extractTitle(html);
-          const fetchedMeta = extractMeta(html);
-          const fetchedExcerpt = extractExcerpt(html);
-          if (!title && fetchedTitle) title = fetchedTitle;
-          if (!meta && fetchedMeta) meta = fetchedMeta;
-          if (!excerpt && fetchedExcerpt) excerpt = fetchedExcerpt;
-        }
-      } catch (e) {
-        // fallback to index metadata
-      }
-
       if (!title) title = 'پست وبلاگ';
 
       const id = path.split('/').pop().replace(/\.html$/i, '');
@@ -166,6 +130,7 @@ async function initBlogList() {
       const link = document.createElement('a');
       const blogHash = `#/blog/${encodeURIComponent(id)}`;
       link.href = blogHash;
+      link.dataset.analytics = 'open_article';
       link.className = 'group flex items-start gap-3';
       link.addEventListener('click', event => {
         if (event.defaultPrevented) return;

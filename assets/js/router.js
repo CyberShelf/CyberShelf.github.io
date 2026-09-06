@@ -1,5 +1,5 @@
 function handleHashChange() {
-  const sections = ['home', 'shop', 'faq', 'contact', 'about', 'books-en', 'tools', 'telegram', 'glossary', 'blog'];
+  const sections = ['home', 'learning-paths', 'shop', 'faq', 'contact', 'about', 'books-en', 'tools', 'telegram', 'glossary', 'blog'];
   const books = document.getElementById('books');
   const blogPost = document.getElementById('blog-post');
   const readerToggle = document.getElementById('readerToggle');
@@ -20,6 +20,7 @@ function handleHashChange() {
     loadPartial('books', `book-details/${bookId}.html`).then(() => {
       if (books) books.style.display = 'block';
       initLazyImages();
+      initPurchaseFlow(books);
     });
     if (blogPost) blogPost.style.display = 'none';
     clearActiveNav();

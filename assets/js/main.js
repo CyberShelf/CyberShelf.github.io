@@ -5,7 +5,7 @@ const init = async () => {
   initMobileMenu();
   initSearch();
   await Promise.allSettled([
-    loadPartial('home', 'partials/home.html'),
+    loadPartial('learning-paths', 'partials/learning-paths.html'),
     loadPartial('shop', 'partials/shop.html'),
     loadPartial('telegram', 'partials/telegram.html'),
     loadPartial('blog', 'partials/blog.html'),
@@ -23,14 +23,13 @@ const init = async () => {
 
   // اگر partial telegram دارید و آن را در لیست بالا اضافه کردید،
   // می‌توانید قبل از این خط loadTelegramPosts را اجرا کنید.
-  await loadTelegramPosts();
-  initLazyImages();
+  loadTelegramPosts().then(initLazyImages).catch(() => {});
 
   handleHashChange();
   initBackToTop();
   initScrollProgress();
   initActiveNav();
-  initHomeTerminal();
+  initAnalyticsEvents();
 };
 
 window.addEventListener('hashchange', handleHashChange);
