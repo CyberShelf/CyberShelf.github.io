@@ -3,7 +3,7 @@ const loadPartial = async (id, url) => {
     const el = document.getElementById(id);
     if (!el) return null;
 
-    const res = await fetch(url);
+    const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) throw new Error(`Failed to load ${url}`);
     el.innerHTML = await res.text();
 
