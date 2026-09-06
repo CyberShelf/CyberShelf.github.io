@@ -1,5 +1,17 @@
 function handleHashChange() {
-  const sections = ['home', 'learning-paths', 'shop', 'faq', 'contact', 'about', 'books-en', 'tools', 'telegram', 'glossary', 'blog'];
+  const standaloneRoutes = {
+    '#about': 'about/',
+    '#contact': 'contact/',
+    '#faq': 'faq/',
+    '#books-en': 'resources/english-books/',
+    '#tools': 'resources/tools/',
+    '#glossary': 'resources/glossary/'
+  };
+  if (standaloneRoutes[location.hash]) {
+    location.replace(standaloneRoutes[location.hash]);
+    return;
+  }
+  const sections = ['home', 'learning-paths', 'shop', 'telegram', 'blog'];
   const books = document.getElementById('books');
   const blogPost = document.getElementById('blog-post');
   const readerToggle = document.getElementById('readerToggle');

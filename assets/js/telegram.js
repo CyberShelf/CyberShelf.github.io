@@ -11,7 +11,8 @@ async function loadTelegramPosts() {
     const response = await fetch('data/telegram-posts.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error('Telegram cache unavailable');
     const data = await response.json();
-    const posts = Array.isArray(data.posts) ? data.posts.slice(0, 6) : [];
+    const limit = Math.max(1, Number.parseInt(container.dataset.limit || '6', 10));
+    const posts = Array.isArray(data.posts) ? data.posts.slice(0, limit) : [];
     if (!posts.length) throw new Error('Telegram cache is empty');
 
     const fragment = document.createDocumentFragment();

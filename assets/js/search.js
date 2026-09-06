@@ -1,6 +1,16 @@
 let searchIndex = [];
 let activeSearchType = 'همه';
 
+const staticSearchItems = [
+  { title: 'همه مسیرهای یادگیری', desc: 'مسیرهای مرحله‌ای امنیت سایبری', link: 'learning-paths/', section: 'مسیر یادگیری' },
+  { title: 'وبلاگ سایبر شلف', desc: 'مقاله‌های امنیت وب، عملیات و آگاهی', link: 'blog/', section: 'وبلاگ' },
+  { title: 'ابزارهای امنیت سایبری', desc: 'ابزارهای شبکه، تست نفوذ و تحلیل امنیتی', link: 'resources/tools/', section: 'ابزار' },
+  { title: 'واژه‌نامه امنیت سایبری', desc: 'تعریف اصطلاحات تخصصی امنیت و مهندسی معکوس', link: 'resources/glossary/', section: 'واژه‌نامه' },
+  { title: 'کتاب‌های تخصصی انگلیسی', desc: 'معرفی منابع زبان اصلی و صفحات رسمی ناشران', link: 'resources/english-books/', section: 'منبع انگلیسی' },
+  { title: 'سؤالات متداول', desc: 'پاسخ پرسش‌های رایج درباره کتاب‌ها و ثبت درخواست', link: 'faq/', section: 'راهنما' },
+  { title: 'تماس با سایبر شلف', desc: 'مشاوره انتخاب کتاب و ثبت درخواست سفارش', link: 'contact/', section: 'راهنما' }
+];
+
 function normalizeText(text) {
   return (text || '').toString().toLowerCase()
     .replace(/[يى]/g, 'ی').replace(/ك/g, 'ک')
@@ -11,7 +21,7 @@ function normalizeText(text) {
 
 function buildSearchIndex() {
   const items = Array.from(document.querySelectorAll('[data-search-item], .path-card'));
-  searchIndex = items.map((el, order) => {
+  const domItems = items.map((el, order) => {
     const titleEl = el.querySelector('[data-search-title]') || el.querySelector('h3, summary');
     const descEl = el.querySelector('[data-search-desc]') || el.querySelector('p');
     const linkEl = el.querySelector('[data-search-link]') || el.querySelector('a[href]');
@@ -25,6 +35,13 @@ function buildSearchIndex() {
     const fullText = el.textContent || '';
     return { title, desc, link, section, order, haystack: normalizeText(`${title} ${desc} ${section} ${fullText}`), normalizedTitle: normalizeText(title) };
   }).filter(item => item.title && item.link);
+  const pageItems = staticSearchItems.map((item, index) => ({
+    ...item,
+    order: domItems.length + index,
+    haystack: normalizeText(`${item.title} ${item.desc} ${item.section}`),
+    normalizedTitle: normalizeText(item.title)
+  }));
+  searchIndex = [...domItems, ...pageItems];
 }
 
 function initSearch() {

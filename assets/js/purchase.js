@@ -1,5 +1,5 @@
 window.cyberShelfPurchase = Object.freeze({
-  contactUrl: 'https://t.me/cybershelf'
+  contactUrl: 'contact/'
 });
 
 window.initPurchaseFlow = function (root) {
@@ -10,7 +10,8 @@ window.initPurchaseFlow = function (root) {
   const panel = document.createElement('aside');
   panel.dataset.purchasePanel = '';
   panel.className = 'purchase-panel';
-  panel.innerHTML = '<h2>خرید کتاب</h2><p>برای ثبت سفارش، عنوان کتاب را از طریق کانال رسمی سایبر شلف ارسال کنید. اطلاعات پرداخت در این وب‌سایت دریافت نمی‌شود.</p><a class="cta cta-primary" target="_blank" rel="noopener noreferrer" data-analytics="click_buy_book">ثبت سفارش در تلگرام</a>';
-  panel.querySelector('a').href = window.cyberShelfPurchase.contactUrl;
+  panel.innerHTML = '<h2>مشاوره و ثبت سفارش</h2><p>درخواست خود را ارسال کنید تا برای انتخاب کتاب و هماهنگی ارسال با شما در ارتباط باشیم.</p><a class="cta cta-primary" data-analytics="click_buy_book">ثبت درخواست خرید</a>';
+  const bookTitle = detail.querySelector('h1')?.textContent?.trim() || '';
+  panel.querySelector('a').href = `${window.cyberShelfPurchase.contactUrl}?book=${encodeURIComponent(bookTitle)}`;
   sidebar.appendChild(panel);
 };
