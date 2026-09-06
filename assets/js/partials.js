@@ -6,18 +6,6 @@ const loadPartial = async (id, url) => {
     const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) throw new Error(`Failed to load ${url}`);
     el.innerHTML = await res.text();
-
-    // اجرای دوباره اسکریپت‌ها
-    el.querySelectorAll("script").forEach(script => {
-      const newScript = document.createElement("script");
-      Array.from(script.attributes).forEach(attr => {
-        newScript.setAttribute(attr.name, attr.value);
-      });
-      if (script.src) newScript.src = script.src;
-      else newScript.textContent = script.textContent;
-      script.replaceWith(newScript);
-    });
-
     return el;
   } catch (err) {
     console.error(err);

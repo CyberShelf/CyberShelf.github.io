@@ -50,76 +50,15 @@ async function initBlogList() {
       setStatus('فعلا پستی برای نمایش نداریم.');
       return;
     }
-
-    const fallbackMeta = {
-      'blog-details/cybersecurity-what-is-2026.html': {
-        title: 'امنیت سایبری چیست؟ راهنمای ۲۰۲۶',
-        excerpt: 'تعریف ساده امنیت سایبری، چرایی اهمیت آن و مسیرهای ورود برای کسب‌وکارها و کاربران عادی.',
-        meta: 'راهنمای پایه · مفاهیم'
-      },
-      'blog-details/common-cybersecurity-mistakes.html': {
-        title: '۱۰ اشتباه رایج در امنیت سایبری',
-        excerpt: 'اشتباهاتی که بیشترین ریسک را ایجاد می‌کنند و راه‌حل‌های سریع برای پیشگیری از آن‌ها.',
-        meta: 'مدیریت ریسک · کسب‌وکار'
-      },
-      'blog-details/social-media-account-security.html': {
-        title: 'امنیت حساب‌های شبکه‌های اجتماعی',
-        excerpt: 'چک‌لیست کوتاه برای ایمن‌سازی حساب‌ها، جلوگیری از سرقت و بازیابی سریع.',
-        meta: 'اکانت‌سکیوریتی · کاربری عمومی'
-      },
-      'blog-details/windows-linux-hardening-best-practices.html': {
-        title: 'سخت‌سازی ویندوز و لینوکس',
-        excerpt: 'اقدام‌های کلیدی برای کاهش سطح حمله و افزایش تاب‌آوری سیستم‌ها.',
-        meta: 'هاردنینگ · عملیات'
-      },
-      'blog-details/phishing-email-detection.html': {
-        title: 'تشخیص ایمیل‌های فیشینگ',
-        excerpt: 'نشانه‌های رایج فیشینگ و روش‌های عملی برای تشخیص و گزارش سریع.',
-        meta: 'فیشینگ · آگاهی'
-      },
-      'blog-details/cybersecurity-for-small-business.html': {
-        title: 'امنیت سایبری برای کسب‌وکارهای کوچک',
-        excerpt: 'حداقل اقدام‌های ضروری با کمترین هزینه برای حفاظت از داده‌ها.',
-        meta: 'SMB · راهنمای عملی'
-      },
-      'blog-details/malware-types-and-defense.html': {
-        title: 'انواع بدافزار و روش‌های دفاع',
-        excerpt: 'آشنایی با گونه‌های بدافزار و گام‌های اولیه برای مقابله مؤثر.',
-        meta: 'بدافزار · دفاع'
-      },
-      'blog-details/strong-passwords-guide.html': {
-        title: 'راهنمای ساخت رمز عبور قوی',
-        excerpt: 'قواعد ساده برای ساخت رمزهای امن و مدیریت درست آن‌ها.',
-        meta: 'رمز عبور · بهداشت دیجیتال'
-      },
-      'blog-details/common-cyber-attacks-iran.html': {
-        title: 'حملات سایبری رایج در ایران',
-        excerpt: 'الگوهای پرتکرار حمله و توصیه‌های پیشگیرانه برای کاربران و سازمان‌ها.',
-        meta: 'تهدیدشناسی · منطقه‌ای'
-      },
-      'blog-details/future-of-cybersecurity.html': {
-        title: 'آینده امنیت سایبری',
-        excerpt: 'روندهای مهم سال‌های پیش‌رو و مهارت‌هایی که باید روی آن‌ها سرمایه‌گذاری کرد.',
-        meta: 'ترندها · چشم‌انداز'
-      }
-    };
-
     const fragment = document.createDocumentFragment();
     let counter = 1;
     for (const entry of entries) {
       const path = typeof entry === 'string' ? entry : entry?.path;
       if (!path) continue;
 
-      const fallback = fallbackMeta[path] || {};
-      let title = typeof entry === 'object' ? (entry.title || '') : '';
-      let meta = typeof entry === 'object' ? (entry.meta || '') : '';
-      let excerpt = typeof entry === 'object' ? (entry.excerpt || '') : '';
-
-      if (!title && fallback.title) title = fallback.title;
-      if (!meta && fallback.meta) meta = fallback.meta;
-      if (!excerpt && fallback.excerpt) excerpt = fallback.excerpt;
-
-      if (!title) title = 'پست وبلاگ';
+      const title = typeof entry === 'object' && entry.title ? entry.title : 'پست وبلاگ';
+      const meta = typeof entry === 'object' ? (entry.meta || '') : '';
+      const excerpt = typeof entry === 'object' ? (entry.excerpt || '') : '';
 
       const id = path.split('/').pop().replace(/\.html$/i, '');
       const item = document.createElement('li');

@@ -2,7 +2,6 @@ async function loadTelegramPosts() {
   const container = document.getElementById('telegram-posts');
   if (!container) return;
 
-  const escapeText = value => String(value || '');
   const safeUrl = value => {
     try { const url = new URL(value, window.location.href); return ['http:', 'https:'].includes(url.protocol) ? url.href : ''; }
     catch (_) { return ''; }
@@ -33,10 +32,10 @@ async function loadTelegramPosts() {
       }
       const title = document.createElement('h3');
       title.className = 'font-bold text-base text-emerald-300 mb-3 line-clamp-2';
-      title.textContent = escapeText(post.title) || 'پست تلگرام';
+      title.textContent = String(post.title || 'پست تلگرام');
       const excerpt = document.createElement('p');
       excerpt.className = 'text-sm text-slate-400 mb-4 flex-grow line-clamp-3';
-      excerpt.textContent = escapeText(post.excerpt);
+      excerpt.textContent = String(post.excerpt || '');
       const link = document.createElement('a');
       link.className = 'text-teal-400 font-semibold mt-auto';
       link.textContent = 'مشاهده در تلگرام';

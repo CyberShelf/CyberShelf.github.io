@@ -88,122 +88,17 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--heading);
 }
 
-/* دکمه‌ها */
-.btn, a.btn, .buy-btn {
-  background: linear-gradient(to right, #34d399, #2dd4bf, #0ea5e9);
-  color: #000;
-  font-weight: bold;
-  border-radius: 1rem;
-  box-shadow: 0 2px 16px #0ea5e933;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.btn:hover, a.btn:hover, .buy-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 24px #0ea5e9aa;
-}
-
-/* باکس‌ها و کارت‌ها */
-.card, .box, .article, .faq-box, .shop-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 1rem;
-  color: var(--text);
-  box-shadow: 0 2px 16px var(--shadow);
-}
-
-/* انیمیشن تایپ افکت */
-.typewriter {
-  overflow: hidden;
-  border-right: .15em solid #34d399;
-  white-space: nowrap;
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #34d399; }
-}
-
-/* افکت گلیچ */
-.glitch {
-  position: relative;
-  color: #34d399;
-  text-shadow: 2px 2px #0ea5e9, -2px -2px #2dd4bf;
-  animation: glitch 1s infinite;
-}
-
-@keyframes glitch {
-  0% { text-shadow: 2px 2px #0ea5e9, -2px -2px #2dd4bf; }
-  50% { text-shadow: -2px -2px #0ea5e9, 2px 2px #2dd4bf; }
-  100% { text-shadow: 2px 2px #0ea5e9, -2px -2px #2dd4bf; }
-}
-
-#backToTop.show {
-  opacity: 1;
-  pointer-events: auto;
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 10px #2dd4bf, 0 0 20px #0ea5e9, 0 0 30px #34d399; }
-  50% { box-shadow: 0 0 20px #2dd4bf, 0 0 40px #0ea5e9, 0 0 60px #34d399; }
-}
-
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
 }
-.animate-blink { animation: blink 1s step-start infinite; }
-
-@keyframes pulse-slow {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 0.8; }
-}
-.animate-pulse-slow { animation: pulse-slow 6s infinite; }
-
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  color: var(--heading) !important;
-  background-color: var(--surface) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: 1rem;
-  padding: 0.75rem 1rem;
-  font-family: var(--font-base);
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: var(--text) !important;
-  opacity: 1 !important;
-}
-
-
-/* ورودی ترمینال */
-input[type="text"], input[type="search"] {
-  color: var(--text);
-  background: transparent;
-  border: none;
-  outline: none;
-}
-input[type="text"]::placeholder, input[type="search"]::placeholder {
-  color: var(--link-hover);
-  opacity: 0.7;
-}
 
 /* خطوط و حاشیه‌ها */
-hr, .border, .bordered {
+hr, .border {
   border-color: var(--border) !important;
 }
 
 
-/* ...existing code... */
 /* فهرست مطالب کتاب - همه فصل‌ها در یک باکس */
 
 .toc-list {
@@ -292,23 +187,6 @@ html {
   background-color: var(--section-c);
 }
 
-.terminal-input-wrap {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  flex: 1;
-  min-width: 0;
-}
-.terminal-input {
-  width: 100%;
-  padding-left: 0.9rem;
-  caret-color: transparent;
-}
-.terminal-cursor {
-  position: absolute;
-  left: 0;
-}
-
 .announcement-bar {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -327,7 +205,7 @@ html {
 
 .glossary-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 @media (min-width: 768px) {
   .glossary-grid {
@@ -338,7 +216,7 @@ html {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 1rem;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem;
   box-shadow: 0 4px 16px var(--shadow);
 }
 .glossary-title {
@@ -433,14 +311,21 @@ body.reader-mode .book-detail .toc-list .toc-subchapter li {
 }
 
 .faq-item {
+  margin-bottom: .75rem;
+  padding: 1.1rem 1.25rem;
   background: var(--surface);
   border: 1px solid var(--border);
 }
 .faq-summary {
-  color: var(--heading);
+  color: var(--text);
+  cursor: pointer;
+  line-height: 1.7;
 }
 .faq-text {
   color: var(--text);
+}
+.faq-item[open] {
+  border-color: var(--border-accent) !important;
 }
 
 html:not(.dark) {
@@ -581,28 +466,10 @@ html:not(.dark) .toc-list .toc-subchapter li {
   top: 0.1em;
 }
 
-/* ...existing code... */
-
-/* استایل حرفه‌ای برای تب‌ها */
-#tabs .tab-btn {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-bottom-color: transparent;
-  border-radius: 0.5em 0.5em 0 0;
-  background: transparent;
-  transition: color 0.2s, border-bottom-color 0.2s, background 0.2s;
-}
-#tabs .tab-btn.active-tab {
-  color: #34d399 !important;
-  border-bottom-color: #34d399 !important;
-  background: rgba(52,211,153,0.07);
-}
-
-/* این کلاس را به استایل‌های خود اضافه کنید */
 .image-ribbon-container {
   position: relative;
-  overflow: hidden; /* این خط بسیار مهم است */
-  border-radius: 12px; /* همانند border-radius تصویر */
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .ribbon {
@@ -611,14 +478,14 @@ html:not(.dark) .toc-list .toc-subchapter li {
   position: absolute;
   top: 15px;
   left: -50px;
-  background-color: #e53e3e; /* رنگ پس‌زمینه روبان */
-  color: white; /* رنگ متن */
+  background-color: #0f766e;
+  color: white;
   text-align: center;
   line-height: 30px;
-  font-family: 'Vazirmatn', sans-serif; /* یک فونت فارسی مناسب */
+  font-family: var(--font-base);
   font-size: 14px;
-  transform: rotate(-45deg); /* چرخش روبان به اندازه ۴۵- درجه */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* سایه برای برجستگی */
+  transform: rotate(-45deg);
+  box-shadow: none;
 }
 
 /* CyberShelf design system: shared rhythm, cards and actions */
@@ -743,24 +610,22 @@ html:not(.dark) .toc-list .toc-subchapter li {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
+  padding: .75rem 1rem;
   border-color: var(--border) !important;
   border-radius: var(--radius-sm);
   background: var(--surface) !important;
   color: var(--text) !important;
   box-shadow: none;
+  font-family: var(--font-base);
 }
 .contact-form input::placeholder,
 .contact-form textarea::placeholder { color: var(--text-soft) !important; opacity: 1 !important; }
-.faq-item { margin-bottom: .75rem; padding: 1.1rem 1.25rem; }
-.faq-summary { color: var(--text); cursor: pointer; line-height: 1.7; }
-.faq-item[open] { border-color: var(--border-accent) !important; }
-.glossary-grid { gap: 1rem; }
-.glossary-group { padding: 1.25rem; }
-.glossary-item summary { color: var(--text); }
-.ribbon { background: #0f766e; box-shadow: none; }
 #backToTop { width: 44px; height: 44px; border-radius: 50%; background: var(--heading); box-shadow: 0 8px 24px var(--shadow); }
-#backToTop.show { animation: none; }
+#backToTop.show { opacity: 1; pointer-events: auto; }
 .footer-links a { color: var(--text-muted); }
+.footer-brand,
+.footer-copyright { color: var(--heading); font-weight: 700; }
+.footer-social { color: var(--link); }
 .section-description { max-width: 48rem; margin: 0 0 2.25rem; color: var(--text-muted); font-size: 1rem; line-height: 1.9; }
 #shop .grid,
 #tools .grid,
@@ -787,8 +652,6 @@ header button:hover,
 .resource-menu div { border-color: var(--border); background: var(--surface); box-shadow: 0 12px 30px var(--shadow); }
 .mobile-resource-menu div { border-color: var(--border); }
 footer { background: var(--bg); border-color: var(--border) !important; }
-footer [style*="color:#34d399"] { color: var(--heading) !important; }
-footer [style*="color:#2dd4bf"] { color: var(--link) !important; }
 .nav-shop-link { padding: .45rem .8rem; border: 1px solid var(--border-accent); border-radius: var(--radius-sm); color: var(--heading) !important; }
 #shop article a[data-search-link] { width: 100%; margin-top: .35rem; border-color: transparent; background: var(--heading); color: #052e2b !important; }
 #shop article a[data-search-link]:hover { border-color: transparent; background: color-mix(in srgb, var(--heading) 88%, white); }
