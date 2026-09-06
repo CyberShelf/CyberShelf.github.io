@@ -17,8 +17,51 @@
     applyTheme(nextTheme);
   });
 
-  const year = document.getElementById('year');
-  if (year) year.textContent = new Date().getFullYear();
+  const navLinks = document.querySelector('.standalone-links');
+  const brand = document.querySelector('.standalone-brand');
+  if (navLinks && brand && !navLinks.querySelector('.standalone-home-link')) {
+    const homeLink = document.createElement('a');
+    homeLink.className = 'standalone-home-link';
+    homeLink.href = brand.getAttribute('href') || './';
+    homeLink.textContent = 'خانه';
+    navLinks.prepend(homeLink);
+  }
+
+  const updateYear = () => {
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  };
+
+  const rebaseLinks = (container, assetBase) => {
+    container.querySelectorAll('a[href]').forEach(link => {
+      const href = link.getAttribute('href') || '';
+      if (href && !href.startsWith('#') && !/^(?:[a-z]+:|\/)/i.test(href)) {
+        link.href = `${assetBase}${href}`;
+      }
+    });
+  };
+
+  const footerMount = document.querySelector('[data-site-footer]');
+  if (footerMount) {
+    const footerBase = footerMount.dataset.assetBase || '';
+    fetch(`${footerBase}partials/footer.html`)
+      .then(response => {
+        if (!response.ok) throw new Error('Failed to load the shared footer');
+        return response.text();
+      })
+      .then(html => {
+        const template = document.createElement('template');
+        template.innerHTML = html.trim();
+        const footer = template.content.firstElementChild;
+        if (!footer) throw new Error('Shared footer markup is empty');
+        rebaseLinks(footer, footerBase);
+        footerMount.replaceWith(footer);
+        updateYear();
+      })
+      .catch(error => console.error(error));
+  } else {
+    updateYear();
+  }
 
   const host = document.querySelector('[data-partial]');
   if (!host) return;
