@@ -18,17 +18,23 @@
   --bg: #0a0a0a;
   --surface: #0f172a;
   --surface-alt: #0b1220;
-  --text: #2dd4bf;
-  --text-muted: #7dd3fc;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
   --text-soft: #94a3b8;
-  --heading: #34d399;
+  --heading: #5eead4;
   --link: #2dd4bf;
   --link-hover: #0ea5e9;
-  --border: #0ea5e9;
-  --shadow: #0ea5e933;
+  --border: #26364b;
+  --border-accent: #0f766e;
+  --shadow: rgba(2, 6, 23, 0.35);
   --section-a: #0b1220;
   --section-b: #0f172a;
   --section-c: #0a0f1c;
+  --radius-sm: 0.65rem;
+  --radius-md: 0.9rem;
+  --radius-lg: 1.1rem;
+  --space-section: clamp(4rem, 7vw, 6rem);
+  --content-width: 72rem;
   --font-base: "Vazirmatn", "Vazir", "Sahel", "Tahoma", "Segoe UI", sans-serif;
 }
 
@@ -36,6 +42,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-base);
+  line-height: 1.75;
 }
 
 :focus-visible { outline: 3px solid #22d3ee; outline-offset: 3px; }
@@ -72,7 +79,7 @@ a {
 }
 a:hover {
   color: var(--link-hover);
-  text-shadow: 0 0 5px var(--link-hover);
+  text-shadow: none;
 }
 
 /* تیترها */
@@ -81,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* دکمه‌ها */
-button, .btn, a.btn, .buy-btn {
+.btn, a.btn, .buy-btn {
   background: linear-gradient(to right, #34d399, #2dd4bf, #0ea5e9);
   color: #000;
   font-weight: bold;
@@ -89,7 +96,7 @@ button, .btn, a.btn, .buy-btn {
   box-shadow: 0 2px 16px #0ea5e933;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-button:hover, .btn:hover, a.btn:hover, .buy-btn:hover {
+.btn:hover, a.btn:hover, .buy-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 24px #0ea5e9aa;
 }
@@ -617,4 +624,184 @@ html:not(.dark) .toc-list .toc-subchapter li {
   font-size: 14px;
   transform: rotate(-45deg); /* چرخش روبان به اندازه ۴۵- درجه */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* سایه برای برجستگی */
+}
+
+/* CyberShelf design system: shared rhythm, cards and actions */
+#shop > section,
+#blog > section,
+#books-en > section,
+#tools > section,
+#glossary > section,
+#faq > section,
+#about > section,
+#contact > section,
+#telegram > section {
+  padding: var(--space-section) 1rem;
+  border-top: 1px solid var(--border);
+  background: var(--section-a);
+  backdrop-filter: none;
+}
+#blog > section,
+#tools > section,
+#faq > section,
+#telegram > section { background: var(--section-b); }
+#shop .container,
+#blog .container,
+#books-en .container,
+#tools .container,
+#glossary .container,
+#faq .container,
+#about .container,
+#contact .container,
+#telegram > section > div { width: min(var(--content-width), 100%); max-width: none; margin-inline: auto; padding: 0; }
+#shop h2,
+#blog h2,
+#books-en h2,
+#tools h2,
+#glossary h2,
+#faq h2,
+#about h2,
+#contact h2,
+#telegram h2 {
+  margin: 0 0 .65rem;
+  color: var(--heading);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: right;
+  text-shadow: none;
+}
+#shop h2 + p,
+#blog h2 + p,
+#books-en h2 + p,
+#tools h2 + p,
+#glossary h2 + p,
+#about h2 + p {
+  max-width: 48rem;
+  margin: 0 0 2.25rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+#shop article,
+#tools [data-search-item],
+#books-en [data-search-item],
+#telegram-posts article,
+.path-card,
+.glossary-group,
+.faq-item,
+#about .grid > div {
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+  background: var(--surface) !important;
+  box-shadow: 0 8px 24px var(--shadow) !important;
+  transform: none;
+  transition: border-color .2s ease, transform .2s ease, background-color .2s ease;
+}
+#shop article:hover,
+#tools [data-search-item]:hover,
+#books-en [data-search-item]:hover,
+#telegram-posts article:hover,
+.path-card:hover,
+#about .grid > div:hover {
+  border-color: var(--border-accent) !important;
+  box-shadow: 0 10px 28px var(--shadow) !important;
+  transform: translateY(-2px);
+}
+#shop article h3,
+#tools [data-search-item] h3,
+#books-en [data-search-item] h3,
+#telegram-posts h3 { color: var(--heading); line-height: 1.55; }
+#shop article p,
+#tools [data-search-item] p,
+#books-en [data-search-item] p,
+#telegram-posts p { color: var(--text-muted); line-height: 1.8; }
+#shop article img,
+#books-en [data-search-item] img,
+#telegram-posts img { border: 0 !important; border-radius: var(--radius-sm); }
+#shop article a[data-search-link],
+#tools [data-search-item] > a,
+#books-en [data-search-item] > a,
+#telegram-posts article > a,
+.contact-form button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: .65rem 1rem;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--heading) !important;
+  box-shadow: none;
+  font-size: .9rem;
+  font-weight: 700;
+  text-shadow: none;
+  transform: none;
+}
+#shop article a[data-search-link]:hover,
+#tools [data-search-item] > a:hover,
+#books-en [data-search-item] > a:hover,
+#telegram-posts article > a:hover {
+  border-color: var(--heading);
+  background: color-mix(in srgb, var(--heading) 10%, transparent);
+  box-shadow: none;
+  transform: none;
+}
+.contact-form button { width: 100%; border: 0; background: var(--heading); color: #052e2b !important; }
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  border-color: var(--border) !important;
+  border-radius: var(--radius-sm);
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  box-shadow: none;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: var(--text-soft) !important; opacity: 1 !important; }
+.faq-item { margin-bottom: .75rem; padding: 1.1rem 1.25rem; }
+.faq-summary { color: var(--text); cursor: pointer; line-height: 1.7; }
+.faq-item[open] { border-color: var(--border-accent) !important; }
+.glossary-grid { gap: 1rem; }
+.glossary-group { padding: 1.25rem; }
+.glossary-item summary { color: var(--text); }
+.ribbon { background: #0f766e; box-shadow: none; }
+#backToTop { width: 44px; height: 44px; border-radius: 50%; background: var(--heading); box-shadow: 0 8px 24px var(--shadow); }
+#backToTop.show { animation: none; }
+.footer-links a { color: var(--text-muted); }
+.section-description { max-width: 48rem; margin: 0 0 2.25rem; color: var(--text-muted); font-size: 1rem; line-height: 1.9; }
+#shop .grid,
+#tools .grid,
+#telegram-posts { gap: 1rem; }
+#telegram-posts { margin-top: 2rem; }
+#blog .flex:first-child { align-items: flex-start; }
+#blogList > li { padding: 1.15rem 0; }
+header button,
+#searchModal button,
+.tab-btn,
+.reader-toggle,
+.announcement-close {
+  background: transparent;
+  color: var(--text);
+  box-shadow: none;
+  transform: none;
+}
+header button:hover,
+#searchModal button:hover,
+.tab-btn:hover,
+.reader-toggle:hover,
+.announcement-close:hover { background: var(--surface-alt); box-shadow: none; transform: none; }
+.resource-menu { color: var(--text-muted); }
+.resource-menu div { border-color: var(--border); background: var(--surface); box-shadow: 0 12px 30px var(--shadow); }
+.mobile-resource-menu div { border-color: var(--border); }
+footer { background: var(--bg); border-color: var(--border) !important; }
+footer [style*="color:#34d399"] { color: var(--heading) !important; }
+footer [style*="color:#2dd4bf"] { color: var(--link) !important; }
+
+@media (max-width: 640px) {
+  #books-en [data-search-item] { flex-direction: column; align-items: stretch; }
+  #books-en [data-search-item] img { width: 5rem; height: 6.5rem; }
+  #books-en [data-search-item] > a { width: 100%; margin-top: .5rem; }
+  #telegram h2 { text-align: right; }
 }
