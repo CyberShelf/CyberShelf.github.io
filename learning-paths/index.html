@@ -6,12 +6,23 @@
   <title>مسیرهای یادگیری امنیت سایبری | سایبر شلف</title>
   <meta name="description" content="مسیرهای مرحله‌ای فارسی برای شروع امنیت سایبری، Red Team، تحلیل بدافزار، امنیت ویندوز، Bug Bounty و Blue Team.">
   <link rel="canonical" href="https://cybershelf.github.io/learning-paths/">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:title" content="مسیرهای یادگیری امنیت سایبری | سایبر شلف">
+  <meta property="og:description" content="مسیرهای مرحله‌ای فارسی برای شروع امنیت سایبری، Red Team، تحلیل بدافزار، امنیت ویندوز، Bug Bounty و Blue Team.">
+  <meta property="og:url" content="https://cybershelf.github.io/learning-paths/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="مسیرهای یادگیری امنیت سایبری | سایبر شلف">
+  <meta name="twitter:description" content="مسیرهای مرحله‌ای فارسی برای شروع امنیت سایبری، Red Team، تحلیل بدافزار، امنیت ویندوز، Bug Bounty و Blue Team.">
+  <link rel="preload" href="../assets/fonts/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/utilities.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="../assets/js/search.js" defer></script>
   <script src="../assets/js/static-page.js" defer></script>
 </head>
 <body class="standalone-body">
+  <a class="skip-link" href="#main-content">رفتن به محتوای اصلی</a>
   <header class="sticky top-0 z-50">
     <div class="bg-black/70 backdrop-blur-md border-b border-slate-800/60">
       <div class="max-w-7xl mx-auto flex items-center justify-between py-3 px-4 md:px-6">
@@ -26,9 +37,7 @@
 
         <div class="hidden md:flex items-center gap-3">
           <a href="../contact/" class="header-contact">مشاوره و سفارش</a>
-          <button id="searchOpen" class="w-10 h-10 p-2 rounded-xl ring-1 ring-slate-700 text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition flex items-center justify-center" type="button" aria-label="جستجو">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7" stroke-width="2"></circle><path d="M20 20l-3.5-3.5" stroke-width="2" stroke-linecap="round"></path></svg>
-          </button>
+          <button id="searchOpen" class="header-search-trigger" type="button" aria-label="باز کردن جستجو"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke-width="2"></circle><path d="M20 20l-3.5-3.5" stroke-width="2" stroke-linecap="round"></path></svg><span>جستجو</span><kbd>Ctrl K</kbd></button>
           <button id="pageThemeToggle" class="w-10 h-10 p-2 rounded-xl ring-1 ring-slate-700 text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition flex items-center justify-center" type="button" aria-label="تغییر حالت نمایش"><span class="theme-icon" aria-hidden="true"></span></button>
         </div>
 
@@ -76,15 +85,15 @@
       </div>
     </div>
   </div>
-  <main class="content-section">
+  <main id="main-content" class="content-section">
     <div class="section-heading"><p class="eyebrow">یادگیری هدفمند و مرحله‌ای</p><h1>مسیرهای یادگیری امنیت سایبری</h1><p>هدف خود را انتخاب کنید و منابع موجود سایبر شلف را مرحله‌به‌مرحله دنبال کنید.</p></div>
     <div class="path-grid">
-      <article class="path-card"><span class="level">مقدماتی</span><h2>شروع امنیت سایبری</h2><ol><li>مبانی امنیت</li><li>شبکه و سیستم‌عامل</li><li><a href="../#/blog/cybersecurity-what-is-2026">مقاله شروع امنیت سایبری</a></li></ol></article>
-      <article class="path-card"><span class="level">متوسط</span><h2>Red Team</h2><ol><li>مبانی عملیات</li><li><a href="../#/book/RedTeam-Operation-Management">کتاب مدیریت عملیات</a></li><li><a href="../resources/tools/">ابزارهای مرتبط</a></li></ol></article>
-      <article class="path-card"><span class="level">متوسط</span><h2>Malware Analysis</h2><ol><li>شناخت بدافزار</li><li>تحلیل ایستا و پویا</li><li><a href="../#/book/Malware-Analysis-Introduction">کتاب تحلیل بدافزار</a></li></ol></article>
-      <article class="path-card"><span class="level">متوسط</span><h2>Windows Security</h2><ol><li>Windows API</li><li><a href="../#/book/Windows-API-Introduction">کتاب Windows API</a></li><li><a href="../#/book/Offensive-Development-Introduction">توسعه تهاجمی</a></li></ol></article>
-      <article class="path-card"><span class="level">مقدماتی</span><h2>Bug Bounty</h2><ol><li>مبانی وب</li><li><a href="../#/book/Introduction-to-BugBounty">کتاب Bug Bounty</a></li><li><a href="../resources/tools/">ابزارهای تمرین</a></li></ol></article>
-      <article class="path-card"><span class="level">مقدماتی تا متوسط</span><h2>Blue Team</h2><ol><li><a href="../#/blog/windows-linux-hardening-best-practices">سخت‌سازی</a></li><li><a href="../#/blog/malware-types-and-defense">دفاع در برابر بدافزار</a></li><li><a href="../resources/glossary/">واژه‌نامه</a></li></ol></article>
+      <article class="path-card"><span class="level">مقدماتی</span><h2>شروع امنیت سایبری</h2><ol><li>مبانی امنیت</li><li>شبکه و سیستم‌عامل</li><li><a href="../blog-details/cybersecurity-what-is-2026.html">مقاله شروع امنیت سایبری</a></li></ol></article>
+      <article class="path-card"><span class="level">متوسط</span><h2>Red Team</h2><ol><li>مبانی عملیات</li><li><a href="../book-details/RedTeam-Operation-Management.html">کتاب مدیریت عملیات</a></li><li><a href="../resources/tools/">ابزارهای مرتبط</a></li></ol></article>
+      <article class="path-card"><span class="level">متوسط</span><h2>Malware Analysis</h2><ol><li>شناخت بدافزار</li><li>تحلیل ایستا و پویا</li><li><a href="../book-details/Malware-Analysis-Introduction.html">کتاب تحلیل بدافزار</a></li></ol></article>
+      <article class="path-card"><span class="level">متوسط</span><h2>Windows Security</h2><ol><li>Windows API</li><li><a href="../book-details/Windows-API-Introduction.html">کتاب Windows API</a></li><li><a href="../book-details/Offensive-Development-Introduction.html">توسعه تهاجمی</a></li></ol></article>
+      <article class="path-card"><span class="level">مقدماتی</span><h2>Bug Bounty</h2><ol><li>مبانی وب</li><li><a href="../book-details/Introduction-to-BugBounty.html">کتاب Bug Bounty</a></li><li><a href="../resources/tools/">ابزارهای تمرین</a></li></ol></article>
+      <article class="path-card"><span class="level">مقدماتی تا متوسط</span><h2>Blue Team</h2><ol><li><a href="../blog-details/windows-linux-hardening-best-practices.html">سخت‌سازی</a></li><li><a href="../blog-details/malware-types-and-defense.html">دفاع در برابر بدافزار</a></li><li><a href="../resources/glossary/">واژه‌نامه</a></li></ol></article>
     </div>
   </main>
   <div data-site-footer data-asset-base="../"></div>

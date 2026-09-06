@@ -67,23 +67,11 @@ async function initBlogList() {
       item.setAttribute('data-search-section', 'وبلاگ');
 
       const link = document.createElement('a');
-      const detailBase = list.dataset.detailBase || '#/blog/';
-      const blogHref = `${detailBase}${encodeURIComponent(id)}`;
+      const detailBase = list.dataset.detailBase || 'blog-details/';
+      const blogHref = `${detailBase}${encodeURIComponent(id)}.html`;
       link.href = blogHref;
       link.dataset.analytics = 'open_article';
       link.className = 'group flex items-start gap-3';
-      if (blogHref.startsWith('#/')) {
-        link.addEventListener('click', event => {
-          if (event.defaultPrevented) return;
-          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-          event.preventDefault();
-          if (location.hash !== blogHref) {
-            location.hash = blogHref;
-          } else if (typeof handleHashChange === 'function') {
-            handleHashChange();
-          }
-        });
-      }
 
       const badge = document.createElement('div');
       badge.className = 'mt-0.5 flex h-8 w-8 items-center justify-center rounded-lg border border-slate-800 text-slate-400 text-[11px] font-bold transition group-hover:border-emerald-400 group-hover:text-emerald-300';

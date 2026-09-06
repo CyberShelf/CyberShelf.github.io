@@ -11,15 +11,17 @@
   <meta property="og:description" content="کتاب، مقاله، ابزار و منابع تخصصی فارسی برای یادگیری عملی امنیت سایبری.">
   <meta property="og:url" content="https://cybershelf.github.io/">
   <meta name="twitter:card" content="summary"><meta name="twitter:title" content="سایبر شلف | مسیر یادگیری امنیت سایبری"><meta name="twitter:description" content="منابع فارسی و مسیرهای هدفمند یادگیری امنیت سایبری.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"سایبر شلف","alternateName":"CyberShelf","url":"https://cybershelf.github.io/","description":"ناشر و مرجع تخصصی کتاب‌های فارسی امنیت سایبری، همراه با منابع رایگان و مسیرهای یادگیری هدفمند.","inLanguage":"fa"}</script>
 
   <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" href="assets/fonts/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/utilities.css">
 
   <!-- استایل اختصاصی -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- اسکریپت -->
-  <script src="assets/js/partials.js" defer></script>
   <script src="assets/js/mobile-menu.js" defer></script>
   <script src="assets/js/ui.js" defer></script>
   <script src="assets/js/search.js" defer></script>
@@ -28,8 +30,6 @@
   <script src="assets/js/blog.js" defer></script>
   <script src="assets/js/site-config.js" defer></script>
   <script src="assets/js/analytics.js" defer></script>
-  <script src="assets/js/purchase.js" defer></script>
-  <script src="assets/js/book-details.js" defer></script>
   <script src="assets/js/main.js" defer></script>
   <meta name="google-site-verification" content="PjWqsk5vsh76351nxavo3PbSS3hrt1r_77w9H3eAcLg" />
 </head>
@@ -63,12 +63,7 @@
 
         <div class="hidden md:flex items-center gap-3">
           <a href="contact/" class="header-contact">مشاوره و سفارش</a>
-          <button id="searchOpen" class="w-10 h-10 p-2 rounded-xl ring-1 ring-slate-700 text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition flex items-center justify-center" aria-label="جستجو">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <circle cx="11" cy="11" r="7" stroke-width="2"></circle>
-              <path d="M20 20l-3.5-3.5" stroke-width="2" stroke-linecap="round"></path>
-            </svg>
-          </button>
+          <button id="searchOpen" class="header-search-trigger" type="button" aria-label="باز کردن جستجو"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke-width="2"></circle><path d="M20 20l-3.5-3.5" stroke-width="2" stroke-linecap="round"></path></svg><span>جستجو</span><kbd>Ctrl K</kbd></button>
           <button id="themeToggle" class="w-10 h-10 p-2 rounded-xl ring-1 ring-slate-700 text-slate-300 hover:text-emerald-400 hover:bg-slate-800 transition flex items-center justify-center" aria-label="تغییر حالت نمایش">
             <span class="theme-icon" aria-hidden="true"></span>
           </button>
@@ -156,20 +151,245 @@
 <span class="terminal-ready">ready_</span></code></pre></div>
     </div>
   </section>
-  <section id="shop"></section>
-  <section id="learning-paths"></section>
-  <section id="blog"></section>
-  <section id="telegram"></section>
-  <section id="blog-post"></section>
-  <section id="books"></section>
+  <section id="featured-book" class="sales-feature" aria-labelledby="featured-title">
+    <div class="sales-feature-grid">
+      <div class="sales-feature-cover"><img width="567" height="806" src="assets/images/Introduction-to-BugBounty.png" alt="جلد کتاب مقدمه‌ای بر Bug Bounty"></div>
+      <div><p class="eyebrow">پیشنهاد برای شروع امنیت وب</p><h2 id="featured-title">مقدمه‌ای بر Bug Bounty</h2><p>یک مسیر فارسی و مرحله‌ای برای آشنایی با مبانی، شناسایی و کلاس‌های مهم آسیب‌پذیری؛ مناسب برای بررسی دقیق مسیر پیش از ورود جدی به شکار باگ.</p><ul class="feature-facts"><li>۲۴۶ صفحه</li><li>نسخه چاپی</li><li>سطح مقدماتی تا متوسط</li><li>همراه با فهرست کامل سرفصل‌ها</li></ul><div class="hero-actions"><a class="cta cta-primary" href="book-details/Introduction-to-BugBounty.html#book-tab-toc">مشاهده نمونه سرفصل‌ها</a><a class="cta cta-secondary" href="contact/?book=%D9%85%D9%82%D8%AF%D9%85%D9%87%E2%80%8C%D8%A7%DB%8C%20%D8%A8%D8%B1%20Bug%20Bounty">ثبت درخواست خرید</a></div></div>
+    </div>
+  </section>
+  <section id="shop">
+<section class="shop-section" aria-labelledby="shop-title">
+  <div class="container mx-auto">
+    <div class="section-heading"><p class="eyebrow">کتاب‌های تألیفی سایبر شلف</p><h2 id="shop-title">کتاب‌های فارسی امنیت سایبری</h2><p>موضوع، سطح، تعداد صفحات و نوع نسخه را مقایسه کنید و برای جزئیات کامل وارد صفحه هر کتاب شوید.</p></div>
+    <div class="book-grid">
+      <article data-search-item data-search-section="کتاب" data-search-level="مقدماتی تا متوسط" class="book-card">
+        <div class="book-cover image-ribbon-container">
+          <img width="577" height="819" loading="lazy" decoding="async" src="assets/images/Windows-API-Introduction.png" alt="جلد کتاب مقدمه‌ای بر Windows API برای تیم قرمز">
+          <div class="ribbon"><span>رایگان</span></div>
+        </div>
+        <div class="book-card-body">
+          <h3 data-search-title>مقدمه‌ای بر Windows API برای تیم قرمز</h3>
+          <p class="book-card-subtitle" data-search-desc lang="en" dir="ltr">Windows API Introduction</p>
+          <div class="book-card-meta" aria-label="مشخصات کتاب"><span>امنیت ویندوز</span><span>مقدماتی تا متوسط</span><span>۱۹۸ صفحه</span><span>PDF</span></div>
+          <div class="book-card-price"><strong>رایگان</strong></div>
+          <a data-search-link href="book-details/Windows-API-Introduction.html" data-analytics="view_book">دریافت رایگان</a>
+        </div>
+      </article>
+      <article data-search-item data-search-section="کتاب" data-search-level="متوسط" class="book-card">
+        <div class="book-cover image-ribbon-container">
+          <img width="556" height="791" loading="lazy" decoding="async" src="assets/images/RedTeam-Operation-Management.png" alt="جلد کتاب مدیریت عملیات تیم قرمز">
+          <div class="ribbon"><span>رایگان</span></div>
+        </div>
+        <div class="book-card-body">
+          <h3 data-search-title>مدیریت عملیات تیم قرمز</h3>
+          <p class="book-card-subtitle" data-search-desc lang="en" dir="ltr">Red Team Operation Management</p>
+          <div class="book-card-meta" aria-label="مشخصات کتاب"><span>Red Team</span><span>متوسط</span><span>۱۰۳ صفحه</span><span>PDF</span></div>
+          <div class="book-card-price"><strong>رایگان</strong></div>
+          <a data-search-link href="book-details/RedTeam-Operation-Management.html" data-analytics="view_book">دریافت رایگان</a>
+        </div>
+      </article>
+      <article data-search-item data-search-section="کتاب" data-search-level="مقدماتی تا متوسط" class="book-card">
+        <div class="book-cover">
+          <img width="554" height="789" loading="lazy" decoding="async" src="assets/images/Malware-Analysis-Introduction.png" alt="جلد کتاب مقدمه‌ای بر تحلیل بدافزار">
+
+        </div>
+        <div class="book-card-body">
+          <h3 data-search-title>مقدمه‌ای بر تحلیل بدافزار</h3>
+          <p class="book-card-subtitle" data-search-desc lang="en" dir="ltr">Malware Analysis Introduction</p>
+          <div class="book-card-meta" aria-label="مشخصات کتاب"><span>تحلیل بدافزار</span><span>مقدماتی تا متوسط</span><span>۲۲۹ صفحه</span><span>نسخه چاپی</span></div>
+          <div class="book-card-price"><del>۱٬۰۰۰٬۰۰۰ تومان</del><strong>۸۰۰٬۰۰۰ تومان</strong></div>
+          <a data-search-link href="book-details/Malware-Analysis-Introduction.html" data-analytics="view_book">مشاهده و ثبت سفارش</a>
+        </div>
+      </article>
+      <article data-search-item data-search-section="کتاب" data-search-level="متوسط تا پیشرفته" class="book-card">
+        <div class="book-cover">
+          <img width="558" height="791" loading="lazy" decoding="async" src="assets/images/AVEDR-Evasion-Practical-Techniques.png" alt="جلد کتاب تکنیک‌های عملی فرار از AV/EDR">
+
+        </div>
+        <div class="book-card-body">
+          <h3 data-search-title>تکنیک‌های عملی فرار از AV/EDR</h3>
+          <p class="book-card-subtitle" data-search-desc lang="en" dir="ltr">AV/EDR Evasion: Practical Techniques</p>
+          <div class="book-card-meta" aria-label="مشخصات کتاب"><span>Red Team و امنیت ویندوز</span><span>متوسط تا پیشرفته</span><span>۳۳۶ صفحه</span><span>نسخه چاپی</span></div>
+          <div class="book-card-price"><del>۱٬۲۰۰٬۰۰۰ تومان</del><strong>۹۶۰٬۰۰۰ تومان</strong></div>
+          <a data-search-link href="book-details/AVEDR-Evasion-Practical-Techniques.html" data-analytics="view_book">مشاهده و ثبت سفارش</a>
+        </div>
+      </article>
+      <article data-search-item data-search-section="کتاب" data-search-level="مقدماتی تا متوسط" class="book-card">
+        <div class="book-cover">
+          <img width="567" height="806" loading="lazy" decoding="async" src="assets/images/Introduction-to-BugBounty.png" alt="جلد کتاب مقدمه‌ای بر Bug Bounty">
+
+        </div>
+        <div class="book-card-body">
+          <h3 data-search-title>مقدمه‌ای بر Bug Bounty</h3>
+          <p class="book-card-subtitle" data-search-desc lang="en" dir="ltr">Introduction to Bug Bounty</p>
+          <div class="book-card-meta" aria-label="مشخصات کتاب"><span>امنیت وب</span><span>مقدماتی تا متوسط</span><span>۲۴۶ صفحه</span><span>نسخه چاپی</span></div>
+          <div class="book-card-price"><del>۱٬۰۰۰٬۰۰۰ تومان</del><strong>۸۰۰٬۰۰۰ تومان</strong></div>
+          <a data-search-link href="book-details/Introduction-to-BugBounty.html" data-analytics="view_book">مشاهده و ثبت سفارش</a>
+        </div>
+      </article>
+      <article data-search-item data-search-section="کتاب" data-search-level="مقدماتی تا متوسط" class="book-card">
+        <div class="book-cover">
+          <img width="575" height="817" loading="lazy" decoding="async" src="assets/images/Offensive-Development-Introduction.png" alt="جلد کتاب مقدمه‌ای بر توسعه تهاجمی">
+
+        </div>
+        <div class="book-card-body">
+          <h3 data-search-title>مقدمه‌ای بر توسعه تهاجمی</h3>
+          <p class="book-card-subtitle" data-search-desc lang="en" dir="ltr">Offensive Development Introduction</p>
+          <div class="book-card-meta" aria-label="مشخصات کتاب"><span>توسعه ویندوز</span><span>مقدماتی تا متوسط</span><span>۲۲۱ صفحه</span><span>نسخه چاپی</span></div>
+          <div class="book-card-price"><del>۱٬۰۰۰٬۰۰۰ تومان</del><strong>۸۰۰٬۰۰۰ تومان</strong></div>
+          <a data-search-link href="book-details/Offensive-Development-Introduction.html" data-analytics="view_book">مشاهده و ثبت سفارش</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+  </section>
+  <section class="value-section" aria-labelledby="value-title"><div class="section-heading"><p class="eyebrow">انتخاب آگاهانه پیش از سفارش</p><h2 id="value-title">چرا کتاب‌های سایبر شلف؟</h2><p>اطلاعات موردنیاز انتخاب کتاب پیش از ثبت درخواست، شفاف و قابل بررسی است.</p></div><div class="value-grid"><article><h3>متمرکز بر امنیت سایبری</h3><p>هر عنوان روی یک مسیر مشخص مانند Red Team، تحلیل بدافزار، امنیت ویندوز یا Bug Bounty تمرکز دارد.</p></article><article><h3>سرفصل پیش از انتخاب</h3><p>فهرست فصل‌ها و ریزموضوعات در صفحه کتاب قابل مشاهده است تا محتوای کتاب را پیش از سفارش ارزیابی کنید.</p></article><article><h3>مشخصات شفاف</h3><p>نویسنده، ناشر، تعداد صفحات، نوع نسخه و قیمت هر عنوان در صفحه معرفی درج شده است.</p></article></div></section>
+  <section id="learning-paths">
+<section class="content-section" aria-labelledby="paths-title">
+  <div class="section-heading"><p class="eyebrow">یادگیری هدفمند و مرحله‌ای</p><h2 id="paths-title">مسیر پیشنهادی شما</h2><p>سه مسیر منتخب برای شروع؛ فهرست کامل مسیرها در صفحه اختصاصی در دسترس است.</p></div>
+  <div class="path-grid">
+    <article class="path-card"><span class="level">متوسط</span><h3>Red Team</h3><ol><li>مبانی عملیات تهاجمی</li><li><a href="book-details/RedTeam-Operation-Management.html">کتاب مدیریت عملیات Red Team</a></li><li><a href="resources/tools/">ابزارهای مرتبط</a></li></ol></article>
+    <article class="path-card"><span class="level">متوسط</span><h3>Malware Analysis</h3><ol><li><a href="blog-details/malware-types-and-defense.html">مقاله انواع بدافزار</a></li><li>تحلیل ایستا و پویا</li><li><a href="book-details/Malware-Analysis-Introduction.html">کتاب مقدمه تحلیل بدافزار</a></li></ol></article>
+    <article class="path-card"><span class="level">متوسط تا پیشرفته</span><h3>Windows Internals / Security</h3><ol><li>مبانی Windows API</li><li><a href="book-details/Windows-API-Introduction.html">کتاب Windows API</a></li><li><a href="book-details/Offensive-Development-Introduction.html">توسعه تهاجمی ویندوز</a></li></ol></article>
+  </div>
+  <div class="section-more"><a class="cta cta-secondary" href="learning-paths/">مشاهده همه مسیرهای یادگیری</a></div>
+</section>
+  </section>
+  <section id="blog">
+<section class="py-12 border-t border-slate-200 dark:border-slate-800 px-4 bg-slate-900/50" dir="rtl">
+  <div class="container mx-auto max-w-5xl">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+      <div>
+        <h2 class="text-3xl font-extrabold mb-8 text-emerald-400">وبلاگ</h2>
+        <p class="text-slate-300 mt-2">
+          نوشته‌های کوتاه و دقیق برای امنیت وب، عملیات و آگاهی سازمانی.
+        </p>
+      </div>
+      <div class="text-xs text-slate-400 flex items-center gap-3">
+        <span id="blogStatus">تازه‌ترین مقاله‌ها</span>
+        <span class="hidden md:inline">|</span>
+        <span>تمرکز: Web · Ops · Awareness</span>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <ul id="blogList" data-page-size="3" data-index-url="blog-index.json" class="divide-y divide-slate-800">
+        <li class="py-4" data-search-item data-search-section="وبلاگ"><a href="blog-details/cybersecurity-what-is-2026.html" class="group flex items-start gap-3"><span class="blog-number">۰۱</span><span><strong data-search-title>امنیت سایبری چیست؟ راهنمای ۲۰۲۶</strong><small data-search-desc>تعریف ساده امنیت سایبری و مسیرهای ورود برای کسب‌وکارها و کاربران عادی.</small></span></a></li>
+        <li class="py-4" data-search-item data-search-section="وبلاگ"><a href="blog-details/common-cybersecurity-mistakes.html" class="group flex items-start gap-3"><span class="blog-number">۰۲</span><span><strong data-search-title>۱۰ اشتباه رایج در امنیت سایبری</strong><small data-search-desc>اشتباهاتی که بیشترین ریسک را ایجاد می‌کنند و راه‌های پیشگیری از آن‌ها.</small></span></a></li>
+        <li class="py-4" data-search-item data-search-section="وبلاگ"><a href="blog-details/social-media-account-security.html" class="group flex items-start gap-3"><span class="blog-number">۰۳</span><span><strong data-search-title>امنیت حساب‌های شبکه‌های اجتماعی</strong><small data-search-desc>چک‌لیستی برای ایمن‌سازی حساب‌ها، جلوگیری از سرقت و بازیابی سریع.</small></span></a></li>
+      </ul>
+    </div>
+
+    <div id="blogPager" class="hidden mt-6 flex items-center justify-between text-xs text-slate-400">
+      <button id="blogPrev" class="px-3 py-2 rounded-lg border border-slate-800 hover:border-emerald-400 hover:text-emerald-300 transition" type="button">
+        قبلی
+      </button>
+      <span id="blogPageInfo">صفحه ۱ از ۱</span>
+      <button id="blogNext" class="px-3 py-2 rounded-lg border border-slate-800 hover:border-emerald-400 hover:text-emerald-300 transition" type="button">
+        بعدی
+      </button>
+    </div>
+    <div class="section-more" data-home-only><a class="cta cta-secondary" href="blog/">مشاهده همه مقاله‌ها</a></div>
+  </div>
+</section>
+  </section>
+  <section id="telegram">
+<section class="w-full py-16 px-6 border-t border-slate-200 dark:border-slate-800 bg-slate-900/50">
+    <div class="w-full px-4 py-12">
+        <h2>آخرین پست‌های تلگرام</h2>
+        <p class="section-description">تازه‌ترین خبرها و یادداشت‌های کوتاه امنیت سایبری از کانال رسمی سایبر شلف.</p>
+
+        <!-- پست‌های تلگرام -->
+        <div id="telegram-posts" data-limit="3" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <article class="telegram-skeleton p-5 border border-slate-700 rounded-2xl bg-slate-900">
+                <div class="skeleton-block h-52 rounded-xl mb-4"></div>
+                <div class="skeleton-line w-3/4 mb-3"></div>
+                <div class="skeleton-line w-full mb-2"></div>
+                <div class="skeleton-line w-5/6"></div>
+            </article>
+            <article class="telegram-skeleton p-5 border border-slate-700 rounded-2xl bg-slate-900">
+                <div class="skeleton-block h-52 rounded-xl mb-4"></div>
+                <div class="skeleton-line w-2/3 mb-3"></div>
+                <div class="skeleton-line w-full mb-2"></div>
+                <div class="skeleton-line w-4/6"></div>
+            </article>
+            <article class="telegram-skeleton p-5 border border-slate-700 rounded-2xl bg-slate-900">
+                <div class="skeleton-block h-52 rounded-xl mb-4"></div>
+                <div class="skeleton-line w-4/5 mb-3"></div>
+                <div class="skeleton-line w-full mb-2"></div>
+                <div class="skeleton-line w-3/5"></div>
+            </article>
+        </div>
+
+        <!-- دکمه مشاهده کانال تلگرام -->
+        <div class="mt-12 text-center">
+            <a href="https://t.me/cybershelf" target="_blank" rel="noopener noreferrer" data-analytics="subscribe_or_join_telegram"
+               class="mt-2 inline-flex items-center gap-2 bg-gradient-to-r from-emerald-400 via-teal-400 to-sky-500 text-black font-bold py-2 px-6 rounded-lg shadow-lg hover:scale-105 transition self-center">
+                <!-- آیکون تلگرام رسمی -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" class="w-5 h-5">
+                    <circle cx="120" cy="120" r="120" fill="#0088cc"/>
+                    <path fill="#ffffff" d="M49 117l138-53c6-2 11 2 10 8l-23 107c-1 6-8 9-13 6l-39-28-19 19c-3 3-8 2-10-2l-13-40-37-14c-6-2-6-11 0-13z"/>
+                </svg>
+                مشاهده همه پست‌ها در تلگرام
+            </a>
+        </div>
+    </div>
+</section>
+  </section>
+  <section class="home-support" aria-labelledby="support-title">
+    <div class="section-heading"><p class="eyebrow">پیش از ثبت درخواست</p><h2 id="support-title">پاسخ و راهنمای انتخاب</h2><p>اگر درباره کتاب یا مسیر مناسب مطمئن نیستید، پاسخ پرسش‌های رایج را ببینید یا درخواست مشاوره ثبت کنید.</p></div>
+    <div class="home-faq">
+      <details><summary>چطور محتوای هر کتاب را پیش از سفارش بررسی کنم؟</summary><p>در صفحه معرفی کتاب، مشخصات، توضیحات و فهرست فصل‌ها و ریزموضوعات قرار دارد.</p></details>
+      <details><summary>چطور درخواست خرید ثبت می‌شود؟</summary><p>از صفحه کتاب روی «ثبت درخواست خرید» بزنید؛ عنوان کتاب در فرم قرار می‌گیرد و درخواست شما برای ادامه هماهنگی ارسال می‌شود.</p></details>
+      <details><summary>کدام کتاب برای مسیر من مناسب است؟</summary><p>سطح و موضوع روی کارت هر کتاب مشخص است. برای انتخاب دقیق‌تر می‌توانید مسیرهای یادگیری را ببینید یا درخواست مشاوره ثبت کنید.</p></details>
+    </div>
+    <div class="support-actions"><a class="cta cta-secondary" href="faq/">مشاهده همه پرسش‌ها</a><a class="cta cta-primary" href="contact/">مشاوره و ثبت درخواست</a></div>
+  </section>
   </main>
-  <div id="footer"></div>
+  <div id="footer">
+<footer class="py-8 border-t border-slate-200 dark:border-slate-800 px-4 text-sm" dir="rtl">
+  <div class="container mx-auto text-center text-slate-500">
+    <div class="footer-brand mb-3">
+      سایبر شلف — CyberShelf
+    </div>
+    <nav aria-label="پیوندهای تکمیلی" class="footer-links">
+      <a href="about/">درباره CyberShelf</a><a href="contact/">تماس با ما</a><a href="faq/">سؤالات متداول</a><a href="resources/">منابع</a><a href="https://github.com/cybershelf" target="_blank" rel="noopener noreferrer">GitHub</a><a href="terms/">قوانین و شرایط</a><a href="privacy/">حریم خصوصی</a>
+    </nav>
+    <div class="flex justify-center gap-4 mb-3">
+      <a class="footer-social" href="https://t.me/cybershelf" target="_blank" rel="noopener noreferrer" aria-label="تلگرام">
+        <!-- آیکون تلگرام -->
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="12" fill="var(--bg)"/>
+          <path d="M8.5 12.5l2.5 2 4-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 3L3 12l6 2 2 6 3-4 4-10z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        </svg>
+      </a>
+      <a class="footer-social" href="https://github.com/cybershelf" target="_blank" rel="noopener noreferrer" aria-label="گیت‌هاب">
+        <!-- آیکون گیت‌هاب -->
+        <svg width="22" height="22" fill="var(--bg)" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+      </a>
+      <a class="footer-social" href="https://instagram.com/cybershelf_page" target="_blank" rel="noopener noreferrer" aria-label="اینستاگرام">
+        <!-- آیکون اینستاگرام -->
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="5" fill="var(--bg)" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="17" cy="7" r="1" fill="currentColor"/>
+        </svg>
+      </a>
+    </div>
+    <div class="footer-copyright">
+      © <span id="year"></span> تمامی حقوق محفوظ است. ساخته‌شده با ❤ .
+    </div>
+  </div>
+</footer>
+  </div>
 
   <!-- دکمه بازگشت به بالا -->
   <button id="backToTop" aria-label="Back to top" class="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-emerald-400 via-teal-400 to-cyan-400 shadow-lg shadow-cyan-500/50 text-black text-xl opacity-0 pointer-events-none z-50 hover:scale-110 transition-transform duration-300">
     ⬆
   </button>
-  <button id="readerToggle" class="reader-toggle hidden" aria-label="حالت مطالعه">
-    حالت مطالعه
-  </button></body>
+</body>
 </html>

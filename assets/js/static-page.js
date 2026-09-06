@@ -28,23 +28,35 @@
   const menuButton = document.getElementById('pageMenuBtn');
   const mobileMenu = document.getElementById('pageMobileMenu');
   if (menuButton && mobileMenu) {
+    let previouslyFocused = null;
+    mobileMenu.setAttribute('aria-hidden', 'true');
     const closeMenu = () => {
       mobileMenu.classList.add('hidden');
       menuButton.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('overflow-hidden');
+      previouslyFocused?.focus?.();
     };
     menuButton.addEventListener('click', () => {
       const shouldOpen = mobileMenu.classList.contains('hidden');
+      if (shouldOpen) previouslyFocused = document.activeElement;
       mobileMenu.classList.toggle('hidden', !shouldOpen);
       menuButton.setAttribute('aria-expanded', String(shouldOpen));
+      mobileMenu.setAttribute('aria-hidden', String(!shouldOpen));
       document.body.classList.toggle('overflow-hidden', shouldOpen);
+      if (shouldOpen) mobileMenu.querySelector('button, a[href]')?.focus();
     });
     mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
     document.addEventListener('click', event => {
       if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
     });
     document.addEventListener('keydown', event => {
-      if (event.key === 'Escape') closeMenu();
+      if (event.key === 'Escape') { closeMenu(); return; }
+      if (event.key !== 'Tab' || mobileMenu.classList.contains('hidden')) return;
+      const focusable = Array.from(mobileMenu.querySelectorAll('button:not([disabled]), a[href]'));
+      const first = focusable[0]; const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
     });
   }
 
@@ -63,7 +75,14 @@
   };
 
   const footerMount = document.querySelector('[data-site-footer]');
-  window.searchBase = footerMount?.dataset.assetBase || '';
+  const pageBase = document.body.dataset.assetBase || footerMount?.dataset.assetBase || '';
+  window.searchBase = pageBase;
+  window.cyberShelfBase = pageBase;
+  const currentPath = location.pathname.replace(/index\.html$/i, '').replace(/\/$/, '') || '/';
+  document.querySelectorAll('.site-header a[href]').forEach(link => {
+    const linkPath = new URL(link.href, location.href).pathname.replace(/index\.html$/i, '').replace(/\/$/, '') || '/';
+    if (linkPath === currentPath) link.setAttribute('aria-current', 'page');
+  });
   if (typeof initSearch === 'function') {
     buildSearchIndex();
     initSearch();
@@ -89,14 +108,22 @@
     updateYear();
   }
 
+  const standaloneBook = document.querySelector('.book-detail');
+  if (standaloneBook && typeof initBookDetails === 'function') {
+    const bookId = decodeURIComponent(location.pathname.split('/').pop().replace(/\.html$/i, ''));
+    initBookDetails(document, bookId);
+  }
+
   const host = document.querySelector('[data-partial]');
   if (!host) return;
 
   const loadPageContent = async () => {
     try {
-      const response = await fetch(host.dataset.partial);
-      if (!response.ok) throw new Error(`Failed to load ${host.dataset.partial}`);
-      host.innerHTML = await response.text();
+      if (host.dataset.prerendered !== 'true') {
+        const response = await fetch(host.dataset.partial);
+        if (!response.ok) throw new Error(`Failed to load ${host.dataset.partial}`);
+        host.innerHTML = await response.text();
+      }
 
       const assetBase = host.dataset.assetBase || '';
       host.querySelectorAll('[src^="assets/"], [href^="assets/"]').forEach(element => {
@@ -127,7 +154,7 @@
         if (list) {
           list.dataset.pageSize = '6';
           list.dataset.indexUrl = `${assetBase}blog-index.json`;
-          list.dataset.detailBase = `${assetBase}#/blog/`;
+          list.dataset.detailBase = `${assetBase}blog-details/`;
         }
         pager?.classList.remove('hidden');
         if (typeof initBlogList === 'function') await initBlogList();
