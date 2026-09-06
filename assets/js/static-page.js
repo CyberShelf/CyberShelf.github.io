@@ -1,30 +1,51 @@
 (function () {
   const root = document.documentElement;
-  const themeToggle = document.getElementById('pageThemeToggle');
+  const themeToggles = [
+    document.getElementById('pageThemeToggle'),
+    document.getElementById('pageThemeToggleMobile')
+  ].filter(Boolean);
+  const sunIcon = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>';
+  const moonIcon = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path></svg>';
 
   const applyTheme = theme => {
     root.classList.toggle('dark', theme === 'dark');
-    if (themeToggle) {
-      themeToggle.textContent = theme === 'dark' ? '☀' : '☾';
-      themeToggle.setAttribute('aria-label', theme === 'dark' ? 'فعال‌کردن حالت روز' : 'فعال‌کردن حالت شب');
-    }
+    themeToggles.forEach(toggle => {
+      const icon = toggle.querySelector('.theme-icon') || toggle;
+      icon.innerHTML = theme === 'dark' ? sunIcon : moonIcon;
+      toggle.setAttribute('aria-label', theme === 'dark' ? 'فعال‌کردن حالت روز' : 'فعال‌کردن حالت شب');
+    });
   };
 
   applyTheme(localStorage.getItem('theme') || 'dark');
-  themeToggle?.addEventListener('click', () => {
-    const nextTheme = root.classList.contains('dark') ? 'light' : 'dark';
-    localStorage.setItem('theme', nextTheme);
-    applyTheme(nextTheme);
+  themeToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const nextTheme = root.classList.contains('dark') ? 'light' : 'dark';
+      localStorage.setItem('theme', nextTheme);
+      applyTheme(nextTheme);
+    });
   });
 
-  const navLinks = document.querySelector('.standalone-links');
-  const brand = document.querySelector('.standalone-brand');
-  if (navLinks && brand && !navLinks.querySelector('.standalone-home-link')) {
-    const homeLink = document.createElement('a');
-    homeLink.className = 'standalone-home-link';
-    homeLink.href = brand.getAttribute('href') || './';
-    homeLink.textContent = 'خانه';
-    navLinks.prepend(homeLink);
+  const menuButton = document.getElementById('pageMenuBtn');
+  const mobileMenu = document.getElementById('pageMobileMenu');
+  if (menuButton && mobileMenu) {
+    const closeMenu = () => {
+      mobileMenu.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('overflow-hidden');
+    };
+    menuButton.addEventListener('click', () => {
+      const shouldOpen = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', !shouldOpen);
+      menuButton.setAttribute('aria-expanded', String(shouldOpen));
+      document.body.classList.toggle('overflow-hidden', shouldOpen);
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('click', event => {
+      if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') closeMenu();
+    });
   }
 
   const updateYear = () => {
@@ -42,6 +63,11 @@
   };
 
   const footerMount = document.querySelector('[data-site-footer]');
+  window.searchBase = footerMount?.dataset.assetBase || '';
+  if (typeof initSearch === 'function') {
+    buildSearchIndex();
+    initSearch();
+  }
   if (footerMount) {
     const footerBase = footerMount.dataset.assetBase || '';
     fetch(`${footerBase}partials/footer.html`)

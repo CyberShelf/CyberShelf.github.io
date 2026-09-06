@@ -35,8 +35,10 @@ function buildSearchIndex() {
     const fullText = el.textContent || '';
     return { title, desc, link, section, order, haystack: normalizeText(`${title} ${desc} ${section} ${fullText}`), normalizedTitle: normalizeText(title) };
   }).filter(item => item.title && item.link);
+  const searchBase = window.searchBase || '';
   const pageItems = staticSearchItems.map((item, index) => ({
     ...item,
+    link: `${searchBase}${item.link}`,
     order: domItems.length + index,
     haystack: normalizeText(`${item.title} ${item.desc} ${item.section}`),
     normalizedTitle: normalizeText(item.title)
