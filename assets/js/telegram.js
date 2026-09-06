@@ -8,7 +8,6 @@
     rssUrl,
     'https://corsproxy.io/?' + encodeURIComponent(rssUrl),
     'https://api.allorigins.win/raw?url=' + encodeURIComponent(rssUrl),
-    'https://thingproxy.freeboard.io/fetch/' + rssUrl, // fallback proxy
     'https://r.jina.ai/http://' + rssPath
   ];
   const fallbackImage = 'https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg';
