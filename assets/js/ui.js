@@ -17,7 +17,6 @@ function initBackToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
-
 // 💻 ترمینال صفحه اصلی
 function initScrollProgress() {
   const bar = document.getElementById('scrollProgress');
@@ -77,10 +76,6 @@ function initActiveNav() {
   };
 
   const updateFromHash = () => {
-    if (location.hash.startsWith('#/book/')) {
-      clearActiveNav();
-      return;
-    }
     const hashId = location.hash.replace('#', '');
     if (groupedLinks.has(hashId)) setActive(hashId);
   };
@@ -163,24 +158,5 @@ function initLazyImages() {
       img.addEventListener('load', clear, { once: true });
       img.addEventListener('error', clear, { once: true });
     }
-  });
-}
-
-function initReaderMode() {
-  const toggle = document.getElementById('readerToggle');
-  if (!toggle) return;
-
-  const apply = enabled => {
-    document.body.classList.toggle('reader-mode', enabled);
-    toggle.textContent = enabled ? 'حالت عادی' : 'حالت مطالعه';
-  };
-
-  const stored = localStorage.getItem('readerMode') === 'on';
-  apply(stored);
-
-  toggle.addEventListener('click', () => {
-    const enabled = !document.body.classList.contains('reader-mode');
-    localStorage.setItem('readerMode', enabled ? 'on' : 'off');
-    apply(enabled);
   });
 }
