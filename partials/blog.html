@@ -15,10 +15,10 @@
     </div>
 
     <div class="mt-8">
-      <ul id="blogList" class="divide-y divide-slate-800"></ul>
+      <ul id="blogList" data-page-size="3" data-index-url="blog-index.json" class="divide-y divide-slate-800"></ul>
     </div>
 
-    <div id="blogPager" class="mt-6 flex items-center justify-between text-xs text-slate-400">
+    <div id="blogPager" class="hidden mt-6 flex items-center justify-between text-xs text-slate-400">
       <button id="blogPrev" class="px-3 py-2 rounded-lg border border-slate-800 hover:border-emerald-400 hover:text-emerald-300 transition" type="button">
         قبلی
       </button>
@@ -27,5 +27,6 @@
         بعدی
       </button>
     </div>
+    <div class="section-more" data-home-only><a class="cta cta-secondary" href="blog/">مشاهده همه مقاله‌ها</a></div>
   </div>
 </section>

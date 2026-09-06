@@ -14,7 +14,7 @@ async function initBlogList() {
   };
 
 
-  const pageSize = 6;
+  const pageSize = Math.max(1, Number.parseInt(list.dataset.pageSize || '6', 10));
   let currentPage = 1;
   let totalPages = 1;
 
@@ -42,7 +42,7 @@ async function initBlogList() {
 
   try {
     setStatus('در حال بارگذاری...');
-    const res = await fetch('blog-index.json', { cache: 'no-store' });
+    const res = await fetch(list.dataset.indexUrl || 'blog-index.json');
     if (!res.ok) throw new Error('index fetch failed');
     const entries = await res.json();
 
@@ -67,20 +67,23 @@ async function initBlogList() {
       item.setAttribute('data-search-section', 'وبلاگ');
 
       const link = document.createElement('a');
-      const blogHash = `#/blog/${encodeURIComponent(id)}`;
-      link.href = blogHash;
+      const detailBase = list.dataset.detailBase || '#/blog/';
+      const blogHref = `${detailBase}${encodeURIComponent(id)}`;
+      link.href = blogHref;
       link.dataset.analytics = 'open_article';
       link.className = 'group flex items-start gap-3';
-      link.addEventListener('click', event => {
-        if (event.defaultPrevented) return;
-        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-        event.preventDefault();
-        if (location.hash !== blogHash) {
-          location.hash = blogHash;
-        } else if (typeof handleHashChange === 'function') {
-          handleHashChange();
-        }
-      });
+      if (blogHref.startsWith('#/')) {
+        link.addEventListener('click', event => {
+          if (event.defaultPrevented) return;
+          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          if (location.hash !== blogHref) {
+            location.hash = blogHref;
+          } else if (typeof handleHashChange === 'function') {
+            handleHashChange();
+          }
+        });
+      }
 
       const badge = document.createElement('div');
       badge.className = 'mt-0.5 flex h-8 w-8 items-center justify-center rounded-lg border border-slate-800 text-slate-400 text-[11px] font-bold transition group-hover:border-emerald-400 group-hover:text-emerald-300';
