@@ -53,8 +53,8 @@
         <!-- ناوبری دسکتاپ -->
         <nav class="hidden md:flex items-center gap-6 text-sm">
           <a href="#home" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">خانه</a>
+          <a href="#shop" data-nav-link class="nav-link nav-shop-link relative text-slate-300 hover:text-emerald-400 transition">کتاب‌های فارسی</a>
           <a href="#learning-paths" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">مسیرهای یادگیری</a>
-          <a href="#shop" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">کتاب‌ها</a>
           <a href="#blog" data-nav-link class="nav-link relative text-slate-300 hover:text-emerald-400 transition after:absolute after:-bottom-1 after:right-0 after:h-px after:w-0 hover:after:w-full after:bg-emerald-400 after:transition-all">وبلاگ</a>
           <details class="resource-menu"><summary>منابع</summary><div><a href="#tools">ابزارها</a><a href="#glossary">واژه‌نامه</a><a href="#books-en">منابع انگلیسی</a><a href="#telegram">تلگرام</a></div></details>
         </nav>
@@ -102,25 +102,28 @@
           </button>
         </div>
         <a href="#home" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">خانه</a>
+        <a href="#shop" data-nav-link class="nav-link nav-shop-link py-2 text-slate-200 hover:text-emerald-400 transition">کتاب‌های فارسی</a>
         <a href="#learning-paths" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">مسیرهای یادگیری</a>
-        <a href="#shop" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">کتاب‌ها</a>
         <a href="#blog" data-nav-link class="nav-link py-2 text-slate-200 hover:text-emerald-400 transition">وبلاگ</a>
         <details class="mobile-resource-menu"><summary class="py-2">منابع</summary><div><a href="#books-en">منابع انگلیسی</a><a href="#tools">ابزارها</a><a href="#glossary">واژه‌نامه</a><a href="#telegram">تلگرام</a></div></details>
       </nav>
     </div>
   </header>
 
-  <div id="searchModal" class="fixed inset-0 z-[80] hidden" aria-hidden="true">
+  <div id="searchModal" class="fixed inset-0 z-[80] hidden" role="dialog" aria-modal="true" aria-labelledby="searchTitle" aria-hidden="true">
     <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
     <div class="relative max-w-2xl mx-auto mt-24 bg-slate-900 border border-slate-700 rounded-2xl shadow-xl overflow-hidden">
       <div class="flex items-center gap-2 px-4 py-3 border-b border-slate-700">
-        <span class="text-emerald-400 text-sm font-bold">جستجو</span>
+        <div><strong id="searchTitle" class="search-title">جستجو در سایبر شلف</strong><p class="search-subtitle">کتاب، مسیر یادگیری، مقاله، ابزار یا اصطلاح</p></div>
         <button id="searchClose" class="ms-auto text-slate-400 hover:text-emerald-400 transition" aria-label="بستن">
           ✕
         </button>
       </div>
       <div class="p-4">
-        <input id="searchInput" type="search" placeholder="عنوان، ابزار یا کتاب را جستجو کنید..." class="w-full rounded-xl border border-slate-700 bg-slate-950/70 px-4 py-3 text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+        <label class="sr-only" for="searchInput">عبارت جستجو</label>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="مثلاً تحلیل بدافزار، Red Team یا Nmap" class="w-full rounded-xl border border-slate-700 bg-slate-950/70 px-4 py-3 text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+        <div id="searchFilters" class="search-filters" aria-label="فیلتر نوع محتوا"></div>
+        <div id="searchSummary" class="search-summary" aria-live="polite"></div>
         <div id="searchResults" class="mt-4 space-y-3 max-h-[60vh] overflow-y-auto"></div>
       </div>
     </div>
@@ -132,9 +135,9 @@
     <div class="hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">سامانه یادگیری سایبر شلف</p>
-        <h1 id="hero-title">یادگیری امنیت سایبری را از مسیر درست شروع کن</h1>
-        <p class="hero-description">کتاب، مقاله، ابزار و منابع تخصصی برای Red Team، Malware Analysis، امنیت ویندوز و یادگیری عملی امنیت سایبری.</p>
-        <div class="hero-actions"><a class="cta cta-primary" href="#learning-paths" data-analytics="click_learning_path">مسیر یادگیری من</a><a class="cta cta-secondary" href="#shop">مشاهده کتاب‌ها</a></div>
+        <h1 id="hero-title">کتاب‌های تخصصی امنیت سایبری برای مسیر حرفه‌ای شما</h1>
+        <p class="hero-description">کتاب‌های فارسی و کاربردی برای Red Team، تحلیل بدافزار، امنیت ویندوز و Bug Bounty؛ همراه با مسیرهای پیشنهادی برای انتخاب آگاهانه.</p>
+        <div class="hero-actions"><a class="cta cta-primary" href="#shop">مشاهده و خرید کتاب‌ها</a><a class="cta cta-secondary" href="#learning-paths" data-analytics="click_learning_path">انتخاب مسیر یادگیری</a></div>
         <ul class="trust-list" aria-label="ویژگی‌های سایبر شلف"><li>کتاب‌های تخصصی فارسی</li><li>منابع رایگان</li><li>محتوای عملی</li><li>مسیرهای یادگیری</li></ul>
       </div>
       <div class="hero-terminal" aria-label="نمایی از موضوعات آموزشی سایبر شلف"><div class="terminal-bar"><span></span><span></span><span></span><b>learning-path.sh</b></div><pre><code><span>$</span> cybershelf start
@@ -148,10 +151,10 @@
 <span class="terminal-ready">ready_</span></code></pre></div>
     </div>
   </section>
-  <section id="learning-paths"></section>
   <section id="shop"></section>
-  <section id="telegram"></section>
+  <section id="learning-paths"></section>
   <section id="blog"></section>
+  <section id="telegram"></section>
   <section id="blog-post"></section>
   <section id="books"></section>
   <section id="books-en"></section>
