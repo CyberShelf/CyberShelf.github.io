@@ -634,14 +634,16 @@ html:not(.dark) .toc-list .toc-subchapter li {
 .standalone-body { min-height: 100vh; background: var(--bg); }
 .standalone-header { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--border); background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(14px); }
 .standalone-nav { display: flex; width: min(var(--content-width), 100%); min-height: 64px; margin-inline: auto; padding: .7rem 1rem; align-items: center; gap: 1rem; }
-.standalone-brand { margin-left: auto; color: var(--heading) !important; font-size: 1.05rem; font-weight: 700; }
-.standalone-links { display: flex; align-items: center; gap: 1rem; font-size: .85rem; }
+.standalone-brand { order: 3; margin: 0; color: var(--heading) !important; font-size: 1.05rem; font-weight: 700; }
+.standalone-links { order: 1; display: flex; margin-left: auto; align-items: center; gap: 1rem; font-size: .85rem; }
 .standalone-links a { color: var(--text-muted); }
 .standalone-links a:hover { color: var(--heading); }
-.standalone-theme { width: 42px; height: 42px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); color: var(--text); cursor: pointer; }
+.standalone-theme { order: 2; width: 42px; height: 42px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); color: var(--text); cursor: pointer; }
 .standalone-content { min-height: calc(100vh - 180px); }
 .standalone-content > .page-loading { width: min(var(--content-width), 100%); margin-inline: auto; padding: var(--space-section) 1rem; color: var(--text-muted); }
-.standalone-footer { padding: 2rem 1rem; border-top: 1px solid var(--border); color: var(--text-soft); text-align: center; }
+footer { padding: 2rem 1rem; border-top: 1px solid var(--border); font-size: .875rem; }
+footer > .container { width: min(var(--content-width), 100%); margin-inline: auto; color: var(--text-soft); text-align: center; }
+footer .footer-links + div { display: flex; justify-content: center; gap: 1rem; margin-bottom: .75rem; }
 .resource-hub { width: min(var(--content-width), 100%); margin-inline: auto; padding: var(--space-section) 1rem; }
 .resource-hub-header { max-width: 48rem; margin-bottom: 2.5rem; }
 .resource-hub-header h1 { margin: .5rem 0 .8rem; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.3; }
@@ -654,7 +656,7 @@ html:not(.dark) .toc-list .toc-subchapter li {
 .resource-hub-card span { margin-top: auto; padding-top: 1rem; color: var(--heading); font-weight: 700; }
 .page-load-error { width: min(42rem, calc(100% - 2rem)); margin: 5rem auto; padding: 2rem; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface); text-align: center; }
 @media (max-width: 700px) {
-  .standalone-links a:not(.standalone-primary-link) { display: none; }
+  .standalone-links a:not(.standalone-primary-link):not(.standalone-home-link) { display: none; }
   .resource-hub-grid { grid-template-columns: 1fr; }
 }
 .section-description { max-width: 48rem; margin: 0 0 2.25rem; color: var(--text-muted); font-size: 1rem; line-height: 1.9; }
