@@ -20,6 +20,7 @@ function handleHashChange() {
     loadPartial('books', `book-details/${bookId}.html`).then(() => {
       if (books) books.style.display = 'block';
       initLazyImages();
+      initBookDetails(books, bookId);
       initPurchaseFlow(books);
     });
     if (blogPost) blogPost.style.display = 'none';
@@ -76,16 +77,20 @@ function handleHashChange() {
         renderFallbackPost();
       }
       initLazyImages();
+      const postTitle = blogPost?.querySelector('h1')?.textContent?.trim();
+      if (postTitle) document.title = `${postTitle} | سایبر شلف`;
     });
     if (books) books.style.display = 'none';
     clearActiveNav();
-    if (readerToggle) readerToggle.classList.remove('hidden');
+    document.body.classList.remove('reader-mode');
+    if (readerToggle) readerToggle.classList.add('hidden');
   } else {
     show(sections);
     if (books) books.style.display = 'none';
     if (blogPost) blogPost.style.display = 'none';
     document.body.classList.remove('reader-mode');
     if (readerToggle) readerToggle.classList.add('hidden');
+    document.title = 'سایبر شلف | مسیر یادگیری امنیت سایبری به زبان فارسی';
   }
 }
 
