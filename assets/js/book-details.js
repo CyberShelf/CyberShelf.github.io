@@ -14,12 +14,14 @@ function initBookDetails(root, bookId) {
   const book = CYBERSHELF_BOOKS[bookId] || { title: bookId.replace(/-/g, ' '), path: 'امنیت سایبری' };
   document.title = `${book.title} | سایبر شلف`;
 
-  const header = document.createElement('header');
-  header.className = 'book-detail-header';
-  header.innerHTML = '<nav aria-label="مسیر صفحه"><a href="#shop">کتاب‌های فارسی</a><span aria-hidden="true">/</span><span>معرفی کتاب</span></nav><p class="eyebrow"></p><h1></h1><p class="book-detail-lead">مشخصات، مخاطبان، محتوای آموزشی و سرفصل‌ها را پیش از انتخاب بررسی کنید.</p>';
+  const header = detail.querySelector(':scope > .book-detail-header') || document.createElement('header');
+  if (!header.classList.contains('book-detail-header')) header.className = 'book-detail-header';
+  if (!header.hasChildNodes()) {
+    header.innerHTML = `<nav aria-label="مسیر صفحه"><a href="${window.cyberShelfBase || ''}#shop">کتاب‌های فارسی</a><span aria-hidden="true">/</span><span>معرفی کتاب</span></nav><p class="eyebrow"></p><h1></h1><p class="book-detail-lead">مشخصات، مخاطبان، محتوای آموزشی و سرفصل‌ها را پیش از انتخاب بررسی کنید.</p>`;
+  }
   header.querySelector('.eyebrow').textContent = book.path;
   header.querySelector('h1').textContent = book.title;
-  detail.prepend(header);
+  if (!header.parentElement) detail.prepend(header);
 
   const sidebar = detail.querySelector('.lg\\:col-span-1');
   const content = detail.querySelector('.lg\\:col-span-2');
@@ -50,7 +52,9 @@ function initBookDetails(root, bookId) {
     button.addEventListener('click', () => activate(button));
     button.addEventListener('keydown', event => { if (!['ArrowRight', 'ArrowLeft'].includes(event.key)) return; event.preventDefault(); const direction = event.key === 'ArrowRight' ? -1 : 1; const next = buttons[(index + direction + buttons.length) % buttons.length]; activate(next); next.focus(); });
   });
-  if (buttons[0]) activate(buttons[0]);
+  const requestedTab = location.hash.replace('#book-tab-', '');
+  const initialButton = buttons.find(button => button.dataset.tab === requestedTab) || buttons[0];
+  if (initialButton) activate(initialButton);
 
   const about = detail.querySelector('#tab-about');
   if (about && !about.querySelector('.panel-title')) about.insertAdjacentHTML('afterbegin', '<h2 class="panel-title">معرفی کتاب</h2>');

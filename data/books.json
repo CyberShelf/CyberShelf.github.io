@@ -1,0 +1,8 @@
+[
+  {"id":"Windows-API-Introduction","title":"مقدمه‌ای بر Windows API برای تیم قرمز","englishTitle":"Windows API Introduction","topic":"امنیت ویندوز","level":"مقدماتی تا متوسط","pages":198,"format":"PDF","price":0,"image":"assets/images/Windows-API-Introduction.png"},
+  {"id":"RedTeam-Operation-Management","title":"مدیریت عملیات تیم قرمز","englishTitle":"Red Team Operation Management","topic":"Red Team","level":"متوسط","pages":103,"format":"PDF","price":0,"image":"assets/images/RedTeam-Operation-Management.png"},
+  {"id":"Malware-Analysis-Introduction","title":"مقدمه‌ای بر تحلیل بدافزار","englishTitle":"Malware Analysis Introduction","topic":"تحلیل بدافزار","level":"مقدماتی تا متوسط","pages":229,"format":"نسخه چاپی","price":800000,"image":"assets/images/Malware-Analysis-Introduction.png"},
+  {"id":"AVEDR-Evasion-Practical-Techniques","title":"تکنیک‌های عملی فرار از AV/EDR","englishTitle":"AV/EDR Evasion: Practical Techniques","topic":"Red Team و امنیت ویندوز","level":"متوسط تا پیشرفته","pages":336,"format":"نسخه چاپی","price":960000,"image":"assets/images/AVEDR-Evasion-Practical-Techniques.png"},
+  {"id":"Introduction-to-BugBounty","title":"مقدمه‌ای بر Bug Bounty","englishTitle":"Introduction to Bug Bounty","topic":"امنیت وب","level":"مقدماتی تا متوسط","pages":246,"format":"نسخه چاپی","price":800000,"image":"assets/images/Introduction-to-BugBounty.png"},
+  {"id":"Offensive-Development-Introduction","title":"مقدمه‌ای بر توسعه تهاجمی","englishTitle":"Offensive Development Introduction","topic":"توسعه ویندوز","level":"مقدماتی تا متوسط","pages":221,"format":"نسخه چاپی","price":800000,"image":"assets/images/Offensive-Development-Introduction.png"}
+]
