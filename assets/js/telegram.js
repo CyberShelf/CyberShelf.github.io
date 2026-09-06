@@ -4,7 +4,7 @@ async function loadTelegramPosts() {
 
   const escapeText = value => String(value || '');
   const safeUrl = value => {
-    try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) ? url.href : ''; }
+    try { const url = new URL(value, window.location.href); return ['http:', 'https:'].includes(url.protocol) ? url.href : ''; }
     catch (_) { return ''; }
   };
 
@@ -19,6 +19,18 @@ async function loadTelegramPosts() {
     posts.forEach(post => {
       const article = document.createElement('article');
       article.className = 'post-card p-5 border border-slate-700 rounded-2xl bg-slate-900 flex flex-col';
+      const imageUrl = safeUrl(post.imageUrl);
+      if (imageUrl) {
+        const image = document.createElement('img');
+        image.className = 'telegram-post-image';
+        image.src = imageUrl;
+        image.alt = '';
+        image.loading = 'lazy';
+        image.decoding = 'async';
+        image.referrerPolicy = 'no-referrer';
+        image.addEventListener('error', () => image.remove(), { once: true });
+        article.appendChild(image);
+      }
       const title = document.createElement('h3');
       title.className = 'font-bold text-base text-emerald-300 mb-3 line-clamp-2';
       title.textContent = escapeText(post.title) || 'پست تلگرام';
