@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-09-07T04:46:53.897Z",
+  "updatedAt": "2026-09-08T08:02:39.273Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
+    {
+      "title": "🚨 هشدار امنیتی — حملات فعال به Magento و Adobe Commerce با سوءاستفاده از آسیب‌پ",
+      "excerpt": "🚨 هشدار امنیتی — حملات فعال به Magento و Adobe Commerce با سوءاستفاده از آسیب‌پذیری Zero-Day مهاجمان از یک آسیب‌پذیری اصلاح‌نشده و بدون نیاز به احراز هویت در Magento Open Source و",
+      "url": "https://t.me/cybershelf/102",
+      "imageUrl": "assets/images/telegram/cybershelf-102.jpg",
+      "publishedAt": "2026-09-07T04:57:30+00:00"
+    },
+    {
+      "title": "🚨 انواع حملات سایبری که باید بشناسیم&#33; دنیای دیجیتال پر از فرصت‌هاست، اما بد",
+      "excerpt": "🚨 انواع حملات سایبری که باید بشناسیم&#33; دنیای دیجیتال پر از فرصت‌هاست، اما بدون آگاهی می‌تواند پر از تهدید هم باشد. در این تصویر با رایج‌ترین انواع حملات سایبری آشنا می‌شویم: 🔹",
+      "url": "https://t.me/cybershelf/101",
+      "imageUrl": "assets/images/telegram/cybershelf-101.jpg",
+      "publishedAt": "2026-02-11T07:27:38+00:00"
+    },
     {
       "title": "🚨 هشدار امنیتی — گروه هکری «Transparent Tribe» با RAT جدید به نهادهای دولتی و د",
       "excerpt": "🚨 هشدار امنیتی — گروه هکری «Transparent Tribe» با RAT جدید به نهادهای دولتی و دانشگاهی هند حمله می‌کند گروه تهدید سایبری شناخته‌شده به نام Transparent Tribe (یا APT36) که پیش‌تر د",
@@ -29,20 +43,6 @@
       "url": "https://t.me/cybershelf/97",
       "imageUrl": "assets/images/telegram/cybershelf-97.jpg",
       "publishedAt": "2025-12-22T07:51:06+00:00"
-    },
-    {
-      "title": "🚨 هشدار امنیتی — نحوه‌ عملکرد باج‌افزار VolkLocker افشا شد تحقیقات جدید پژوهشگر",
-      "excerpt": "🚨 هشدار امنیتی — نحوه‌ عملکرد باج‌افزار VolkLocker افشا شد تحقیقات جدید پژوهشگران امنیتی نشان می‌دهد باج‌افزار VolkLocker یک تهدید هدفمند علیه سازمان‌ها و شبکه‌های شرکتی است که بر",
-      "url": "https://t.me/cybershelf/96",
-      "imageUrl": "assets/images/telegram/cybershelf-96.jpg",
-      "publishedAt": "2025-12-15T05:56:33+00:00"
-    },
-    {
-      "title": "🚨 هشدار امنیتی — هکرهای وابسته به کره‌شمالی با آسیب‌پذیری React2Shell بدافزار ج",
-      "excerpt": "🚨 هشدار امنیتی — هکرهای وابسته به کره‌شمالی با آسیب‌پذیری React2Shell بدافزار جدید منتشر کردند گروهی مرتبط با کره‌شمالی پس از افشای ضعف بحرانی React / Next.js (شناسه CVE-2025-5518",
-      "url": "https://t.me/cybershelf/95",
-      "imageUrl": "assets/images/telegram/cybershelf-95.jpg",
-      "publishedAt": "2025-12-10T07:29:46+00:00"
     }
   ]
 }
