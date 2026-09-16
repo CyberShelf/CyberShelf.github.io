@@ -1,7 +1,28 @@
 {
-  "updatedAt": "2026-09-15T08:38:25.224Z",
+  "updatedAt": "2026-09-16T08:33:01.224Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
+    {
+      "title": "🚨 هشدار امنیتی — بدافزار BambooToken با استفاده از MQTT سیستم‌های Windows و Lin",
+      "excerpt": "🚨 هشدار امنیتی — بدافزار BambooToken با استفاده از MQTT سیستم‌های Windows و Linux را کنترل می‌کند محققان از یک کمپین چندسکویی با بدافزار جدید BambooToken خبر داده‌اند که از پروتکل",
+      "url": "https://t.me/cybershelf/105",
+      "imageUrl": "assets/images/telegram/cybershelf-105.jpg",
+      "publishedAt": "2026-09-16T05:22:16+00:00"
+    },
+    {
+      "title": "🚨 هشدار امنیتی — بدافزار BambooToken با استفاده از MQTT سیستم‌های Windows و Lin",
+      "excerpt": "🚨 هشدار امنیتی — بدافزار BambooToken با استفاده از MQTT سیستم‌های Windows و Linux را کنترل می‌کند محققان از یک کمپین چندسکویی با بدافزار جدید BambooToken خبر داده‌اند که از پروتکل",
+      "url": "https://t.me/cybershelf/104",
+      "imageUrl": "assets/images/telegram/cybershelf-104.jpg",
+      "publishedAt": "2026-09-16T05:21:59+00:00"
+    },
+    {
+      "title": "🚨 هشدار امنیتی — مهاجمان روترهای MikroTik را بدون احراز هویت هک می‌کنند مهاجمان",
+      "excerpt": "🚨 هشدار امنیتی — مهاجمان روترهای MikroTik را بدون احراز هویت هک می‌کنند مهاجمان با سوءاستفاده از سرویس SSH در دسترس از اینترنت ، برخی روترهای MikroTik را هدف قرار داده و بدون نیاز",
+      "url": "https://t.me/cybershelf/103",
+      "imageUrl": "assets/images/telegram/cybershelf-103.jpg",
+      "publishedAt": "2026-09-07T04:59:54+00:00"
+    },
     {
       "title": "🚨 هشدار امنیتی — حملات فعال به Magento و Adobe Commerce با سوءاستفاده از آسیب‌پ",
       "excerpt": "🚨 هشدار امنیتی — حملات فعال به Magento و Adobe Commerce با سوءاستفاده از آسیب‌پذیری Zero-Day مهاجمان از یک آسیب‌پذیری اصلاح‌نشده و بدون نیاز به احراز هویت در Magento Open Source و",
@@ -22,27 +43,6 @@
       "url": "https://t.me/cybershelf/100",
       "imageUrl": "assets/images/telegram/cybershelf-100.jpg",
       "publishedAt": "2026-01-04T07:27:30+00:00"
-    },
-    {
-      "title": "🚨 هشدار امنیتی — نسخه‌ی تغییر‌ یافته بدافزار Shai-Hulud با ماژول‌های جدید دیده ",
-      "excerpt": "🚨 هشدار امنیتی — نسخه‌ی تغییر‌ یافته بدافزار Shai-Hulud با ماژول‌های جدید دیده شد پژوهشگران امنیتی کشف کرده‌اند که نمونه‌ای جدید و توسعه‌ یافته از بدافزار Shai-Hulud در حال گردش ا",
-      "url": "https://t.me/cybershelf/99",
-      "imageUrl": "assets/images/telegram/cybershelf-99.jpg",
-      "publishedAt": "2026-01-04T07:21:49+00:00"
-    },
-    {
-      "title": "🚨 اخبار مهم امنیت سایبری و سیاست‌های بین‌الملل — آمریکا تحریم‌ها را علیه ۳ نفر ",
-      "excerpt": "🚨 اخبار مهم امنیت سایبری و سیاست‌های بین‌الملل — آمریکا تحریم‌ها را علیه ۳ نفر مرتبط با جاسوس‌افزار Predator برداشته است وزارت خزانه‌داری ایالات متحده به‌طور غیرمنتظره تحریم‌ها را",
-      "url": "https://t.me/cybershelf/98",
-      "imageUrl": "assets/images/telegram/cybershelf-98.jpg",
-      "publishedAt": "2026-01-04T07:18:21+00:00"
-    },
-    {
-      "title": "🚨 هشدار امنیتی – بدافزارهای اندروید اکنون از دراپرها تا سرقت SMS و قابلیت‌های ر",
-      "excerpt": "🚨 هشدار امنیتی – بدافزارهای اندروید اکنون از دراپرها تا سرقت SMS و قابلیت‌های ریموت کنترل یکپارچه شده‌اند تحقیق جدید نشان می‌دهد که عملیات بدافزار اندروید (Android malware operati",
-      "url": "https://t.me/cybershelf/97",
-      "imageUrl": "assets/images/telegram/cybershelf-97.jpg",
-      "publishedAt": "2025-12-22T07:51:06+00:00"
     }
   ]
 }
