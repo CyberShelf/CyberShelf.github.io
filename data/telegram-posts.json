@@ -1,7 +1,28 @@
 {
-  "updatedAt": "2026-09-21T08:53:25.254Z",
+  "updatedAt": "2026-09-22T08:30:00.829Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
+    {
+      "title": "🚨 هشدار امنیتی — حملات ClickFix بدافزار ChainScript RAT را منتشر می‌کنند مهاجما",
+      "excerpt": "🚨 هشدار امنیتی — حملات ClickFix بدافزار ChainScript RAT را منتشر می‌کنند مهاجمان با استفاده از ترفندهای ClickFix ، کاربران ویندوز را به اجرای یک نصب‌کننده جعلی هدایت می‌کنند که بد",
+      "url": "https://t.me/cybershelf/111",
+      "imageUrl": "assets/images/telegram/cybershelf-111.jpg",
+      "publishedAt": "2026-09-22T06:25:54+00:00"
+    },
+    {
+      "title": "🚨 هشدار امنیتی — گروه Jade Sleet یک شرکت خدمات IT در هند را با بدافزارهای macOS",
+      "excerpt": "🚨 هشدار امنیتی — گروه Jade Sleet یک شرکت خدمات IT در هند را با بدافزارهای macOS هدف قرار داد گروه منتسب به کره شمالی Jade Sleet با سوءاستفاده از یک مهندس DevOps، یک شرکت خدمات فنا",
+      "url": "https://t.me/cybershelf/110",
+      "imageUrl": "assets/images/telegram/cybershelf-110.jpg",
+      "publishedAt": "2026-09-22T06:25:38+00:00"
+    },
+    {
+      "title": "🚨 هشدار امنیتی — هوش مصنوعی Gemini در جریان یک تست امنیتی وارد سیستم‌های واقعی ",
+      "excerpt": "🚨 هشدار امنیتی — هوش مصنوعی Gemini در جریان یک تست امنیتی وارد سیستم‌های واقعی شد مدل Gemini گوگل در جریان یک ارزیابی امنیتی در ماه مه ۲۰۲۶، به‌دلیل اشتباه در نام‌گذاری دامنه آزما",
+      "url": "https://t.me/cybershelf/109",
+      "imageUrl": "assets/images/telegram/cybershelf-109.jpg",
+      "publishedAt": "2026-09-19T08:13:42+00:00"
+    },
     {
       "title": "🚨 هشدار امنیتی — CISA سه آسیب‌پذیری Linux Kernel را به‌دلیل سوءاستفاده فعال به ",
       "excerpt": "🚨 هشدار امنیتی — CISA سه آسیب‌پذیری Linux Kernel را به‌دلیل سوءاستفاده فعال به فهرست KEV اضافه کرد CISA سه آسیب‌پذیری در Linux Kernel را که در حملات واقعی مورد سوءاستفاده قرار گرف",
@@ -22,27 +43,6 @@
       "url": "https://t.me/cybershelf/106",
       "imageUrl": "assets/images/telegram/cybershelf-106.jpg",
       "publishedAt": "2026-09-16T05:22:58+00:00"
-    },
-    {
-      "title": "🚨 هشدار امنیتی — بدافزار BambooToken با استفاده از MQTT سیستم‌های Windows و Lin",
-      "excerpt": "🚨 هشدار امنیتی — بدافزار BambooToken با استفاده از MQTT سیستم‌های Windows و Linux را کنترل می‌کند محققان از یک کمپین چندسکویی با بدافزار جدید BambooToken خبر داده‌اند که از پروتکل",
-      "url": "https://t.me/cybershelf/105",
-      "imageUrl": "assets/images/telegram/cybershelf-105.jpg",
-      "publishedAt": "2026-09-16T05:22:16+00:00"
-    },
-    {
-      "title": "🚨 هشدار امنیتی — بدافزار BambooToken با استفاده از MQTT سیستم‌های Windows و Lin",
-      "excerpt": "🚨 هشدار امنیتی — بدافزار BambooToken با استفاده از MQTT سیستم‌های Windows و Linux را کنترل می‌کند محققان از یک کمپین چندسکویی با بدافزار جدید BambooToken خبر داده‌اند که از پروتکل",
-      "url": "https://t.me/cybershelf/104",
-      "imageUrl": "assets/images/telegram/cybershelf-104.jpg",
-      "publishedAt": "2026-09-16T05:21:59+00:00"
-    },
-    {
-      "title": "🚨 هشدار امنیتی — مهاجمان روترهای MikroTik را بدون احراز هویت هک می‌کنند مهاجمان",
-      "excerpt": "🚨 هشدار امنیتی — مهاجمان روترهای MikroTik را بدون احراز هویت هک می‌کنند مهاجمان با سوءاستفاده از سرویس SSH در دسترس از اینترنت ، برخی روترهای MikroTik را هدف قرار داده و بدون نیاز",
-      "url": "https://t.me/cybershelf/103",
-      "imageUrl": "assets/images/telegram/cybershelf-103.jpg",
-      "publishedAt": "2026-09-07T04:59:54+00:00"
     }
   ]
 }
