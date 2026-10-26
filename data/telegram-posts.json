@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-10-25T08:21:59.842Z",
+  "updatedAt": "2026-10-26T08:50:35.208Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
     {
-      "title": "🚀 🔥 ریپوی ترند GitHub — ایجنت هوش مصنوعی متن‌باز و آماده به کار پروژه cindy یک",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — ایجنت هوش مصنوعی متن‌باز و آماده به کار پروژه cindy یک ایجنت هوش مصنوعی متن‌باز است که به صورت آماده به کار ارائه شده و شعار آن تبدیل ایده‌ها به عمل است. ",
-      "url": "https://t.me/cybershelf/968",
+      "title": "🚀 💻 خبر برنامه‌نویسی — انتشار اصلاحیه برای دو آسیب‌پذیری بحرانی RCE در PHP پرو",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — انتشار اصلاحیه برای دو آسیب‌پذیری بحرانی RCE در PHP پروژه PHP نسخه‌های جدیدی را برای رفع دو آسیب‌پذیری بحرانی اجرای کد از راه دور (RCE) که مورد بهره‌برداری",
+      "url": "https://t.me/cybershelf/979",
+      "imageUrl": "assets/images/telegram/cybershelf-979.jpg",
+      "publishedAt": "2026-10-25T21:01:06+00:00"
+    },
+    {
+      "title": "🚀 💻 خبر برنامه‌نویسی — معرفی پروژه TorchTPU توسط گوگل و Meta در کنفرانس PyTorc",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — معرفی پروژه TorchTPU توسط گوگل و Meta در کنفرانس PyTorch گوگل و Meta در کنفرانس PyTorch 2026 از پروژه TorchTPU به عنوان بک‌اند بومی PyTorch برای TPUهای گوگ",
+      "url": "https://t.me/cybershelf/978",
+      "imageUrl": "assets/images/telegram/cybershelf-978.jpg",
+      "publishedAt": "2026-10-25T21:01:03+00:00"
+    },
+    {
+      "title": "🚀 💻 خبر برنامه‌نویسی — ابزار ML Drift گوگل برای اجرای هوش مصنوعی روی دستگاه گو",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — ابزار ML Drift گوگل برای اجرای هوش مصنوعی روی دستگاه گوگل ابزار متن‌باز ML Drift را برای بهبود پردازش هوش مصنوعی و یادگیری ماشین بر روی انواع GPUهای دستگاه",
+      "url": "https://t.me/cybershelf/977",
+      "imageUrl": "https://cdn4.telesco.pe/file/EjZwf3zLb0aXCn2HH8Ebzr9_EFZpEZEgEQOH47-LqB2Z35-DvBrqaRGbOixa5bDGiO4NqFwUIZWD1L_uZh2lDqN3dAmqbsvh7rncM-OLsBmpmlDovT0o_8g2faeRnZMbVMxyDaUXItPeRbEoIBDgMVKHdONGPyPe_8ZhJuPsCyA49YxESbo7CY6dSU2dENPl35JQMhdrwuwJJ9PtXcxCohadj60WCfKLiXRPWtOsyT5fwIFJ5YvlmkcmXkdY4LN9IDj1Au0VjkHgpqQgaquDPU2Jjx0d9sto5J7tFUVksbi_1gF6NQJvbyvDDcInSk6hNN03AFZcdCOWeJi055H6jw.jpg",
+      "publishedAt": "2026-10-25T21:01:01+00:00"
+    },
+    {
+      "title": "🚀 🚨 هشدار امنیتی — آسیب‌پذیری‌های اصلاح‌نشده در Tailscale SSH و خطر دسترسی روت",
+      "excerpt": "🚀 🚨 هشدار امنیتی — آسیب‌پذیری‌های اصلاح‌نشده در Tailscale SSH و خطر دسترسی روت به سایر سرورها بر اساس یافته‌های یک پژوهشگر امنیت، یک دستگاه هک‌شده در شبکه Tailscale می‌تواند برای",
+      "url": "https://t.me/cybershelf/976",
+      "imageUrl": "assets/images/telegram/cybershelf-976.jpg",
+      "publishedAt": "2026-10-25T20:01:03+00:00"
+    },
+    {
+      "title": "🚀 🚨 هشدار امنیتی — سوءاستفاده از آسیب‌پذیری‌های PHP2Shell و هوش مصنوعی علیه نه",
+      "excerpt": "🚀 🚨 هشدار امنیتی — سوءاستفاده از آسیب‌پذیری‌های PHP2Shell و هوش مصنوعی علیه نهادهای دولتی گروه‌های تهدید با استفاده از پلتفرم‌های هوش مصنوعی عامل‌محور، فعالیت‌های پس از بهره‌بردا",
+      "url": "https://t.me/cybershelf/975",
+      "imageUrl": "assets/images/telegram/cybershelf-975.jpg",
+      "publishedAt": "2026-10-25T20:01:01+00:00"
+    },
+    {
+      "title": "🚀 🔥 ریپوی ترند GitHub — ابزار claude-seo برای بهینه‌سازی موتور جستجو در Claude",
+      "excerpt": "🚀 🔥 ریپوی ترند GitHub — ابزار claude-seo برای بهینه‌سازی موتور جستجو در Claude Code ابزار claude-seo یک مهارت سئو یونیورسال برای Claude Code است که شامل ۲۶ زیرمهارت و ۱۹ زیرعامل ",
+      "url": "https://t.me/cybershelf/974",
       "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-10-24T23:01:03+00:00"
-    },
-    {
-      "title": "🚀 🔥 ریپوی ترند GitHub — مخزن منابع دانلود کتاب‌های الکترونیکی این پروژه یک مخز",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — مخزن منابع دانلود کتاب‌های الکترونیکی این پروژه یک مخزن برای جمع‌آوری لینک‌های دانلود انواع کتاب‌های الکترونیکی در دسته‌بندی‌های مختلف است. این مجموعه شام",
-      "url": "https://t.me/cybershelf/967",
-      "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-10-24T23:01:01+00:00"
-    },
-    {
-      "title": "🚀 🔥 ریپوی ترند GitHub — ابزار خط فرمان گوگل gemini-cli پروژه google-gemini/gem",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — ابزار خط فرمان گوگل gemini-cli پروژه google-gemini/gemini-cli یک عامل هوش مصنوعی متن‌باز است که قدرت مدل Gemini را مستقیماً به محیط ترمینال می‌آورد. این ا",
-      "url": "https://t.me/cybershelf/966",
-      "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-10-24T19:01:07+00:00"
-    },
-    {
-      "title": "🚀 🔥 ریپوی ترند GitHub — ربات اردک دوپای کوچک microduck پروژه pollen-robotics/m",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — ربات اردک دوپای کوچک microduck پروژه pollen-robotics/microduck یک ربات اردک دوپای کوچک است که با زبان Rust توسعه یافته است. این پروژه توانسته است در گیت‌ه",
-      "url": "https://t.me/cybershelf/965",
-      "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-10-24T19:01:05+00:00"
-    },
-    {
-      "title": "🚀 💻 خبر برنامه‌نویسی — بهینه‌سازی کدهای Python با کمک Gemini 4 Argon شرکت Goog",
-      "excerpt": "🚀 💻 خبر برنامه‌نویسی — بهینه‌سازی کدهای Python با کمک Gemini 4 Argon شرکت Google توضیح داد که چگونه اجرای ۱۱ ساعته و خودکار مدل Gemini 4 Argon توانسته است کدهای Python پروژه Agen",
-      "url": "https://t.me/cybershelf/964",
-      "imageUrl": "assets/images/telegram/cybershelf-964.jpg",
-      "publishedAt": "2026-10-24T17:01:04+00:00"
-    },
-    {
-      "title": "🚀 🚨 هشدار امنیتی — آسیب‌پذیری خطرناک در کتابخانه Brotli؛ خطر اجرای کد از راه د",
-      "excerpt": "🚀 🚨 هشدار امنیتی — آسیب‌پذیری خطرناک در کتابخانه Brotli؛ خطر اجرای کد از راه دور یک آسیب‌پذیری فساد حافظه در کتابخانه رمزگشایی Brotli گوگل، برنامه‌های متعددی از جمله Bun و پکیج‌ه",
-      "url": "https://t.me/cybershelf/963",
-      "imageUrl": "assets/images/telegram/cybershelf-963.jpg",
-      "publishedAt": "2026-10-24T16:01:03+00:00"
+      "publishedAt": "2026-10-25T15:01:03+00:00"
     }
   ]
 }
