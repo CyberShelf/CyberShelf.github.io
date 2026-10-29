@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-10-28T09:36:22.209Z",
+  "updatedAt": "2026-10-29T09:54:26.141Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
     {
-      "title": "🚀 🚨 هشدار امنیتی — انتشار به‌روزرسانی امنیتی Tailscale برای رفع نواقص سرور SSH",
-      "excerpt": "🚀 🚨 هشدار امنیتی — انتشار به‌روزرسانی امنیتی Tailscale برای رفع نواقص سرور SSH شرکت Tailscale نسخه 1.104.4 را برای رفع آسیب‌پذیری‌های موجود در سرور SSH داخلی خود منتشر کرد. این ن",
-      "url": "https://t.me/cybershelf/1047",
-      "imageUrl": "assets/images/telegram/cybershelf-1047.jpg",
-      "publishedAt": "2026-10-28T08:01:12+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — معرفی Web Search API توسط Cloudflare برای برنامه‌های هو",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — معرفی Web Search API توسط Cloudflare برای برنامه‌های هوش مصنوعی شرکت Cloudflare نسخه بتای رابط برنامه‌نویسی Web Search API را از طریق AI Gateway عرضه کرده ",
+      "url": "https://t.me/cybershelf/1085",
+      "imageUrl": "assets/images/telegram/cybershelf-1085.jpg",
+      "publishedAt": "2026-10-29T09:01:06+00:00"
     },
     {
-      "title": "🚀 🚨 هشدار امنیتی — افشای جزئیات آسیب‌پذیری زنجیره‌ای صفرروزی Oracle PeopleSoft",
-      "excerpt": "🚀 🚨 هشدار امنیتی — افشای جزئیات آسیب‌پذیری زنجیره‌ای صفرروزی Oracle PeopleSoft توسط ShinyHunters پژوهشگران امنیتی فاش کردند که آسیب‌پذیری بحرانی Oracle PeopleSoft که گروه ShinyHu",
-      "url": "https://t.me/cybershelf/1046",
-      "imageUrl": "assets/images/telegram/cybershelf-1046.jpg",
-      "publishedAt": "2026-10-28T08:01:10+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — بهره‌برداری هکرهای مرتبط با چین از آسیب‌پذیری روز صفرم VMwa",
+      "excerpt": "🚀 🚨 هشدار امنیتی — بهره‌برداری هکرهای مرتبط با چین از آسیب‌پذیری روز صفرم VMware ESX برای پنهان‌سازی ردپا آژانس امنیت سایبری و زیرساخت آمریکا آسیب‌پذیری امنیتی محصولات Broadcom V",
+      "url": "https://t.me/cybershelf/1084",
+      "imageUrl": "assets/images/telegram/cybershelf-1084.jpg",
+      "publishedAt": "2026-10-29T08:01:12+00:00"
     },
     {
-      "title": "🚀 🚨 هشدار امنیتی — حملات PolyShell به Adobe Commerce و افزودن آسیب‌پذیری‌های ج",
-      "excerpt": "🚀 🚨 هشدار امنیتی — حملات PolyShell به Adobe Commerce و افزودن آسیب‌پذیری‌های جدید به لیست KEV آژانس امنیت سایبری و زیرساخت ایالات متحده (CISA) دو آسیب‌پذیری جدید شامل یک نقص در A",
-      "url": "https://t.me/cybershelf/1045",
-      "imageUrl": "assets/images/telegram/cybershelf-1045.jpg",
-      "publishedAt": "2026-10-28T08:01:07+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — سوءاستفاده مهاجمان سایبری از آسیب‌پذیری‌های PHP2Shell در تج",
+      "excerpt": "🚀 🚨 هشدار امنیتی — سوءاستفاده مهاجمان سایبری از آسیب‌پذیری‌های PHP2Shell در تجهیزات Palo Alto Networks شرکت Palo Alto Networks هشدار داد که مهاجمان سایبری در حال سوءاستفاده فعال ",
+      "url": "https://t.me/cybershelf/1083",
+      "imageUrl": "assets/images/telegram/cybershelf-1083.jpg",
+      "publishedAt": "2026-10-29T08:01:10+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — طرح ایالت دلاور برای اداره کامل کسب‌وکارها توسط ایجنت‌های هو",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — طرح ایالت دلاور برای اداره کامل کسب‌وکارها توسط ایجنت‌های هوش مصنوعی طرح جدیدی در ایالت دلاور آمریکا به ایجنت‌های هوش مصنوعی اجازه می‌دهد تا به‌صورت کامل کسب‌وک",
-      "url": "https://t.me/cybershelf/1044",
-      "imageUrl": "assets/images/telegram/cybershelf-1044.jpg",
-      "publishedAt": "2026-10-28T06:01:09+00:00"
+      "title": "🚀 ⚡ خبر تکنولوژی — اقدام دولت آمریکا علیه ممنوعیت فعالیت Kalshi در یوتا دولت ای",
+      "excerpt": "🚀 ⚡ خبر تکنولوژی — اقدام دولت آمریکا علیه ممنوعیت فعالیت Kalshi در یوتا دولت ایالات متحده از ایالت یوتا به دلیل ممنوعیت کامل فعالیت پلتفرم پیش‌بینی Kalshi شکایت کرد. این آژانس فدر",
+      "url": "https://t.me/cybershelf/1082",
+      "imageUrl": "assets/images/telegram/cybershelf-1082.jpg",
+      "publishedAt": "2026-10-29T06:01:08+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — هشدارهای عرضه عمومی سهام Anthropic درباره ریسک‌های هوش مصنوع",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — هشدارهای عرضه عمومی سهام Anthropic درباره ریسک‌های هوش مصنوعی شرکت Anthropic در مستناد عرضه عمومی سهام خود به خطرات بالقوه هوش مصنوعی اشاره کرده است. این موارد ",
-      "url": "https://t.me/cybershelf/1043",
-      "imageUrl": "assets/images/telegram/cybershelf-1043.jpg",
-      "publishedAt": "2026-10-28T06:01:07+00:00"
+      "title": "🚀 ⚡ خبر تکنولوژی — امید تازه برای از سرگیری توریسم فضایی در آریزونا یک وسیله نق",
+      "excerpt": "🚀 ⚡ خبر تکنولوژی — امید تازه برای از سرگیری توریسم فضایی در آریزونا یک وسیله نقلیه جدید مربوط به گردشگری فضایی وارد باندی در ایالت آریزونا شد. این رویداد گامی مهم برای بازگشت پروا",
+      "url": "https://t.me/cybershelf/1081",
+      "imageUrl": "assets/images/telegram/cybershelf-1081.jpg",
+      "publishedAt": "2026-10-29T06:01:04+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — آسیب‌پذیری اجرای کد در فریم‌ورک UEFI یک نقص بحرانی در کد EDK",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — آسیب‌پذیری اجرای کد در فریم‌ورک UEFI یک نقص بحرانی در کد EDK2 به مهاجمان اجازه می‌دهد تا در مراحل اولیه فرآیند بوت سیستم اقدام به اجرای کد کنند. این آسیب‌پذیری ",
-      "url": "https://t.me/cybershelf/1042",
-      "imageUrl": "assets/images/telegram/cybershelf-1042.jpg",
-      "publishedAt": "2026-10-28T06:01:04+00:00"
+      "title": "🚀 ⚡ خبر تکنولوژی — بررسی اولیه مک‌بوک پرو با صفحه نمایش لمسی: پنل OLED کیفیت عا",
+      "excerpt": "🚀 ⚡ خبر تکنولوژی — بررسی اولیه مک‌بوک پرو با صفحه نمایش لمسی: پنل OLED کیفیت عالی دارد شرکت Apple نسخه جدید مک‌بوک پرو را با صفحه نمایش لمسی و پنل OLED مجهز کرده است. این تغییر بص",
+      "url": "https://t.me/cybershelf/1080",
+      "imageUrl": "assets/images/telegram/cybershelf-1080.jpg",
+      "publishedAt": "2026-10-29T06:01:02+00:00"
     }
   ]
 }
