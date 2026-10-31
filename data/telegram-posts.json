@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-10-30T09:57:46.406Z",
+  "updatedAt": "2026-10-31T09:34:48.669Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
     {
-      "title": "🚀 🚨 هشدار امنیتی — افزودن آسیب‌پذیری‌های بحرانی GitLab و Cisco به فهرست KEV آژ",
-      "excerpt": "🚀 🚨 هشدار امنیتی — افزودن آسیب‌پذیری‌های بحرانی GitLab و Cisco به فهرست KEV آژانس CISA آژانس امنیت سایبری و زیرساخت آمریکا (CISA) دو آسیب‌پذیری امنیتی جدید مربوط به نرم‌افزارهای ",
-      "url": "https://t.me/cybershelf/1120",
-      "imageUrl": "assets/images/telegram/cybershelf-1120.jpg",
-      "publishedAt": "2026-10-30T08:01:04+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — عرضه نسخه پیش‌نمایش عمومی شبیه‌ساز LocalStack برای Azur",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — عرضه نسخه پیش‌نمایش عمومی شبیه‌ساز LocalStack برای Azure ابزار LocalStack شبیه‌ساز Azure خود را به صورت پیش‌نمایش عمومی رایگان عرضه کرده است. این ابزار امک",
+      "url": "https://t.me/cybershelf/1153",
+      "imageUrl": "assets/images/telegram/cybershelf-1153.jpg",
+      "publishedAt": "2026-10-31T09:01:06+00:00"
     },
     {
-      "title": "🚀 🚨 هشدار امنیتی — حمله سایبری به صرافی Binance و آسیب ۶.۳ میلیارد دلاری بزرگت",
-      "excerpt": "🚀 🚨 هشدار امنیتی — حمله سایبری به صرافی Binance و آسیب ۶.۳ میلیارد دلاری بزرگترین صرافی رمزارز جهان یعنی Binance از وقوع یک حادثه امنیتی خبر داد که حدود ۶.۳ میلیارد دلار از دارای",
-      "url": "https://t.me/cybershelf/1119",
-      "imageUrl": "assets/images/telegram/cybershelf-1119.jpg",
-      "publishedAt": "2026-10-30T08:01:02+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — شناسایی بیش از ۵۰۰ آسیب‌پذیری XSS توسط عامل هوش مصنوعی ",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — شناسایی بیش از ۵۰۰ آسیب‌پذیری XSS توسط عامل هوش مصنوعی Google شرکت Google مقاله‌ای منتشر کرده که نشان می‌دهد عامل امنیتی مبتنی بر هوش مصنوعی این شرکت به نا",
+      "url": "https://t.me/cybershelf/1152",
+      "imageUrl": "assets/images/telegram/cybershelf-1152.jpg",
+      "publishedAt": "2026-10-31T09:01:04+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — تغییرات جدید در Reddit؛ دسترسی به محتوا نیازمند ورود به حساب",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — تغییرات جدید در Reddit؛ دسترسی به محتوا نیازمند ورود به حساب کاربری می‌شود مدیرعامل Reddit اعلام کرد که این پلتفرم در حال حرکت به سمت تجربه‌ای است که تنها با ور",
-      "url": "https://t.me/cybershelf/1118",
-      "imageUrl": "assets/images/telegram/cybershelf-1118.jpg",
-      "publishedAt": "2026-10-30T06:01:27+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — A Shared ChatGPT Link Could Run Attacker Code in Your Sessi",
+      "excerpt": "🚀 🚨 هشدار امنیتی — A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats A malicious ChatGPT share link could run an attacker's code in the logged-",
+      "url": "https://t.me/cybershelf/1151",
+      "imageUrl": "assets/images/telegram/cybershelf-1151.jpg",
+      "publishedAt": "2026-10-31T08:01:11+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — رفع یکی از مشکلات آزاردهنده Windows 11 همزمان با کاهش درآمد ",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — رفع یکی از مشکلات آزاردهنده Windows 11 همزمان با کاهش درآمد سخت‌افزاری Microsoft شرکت Microsoft در به‌روزرسانی جدید Windows 11 یکی از مشکلات آزاره‌دهنده کاربران",
-      "url": "https://t.me/cybershelf/1117",
-      "imageUrl": "assets/images/telegram/cybershelf-1117.jpg",
-      "publishedAt": "2026-10-30T02:01:22+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks ",
+      "excerpt": "🚀 🚨 هشدار امنیتی — Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38% Threat actors are launching about 8,226 network-layer distributed denial-of-service (D",
+      "url": "https://t.me/cybershelf/1150",
+      "imageUrl": "assets/images/telegram/cybershelf-1150.jpg",
+      "publishedAt": "2026-10-31T08:01:08+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — امتناع بازرس پنتاگون از تحقیق درباره اختلالات Starlink در او",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — امتناع بازرس پنتاگون از تحقیق درباره اختلالات Starlink در اوکراین بازرس کل پنتاگون درخواست سناتورهای دموکرات و جمهوری‌خواه برای تحقیق درباره کندی یا اختلال در ع",
-      "url": "https://t.me/cybershelf/1116",
-      "imageUrl": "assets/images/telegram/cybershelf-1116.jpg",
-      "publishedAt": "2026-10-30T02:01:19+00:00"
+      "title": "🚀 ⚡ خبر تکنولوژی — یادبود پاتریک استوارت توسط تیم رسانه Ars Technica اعضای تیم ",
+      "excerpt": "🚀 ⚡ خبر تکنولوژی — یادبود پاتریک استوارت توسط تیم رسانه Ars Technica اعضای تیم Ars Technica یاد و خاطره پاتریک استوارت را گرامی داشتند. او برای شمار زیادی از مردم همواره یادآور نق",
+      "url": "https://t.me/cybershelf/1149",
+      "imageUrl": "assets/images/telegram/cybershelf-1149.jpg",
+      "publishedAt": "2026-10-31T06:01:08+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — تهدید امنیت ملی آمریکا توسط واردات ربات رئیس‌جمهور ایالات مت",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — تهدید امنیت ملی آمریکا توسط واردات ربات رئیس‌جمهور ایالات متحده واردات ربات‌های صنعتی خارجی را به‌عنوان تهدیدی برای امنیت ملی اعلام کرد. این تصمیم شامل دستور بر",
-      "url": "https://t.me/cybershelf/1115",
-      "imageUrl": "assets/images/telegram/cybershelf-1115.jpg",
-      "publishedAt": "2026-10-30T02:01:15+00:00"
+      "title": "🚀 ⚡ خبر تکنولوژی — ابهام در آینده هواپیمای مافوق صوت با تغییر تمرکز شرکت به دیت",
+      "excerpt": "🚀 ⚡ خبر تکنولوژی — ابهام در آینده هواپیمای مافوق صوت با تغییر تمرکز شرکت به دیتاسنترهای هوش مصنوعی پروژه هواپیمای مسافربری مافوق صوت شرکت Boom ممکن است با تاخیر مواجه شود. این شرک",
+      "url": "https://t.me/cybershelf/1148",
+      "imageUrl": "assets/images/telegram/cybershelf-1148.jpg",
+      "publishedAt": "2026-10-31T06:01:05+00:00"
     }
   ]
 }
