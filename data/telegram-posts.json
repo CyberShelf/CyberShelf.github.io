@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-10-31T09:34:48.669Z",
+  "updatedAt": "2026-11-01T10:24:17.940Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
     {
-      "title": "🚀 💻 خبر برنامه‌نویسی — عرضه نسخه پیش‌نمایش عمومی شبیه‌ساز LocalStack برای Azur",
-      "excerpt": "🚀 💻 خبر برنامه‌نویسی — عرضه نسخه پیش‌نمایش عمومی شبیه‌ساز LocalStack برای Azure ابزار LocalStack شبیه‌ساز Azure خود را به صورت پیش‌نمایش عمومی رایگان عرضه کرده است. این ابزار امک",
-      "url": "https://t.me/cybershelf/1153",
-      "imageUrl": "assets/images/telegram/cybershelf-1153.jpg",
-      "publishedAt": "2026-10-31T09:01:06+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — معرفی ابزار متن‌باز File Mover Express توسط AWS برای ان",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — معرفی ابزار متن‌باز File Mover Express توسط AWS برای انتقال فایل به S3 شرکت AWS ابزار جدیدی به نام File Mover Express را تحت مجوز Apache 2.0 برای انتقال حج",
+      "url": "https://t.me/cybershelf/1171",
+      "imageUrl": "https://cdn4.telesco.pe/file/HI1yy15P3snOdRtrfJbXkaRS_AflNewA4EDpdflfGqCW8-9jY0lBrWBsiXLFpdbsNXqZdmTI_Zss2iMacnVY9F-Nwugz485AMWEM-d4dsIch05SoSN93dIjs93S3TyislZZnzzjW-sww2HdFFQSHer5b8Ymbz_X4XupNw43QdYOq46B614OwRxjmgYT36cTjkGLEpV8TFvdnqXGMfP6n2j_9uvwmabKFqU4sne_WC8honirnxhAe10gpw-8jfNpuMV0jpiTLIuUvy9NchL1JboBfFnFhdDEVl-4tbwryEVuj1WlNkZytb282mEE__TLk8KpLFWC6I4IUtavryX3Umg.jpg",
+      "publishedAt": "2026-11-01T09:01:04+00:00"
     },
     {
-      "title": "🚀 💻 خبر برنامه‌نویسی — شناسایی بیش از ۵۰۰ آسیب‌پذیری XSS توسط عامل هوش مصنوعی ",
-      "excerpt": "🚀 💻 خبر برنامه‌نویسی — شناسایی بیش از ۵۰۰ آسیب‌پذیری XSS توسط عامل هوش مصنوعی Google شرکت Google مقاله‌ای منتشر کرده که نشان می‌دهد عامل امنیتی مبتنی بر هوش مصنوعی این شرکت به نا",
-      "url": "https://t.me/cybershelf/1152",
-      "imageUrl": "assets/images/telegram/cybershelf-1152.jpg",
-      "publishedAt": "2026-10-31T09:01:04+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — سرقت ۲.۷ میلیون دلاری از معامله‌گران Polymarket با اسکریپت ",
+      "excerpt": "🚀 🚨 هشدار امنیتی — سرقت ۲.۷ میلیون دلاری از معامله‌گران Polymarket با اسکریپت آلوده کد مخربی روی وب‌سایت پیش‌بینی Polymarket باعث شد پوزیشن‌های برخی معامله‌گران فروخته شده و سرما",
+      "url": "https://t.me/cybershelf/1170",
+      "imageUrl": "assets/images/telegram/cybershelf-1170.jpg",
+      "publishedAt": "2026-11-01T08:01:06+00:00"
     },
     {
-      "title": "🚀 🚨 هشدار امنیتی — A Shared ChatGPT Link Could Run Attacker Code in Your Sessi",
-      "excerpt": "🚀 🚨 هشدار امنیتی — A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats A malicious ChatGPT share link could run an attacker's code in the logged-",
-      "url": "https://t.me/cybershelf/1151",
-      "imageUrl": "assets/images/telegram/cybershelf-1151.jpg",
-      "publishedAt": "2026-10-31T08:01:11+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — حمله بدافزار NetamLoader به سیستم‌های دولتی ویندوز ۱۰ در آس",
+      "excerpt": "🚀 🚨 هشدار امنیتی — حمله بدافزار NetamLoader به سیستم‌های دولتی ویندوز ۱۰ در آسیا پژوهشگران امنیت سایبری جزئیات یک زنجیره آلودگی پیشرفته را کشف کردند که سازمان‌های دولتی در آسیا ر",
+      "url": "https://t.me/cybershelf/1169",
+      "imageUrl": "assets/images/telegram/cybershelf-1169.jpg",
+      "publishedAt": "2026-11-01T08:01:04+00:00"
     },
     {
-      "title": "🚀 🚨 هشدار امنیتی — Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks ",
-      "excerpt": "🚀 🚨 هشدار امنیتی — Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38% Threat actors are launching about 8,226 network-layer distributed denial-of-service (D",
-      "url": "https://t.me/cybershelf/1150",
-      "imageUrl": "assets/images/telegram/cybershelf-1150.jpg",
-      "publishedAt": "2026-10-31T08:01:08+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — نقش گروه هکری وابسته به کره شمالی در سرقت بزرگ رمزارز اف‌بی",
+      "excerpt": "🚀 🚨 هشدار امنیتی — نقش گروه هکری وابسته به کره شمالی در سرقت بزرگ رمزارز اف‌بی‌آی رسماً اعلام کرد که گروه هکری TraderTraitor وابسته به کره شمالی مسئول سرقت بیش از ۶ میلیارد دلار ",
+      "url": "https://t.me/cybershelf/1168",
+      "imageUrl": "assets/images/telegram/cybershelf-1168.jpg",
+      "publishedAt": "2026-11-01T08:01:02+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — یادبود پاتریک استوارت توسط تیم رسانه Ars Technica اعضای تیم ",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — یادبود پاتریک استوارت توسط تیم رسانه Ars Technica اعضای تیم Ars Technica یاد و خاطره پاتریک استوارت را گرامی داشتند. او برای شمار زیادی از مردم همواره یادآور نق",
-      "url": "https://t.me/cybershelf/1149",
-      "imageUrl": "assets/images/telegram/cybershelf-1149.jpg",
-      "publishedAt": "2026-10-31T06:01:08+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — ورود سیستم مدیریت کلید Cloudflare به مرحله بتای بسته شر",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — ورود سیستم مدیریت کلید Cloudflare به مرحله بتای بسته شرکت Cloudflare نسخه بازسازی‌شده پساکوانتومی GeoKey Manager را وارد مرحله بتای بسته کرده است. این سیست",
+      "url": "https://t.me/cybershelf/1167",
+      "imageUrl": "assets/images/telegram/cybershelf-1167.jpg",
+      "publishedAt": "2026-10-31T21:01:04+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — ابهام در آینده هواپیمای مافوق صوت با تغییر تمرکز شرکت به دیت",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — ابهام در آینده هواپیمای مافوق صوت با تغییر تمرکز شرکت به دیتاسنترهای هوش مصنوعی پروژه هواپیمای مسافربری مافوق صوت شرکت Boom ممکن است با تاخیر مواجه شود. این شرک",
-      "url": "https://t.me/cybershelf/1148",
-      "imageUrl": "assets/images/telegram/cybershelf-1148.jpg",
-      "publishedAt": "2026-10-31T06:01:05+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — انتشار نسخه جدید OpenBSD 8.0 نسخه جدید OpenBSD 8.0 با ب",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — انتشار نسخه جدید OpenBSD 8.0 نسخه جدید OpenBSD 8.0 با بهبودهای قابل توجهی در زمینه سازگاری سخت‌افزاری، ارتقای امنیت و توسعه فضای آدرس مجازی عرضه شده است. ا",
+      "url": "https://t.me/cybershelf/1166",
+      "imageUrl": "assets/images/telegram/cybershelf-1166.jpg",
+      "publishedAt": "2026-10-31T21:01:01+00:00"
     }
   ]
 }
