@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-11-07T10:01:29.703Z",
+  "updatedAt": "2026-11-08T10:15:25.041Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — سرقت اطلاعات و توکن‌های مشتریان Chainalysis توسط هکرها شرکت ",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — سرقت اطلاعات و توکن‌های مشتریان Chainalysis توسط هکرها شرکت Chainalysis اعلام کرد که هدف یک حمله سایبری چندجانبه قرار گرفته است. مهاجمان با استفاده از عوامل هوش",
-      "url": "https://t.me/cybershelf/1353",
-      "imageUrl": "assets/images/telegram/cybershelf-1353.jpg",
-      "publishedAt": "2026-11-07T10:01:04+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — مقیاس‌پذیری کنترل پلن D1 در Cloudflare برای میلیون‌ها د",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — مقیاس‌پذیری کنترل پلن D1 در Cloudflare برای میلیون‌ها دیتابیس کلادفلر اخیراً بازطراحی کنترل پلن دیتابیس سرورلس SQL خود یعنی D1 را برای پشتیبانی از میلیون‌ه",
+      "url": "https://t.me/cybershelf/1368",
+      "imageUrl": "assets/images/telegram/cybershelf-1368.jpg",
+      "publishedAt": "2026-11-08T09:01:35+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — نقش گوشته زمین در ایجاد ناهمواری بزرگ دانشمندان در حال بررسی",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — نقش گوشته زمین در ایجاد ناهمواری بزرگ دانشمندان در حال بررسی پدیده‌ای زمین‌شناسی موسوم به ناهمواری بزرگ هستند که در آن رسوبات دوره کامبرین بر روی سنگ‌های بسیار ",
-      "url": "https://t.me/cybershelf/1352",
-      "imageUrl": "assets/images/telegram/cybershelf-1352.jpg",
-      "publishedAt": "2026-11-07T10:01:02+00:00"
-    },
-    {
-      "title": "🚀 💻 خبر برنامه‌نویسی — معرفی Bumpy؛ ابزاری جدید برای مدیریت نسخه و تغییرات در ",
-      "excerpt": "🚀 💻 خبر برنامه‌نویسی — معرفی Bumpy؛ ابزاری جدید برای مدیریت نسخه و تغییرات در مونورپوها ابزار Bumpy یک ابزار مبتنی بر TypeScript با مجوز MIT است که برای مدیریت نسخه و تهیه‌ی گزار",
-      "url": "https://t.me/cybershelf/1351",
-      "imageUrl": "assets/images/telegram/cybershelf-1351.jpg",
-      "publishedAt": "2026-11-07T09:01:02+00:00"
-    },
-    {
-      "title": "🚀 🚨 هشدار امنیتی — افشای کلیدها و رمزعبورها در ریپازیتوری‌های عمومی GitHub توس",
-      "excerpt": "🚀 🚨 هشدار امنیتی — افشای کلیدها و رمزعبورها در ریپازیتوری‌های عمومی GitHub توسط ابزار Claude Code ابزار هوش مصنوعی Claude Code متعلق به شرکت Anthropic ممکن است رمزعبورها و کلیدها",
-      "url": "https://t.me/cybershelf/1350",
-      "imageUrl": "assets/images/telegram/cybershelf-1350.jpg",
-      "publishedAt": "2026-11-07T08:01:04+00:00"
-    },
-    {
-      "title": "🚀 🔥 ریپوی ترند GitHub — پایگاه داده توزیع‌شده etcd پروژه etcd-io/etcd یک انبار",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — پایگاه داده توزیع‌شده etcd پروژه etcd-io/etcd یک انبار کلید-مقدار توزیع‌شده و قابل اعتماد است که برای ذخیره‌سازی داده‌های حیاتی سیستم‌های توزیع‌شده طراحی ",
-      "url": "https://t.me/cybershelf/1349",
+      "title": "🚀 🔥 ریپوی ترند GitHub — ابزار NVIDIA Kubernetes Engine برای مدیریت GPU پروژه n",
+      "excerpt": "🚀 🔥 ریپوی ترند GitHub — ابزار NVIDIA Kubernetes Engine برای مدیریت GPU پروژه nvke یک مدیریت‌پلین برای اجرای Kubernetes مبتنی بر GPU روی سرورهای فلز لخت (bare metal) است. این ابزا",
+      "url": "https://t.me/cybershelf/1367",
       "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-11-07T07:01:03+00:00"
+      "publishedAt": "2026-11-07T23:01:00+00:00"
     },
     {
-      "title": "🚀 🔥 ریپوی ترند GitHub — ابزار خط فرمان Nushell پروژه nushell/nushell یک پوسته ",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — ابزار خط فرمان Nushell پروژه nushell/nushell یک پوسته خط فرمان مدرن است که با زبان Rust توسعه یافته و ساختار داده‌ها را به خط فرمان می‌آورد. این ابزار به ",
-      "url": "https://t.me/cybershelf/1348",
+      "title": "🚀 🔥 ریپوی ترند GitHub — افزونه فشرده‌سازی متن برای مدل‌های هوش مصنوعی پروژه ra",
+      "excerpt": "🚀 🔥 ریپوی ترند GitHub — افزونه فشرده‌سازی متن برای مدل‌های هوش مصنوعی پروژه ranxianglei/billion-context یک افزونه فشرده‌سازی متن برای جلسات طولانی ماهانه با میلیاردها توکن است. ا",
+      "url": "https://t.me/cybershelf/1366",
       "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-11-07T07:01:02+00:00"
+      "publishedAt": "2026-11-07T19:01:05+00:00"
+    },
+    {
+      "title": "🚀 🔥 ریپوی ترند GitHub — کنترل لوازم خانگی Samsung با Home Assistant پروژه mbil",
+      "excerpt": "🚀 🔥 ریپوی ترند GitHub — کنترل لوازم خانگی Samsung با Home Assistant پروژه mbillow/localthings ابزاری برای کنترل لوازم خانگی Samsung از طریق Home Assistant و بستر شبکه خانگی است. ",
+      "url": "https://t.me/cybershelf/1365",
+      "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
+      "publishedAt": "2026-11-07T19:01:03+00:00"
+    },
+    {
+      "title": "🚀 ⚡ خبر تکنولوژی — بررسی روند گسترش قوم Bantu در آفریقا با کمک ژنتیک و باستان‌ش",
+      "excerpt": "🚀 ⚡ خبر تکنولوژی — بررسی روند گسترش قوم Bantu در آفریقا با کمک ژنتیک و باستان‌شناسی دانشمندان با استفاده از شواهد ژنتیکی و باستان‌شناسی در حال بررسی نحوه مهاجرت و گسترش گویشوران ز",
+      "url": "https://t.me/cybershelf/1364",
+      "imageUrl": "assets/images/telegram/cybershelf-1364.jpg",
+      "publishedAt": "2026-11-07T18:01:38+00:00"
+    },
+    {
+      "title": "🚀 🔥 ریپوی ترند GitHub — فریم‌ورک tailwindlabs/tailwindcss فریم‌ورک tailwindlab",
+      "excerpt": "🚀 🔥 ریپوی ترند GitHub — فریم‌ورک tailwindlabs/tailwindcss فریم‌ورک tailwindlabs/tailwindcss یک ابزار مبتنی بر utility برای توسعه سریع رابط‌های کاربری با CSS است. این فریم‌ورک با ",
+      "url": "https://t.me/cybershelf/1363",
+      "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
+      "publishedAt": "2026-11-07T15:01:08+00:00"
     }
   ]
 }
