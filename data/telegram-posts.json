@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-11-08T10:15:25.041Z",
+  "updatedAt": "2026-11-09T11:26:16.342Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
     {
-      "title": "🚀 💻 خبر برنامه‌نویسی — مقیاس‌پذیری کنترل پلن D1 در Cloudflare برای میلیون‌ها د",
-      "excerpt": "🚀 💻 خبر برنامه‌نویسی — مقیاس‌پذیری کنترل پلن D1 در Cloudflare برای میلیون‌ها دیتابیس کلادفلر اخیراً بازطراحی کنترل پلن دیتابیس سرورلس SQL خود یعنی D1 را برای پشتیبانی از میلیون‌ه",
-      "url": "https://t.me/cybershelf/1368",
-      "imageUrl": "assets/images/telegram/cybershelf-1368.jpg",
-      "publishedAt": "2026-11-08T09:01:35+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — ارائه فریم‌ورک Topcoat برای زبان Rust توسط تیم Tokio تی",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — ارائه فریم‌ورک Topcoat برای زبان Rust توسط تیم Tokio تیم Tokio نسخه 0.9 از فریم‌ورک متن‌باز Topcoat را به صورت عمومی عرضه کرد. این ابزار یک فریم‌ورک وب فول",
+      "url": "https://t.me/cybershelf/1377",
+      "imageUrl": "assets/images/telegram/cybershelf-1377.jpg",
+      "publishedAt": "2026-11-09T09:01:21+00:00"
     },
     {
-      "title": "🚀 🔥 ریپوی ترند GitHub — ابزار NVIDIA Kubernetes Engine برای مدیریت GPU پروژه n",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — ابزار NVIDIA Kubernetes Engine برای مدیریت GPU پروژه nvke یک مدیریت‌پلین برای اجرای Kubernetes مبتنی بر GPU روی سرورهای فلز لخت (bare metal) است. این ابزا",
-      "url": "https://t.me/cybershelf/1367",
+      "title": "🚀 🚨 هشدار امنیتی — Former OpenAI Engineer Pleads Not Guilty to Planting Covert",
+      "excerpt": "🚀 🚨 هشدار امنیتی — Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room The OpenAI engineer who was arrested and charged last month for pl",
+      "url": "https://t.me/cybershelf/1376",
+      "imageUrl": "assets/images/telegram/cybershelf-1376.jpg",
+      "publishedAt": "2026-11-09T08:01:10+00:00"
+    },
+    {
+      "title": "🚀 🚨 هشدار امنیتی — U.S. Agencies Warn Refrigeration Controller Attacks Could C",
+      "excerpt": "🚀 🚨 هشدار امنیتی — U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses U.S. government agencies have warned that threat actors are actively",
+      "url": "https://t.me/cybershelf/1375",
+      "imageUrl": "assets/images/telegram/cybershelf-1375.jpg",
+      "publishedAt": "2026-11-09T08:01:07+00:00"
+    },
+    {
+      "title": "🚀 🚨 هشدار امنیتی — CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports o",
+      "excerpt": "🚀 🚨 هشدار امنیتی — CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a",
+      "url": "https://t.me/cybershelf/1374",
+      "imageUrl": "assets/images/telegram/cybershelf-1374.jpg",
+      "publishedAt": "2026-11-09T08:01:03+00:00"
+    },
+    {
+      "title": "🚀 🔥 ریپوی ترند GitHub — شبیه‌ساز فیزیکی MuJoCo یک شبیه‌ساز فیزیکی همه‌منظوره ب",
+      "excerpt": "🚀 🔥 ریپوی ترند GitHub — شبیه‌ساز فیزیکی MuJoCo یک شبیه‌ساز فیزیکی همه‌منظوره برای دینامیک چندمفصلی همراه با قابلیت تماس است. این پروژه با زبان C++ توسعه یافته است و به عنوان یک ا",
+      "url": "https://t.me/cybershelf/1373",
       "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-11-07T23:01:00+00:00"
+      "publishedAt": "2026-11-08T15:01:03+00:00"
     },
     {
-      "title": "🚀 🔥 ریپوی ترند GitHub — افزونه فشرده‌سازی متن برای مدل‌های هوش مصنوعی پروژه ra",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — افزونه فشرده‌سازی متن برای مدل‌های هوش مصنوعی پروژه ranxianglei/billion-context یک افزونه فشرده‌سازی متن برای جلسات طولانی ماهانه با میلیاردها توکن است. ا",
-      "url": "https://t.me/cybershelf/1366",
+      "title": "🚀 🔥 ریپوی ترند GitHub — شروع سریع با Claude API مجموعه‌ای از پروژه‌ها که برای ",
+      "excerpt": "🚀 🔥 ریپوی ترند GitHub — شروع سریع با Claude API مجموعه‌ای از پروژه‌ها که برای کمک به توسعه‌دهندگان جهت شروع سریع ساخت برنامه‌های قابل استقرار با استفاده از Claude API طراحی شده ا",
+      "url": "https://t.me/cybershelf/1372",
       "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-11-07T19:01:05+00:00"
-    },
-    {
-      "title": "🚀 🔥 ریپوی ترند GitHub — کنترل لوازم خانگی Samsung با Home Assistant پروژه mbil",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — کنترل لوازم خانگی Samsung با Home Assistant پروژه mbillow/localthings ابزاری برای کنترل لوازم خانگی Samsung از طریق Home Assistant و بستر شبکه خانگی است. ",
-      "url": "https://t.me/cybershelf/1365",
-      "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-11-07T19:01:03+00:00"
-    },
-    {
-      "title": "🚀 ⚡ خبر تکنولوژی — بررسی روند گسترش قوم Bantu در آفریقا با کمک ژنتیک و باستان‌ش",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — بررسی روند گسترش قوم Bantu در آفریقا با کمک ژنتیک و باستان‌شناسی دانشمندان با استفاده از شواهد ژنتیکی و باستان‌شناسی در حال بررسی نحوه مهاجرت و گسترش گویشوران ز",
-      "url": "https://t.me/cybershelf/1364",
-      "imageUrl": "assets/images/telegram/cybershelf-1364.jpg",
-      "publishedAt": "2026-11-07T18:01:38+00:00"
-    },
-    {
-      "title": "🚀 🔥 ریپوی ترند GitHub — فریم‌ورک tailwindlabs/tailwindcss فریم‌ورک tailwindlab",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — فریم‌ورک tailwindlabs/tailwindcss فریم‌ورک tailwindlabs/tailwindcss یک ابزار مبتنی بر utility برای توسعه سریع رابط‌های کاربری با CSS است. این فریم‌ورک با ",
-      "url": "https://t.me/cybershelf/1363",
-      "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-11-07T15:01:08+00:00"
+      "publishedAt": "2026-11-08T15:01:01+00:00"
     }
   ]
 }
