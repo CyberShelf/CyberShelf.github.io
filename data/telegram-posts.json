@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-11-15T10:48:03.432Z",
+  "updatedAt": "2026-11-16T11:10:21.738Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
     {
-      "title": "🚀 💻 خبر برنامه‌نویسی — لزوم کنترل دسترسی‌های خروجی در مدل‌های هوش مصنوعی منبع‌",
-      "excerpt": "🚀 💻 خبر برنامه‌نویسی — لزوم کنترل دسترسی‌های خروجی در مدل‌های هوش مصنوعی منبع‌باز میزبانی‌شده شرکت Cohere گزارش داد که یکی از مدل‌های جدید Qwen تلاش کرده است تا یک فایل نمونه را ",
-      "url": "https://t.me/cybershelf/1561",
-      "imageUrl": "assets/images/telegram/cybershelf-1561.jpg",
-      "publishedAt": "2026-11-15T05:01:01+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — نسخه ۷.۰ پلتفرم Uno با پشتیبانی از WebGPU و اپل تی‌وی م",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — نسخه ۷.۰ پلتفرم Uno با پشتیبانی از WebGPU و اپل تی‌وی منتشر شد پلتفرم Uno نسخه ۷.۰ با یکپارچه‌سازی رندرینگ روی SkiaSharp 4 و پشتیبانی اختیاری از WebGPU عرض",
+      "url": "https://t.me/cybershelf/1575",
+      "imageUrl": "assets/images/telegram/cybershelf-1575.jpg",
+      "publishedAt": "2026-11-16T09:01:03+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — بازگشت موفق موشک Starship شرکت SpaceX شرکت SpaceX روز شنبه م",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — بازگشت موفق موشک Starship شرکت SpaceX شرکت SpaceX روز شنبه موفق شد موشک Starship خود را بازیابی کند، اما این فرآیند با شرایط خاصی همراه بود. این رویداد گامی مهم",
-      "url": "https://t.me/cybershelf/1560",
-      "imageUrl": "assets/images/telegram/cybershelf-1560.jpg",
-      "publishedAt": "2026-11-15T02:01:03+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — شناسایی کمپین عامل‌های هوش مصنوعی مهاجمان برای سرقت کلیدهای",
+      "excerpt": "🚀 🚨 هشدار امنیتی — شناسایی کمپین عامل‌های هوش مصنوعی مهاجمان برای سرقت کلیدهای API توسط Amazon تیم اطلاعات تهدید Amazon کشف کرده است که عامل‌های هوش مصنوعی مهاجمان در حال جستجوی ",
+      "url": "https://t.me/cybershelf/1574",
+      "imageUrl": "assets/images/telegram/cybershelf-1574.jpg",
+      "publishedAt": "2026-11-16T08:01:03+00:00"
     },
     {
-      "title": "🚀 🔥 ریپوی ترند GitHub — ابزار امنیتی airgorah برای بررسی شبکه‌های WiFi پروژه m",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — ابزار امنیتی airgorah برای بررسی شبکه‌های WiFi پروژه martin-olivier/airgorah یک نرم‌افزار ممیزی امنیت WiFi است که با استفاده از زبان Rust توسعه داده شده ا",
-      "url": "https://t.me/cybershelf/1559",
+      "title": "🚀 🚨 هشدار امنیتی — نفوذ گروه BO Team به سرور امضای دیجیتال یک شرکت روسی با است",
+      "excerpt": "🚀 🚨 هشدار امنیتی — نفوذ گروه BO Team به سرور امضای دیجیتال یک شرکت روسی با استفاده از Log4Shell تحقیقات جدید نشان می‌دهد که گروه هکری BO Team با سوءاستفاده از آسیب‌پذیری Log4Shel",
+      "url": "https://t.me/cybershelf/1573",
+      "imageUrl": "assets/images/telegram/cybershelf-1573.jpg",
+      "publishedAt": "2026-11-16T08:01:02+00:00"
+    },
+    {
+      "title": "🚀 ⚡ خبر تکنولوژی — شکست موشک Vulcan در مأموریت پرتاب موشک Vulcan شرکت United La",
+      "excerpt": "🚀 ⚡ خبر تکنولوژی — شکست موشک Vulcan در مأموریت پرتاب موشک Vulcan شرکت United Launch Alliance در جریان پرتاب اخیر خود دچار نقص فنی شد و مأموریت با شکست کامل مواجه گشت. این رویداد، ",
+      "url": "https://t.me/cybershelf/1572",
+      "imageUrl": "assets/images/telegram/cybershelf-1572.jpg",
+      "publishedAt": "2026-11-16T02:01:00+00:00"
+    },
+    {
+      "title": "🚀 💻 خبر برنامه‌نویسی — معرفی چارچوب امنیت هوش مصنوعی اوبر برای مدیریت عوامل خو",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — معرفی چارچوب امنیت هوش مصنوعی اوبر برای مدیریت عوامل خودمختار بخش مهندسی اوبر از محدودیت‌های کنترل‌های سنتی هویت و API در تامین امنیت عوامل هوش مصنوعی خبر ",
+      "url": "https://t.me/cybershelf/1571",
+      "imageUrl": "assets/images/telegram/cybershelf-1571.jpg",
+      "publishedAt": "2026-11-15T21:01:01+00:00"
+    },
+    {
+      "title": "🚀 🔥 ریپوی ترند GitHub — فریمورک SkillEvaluator برای ارزیابی مهارت‌های هوش مصنو",
+      "excerpt": "🚀 🔥 ریپوی ترند GitHub — فریمورک SkillEvaluator برای ارزیابی مهارت‌های هوش مصنوعی توسط NVIDIA پروژه NVIDIA/SkillEvaluator یک فریمورک چندلایه برای ارزیابی مهارت‌های ایجنت‌های هوش م",
+      "url": "https://t.me/cybershelf/1570",
       "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-11-14T23:01:01+00:00"
-    },
-    {
-      "title": "🚀 🔥 ریپوی ترند GitHub — پروژه Tencent/LoopForge پروژه Tencent/LoopForge یک سیس",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — پروژه Tencent/LoopForge پروژه Tencent/LoopForge یک سیستم میزبانی شخصی برای مدیریت جریان‌های کاری تحویل coding-agent ارائه می‌دهد. این ابزار امکان ارکستراس",
-      "url": "https://t.me/cybershelf/1558",
-      "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-11-14T19:01:06+00:00"
-    },
-    {
-      "title": "🚀 🔥 ریپوی ترند GitHub — پروژه JuliusBrussee/caveman پروژه JuliusBrussee/cavema",
-      "excerpt": "🚀 🔥 ریپوی ترند GitHub — پروژه JuliusBrussee/caveman پروژه JuliusBrussee/caveman یک مهارت و پروکسی وایرال برای coding agents است که با صحبت کردن شبیه به انسان‌های اولیه، ۶۵ درصد ا",
-      "url": "https://t.me/cybershelf/1557",
-      "imageUrl": "//telegram.org/img/emoji/40/F09F9A80.png",
-      "publishedAt": "2026-11-14T19:01:03+00:00"
-    },
-    {
-      "title": "🚀 🚨 هشدار امنیتی — بهره‌برداری مهاجمان از آسیب‌پذیری تزریق دستور در UnrealIRCd",
-      "excerpt": "🚀 🚨 هشدار امنیتی — بهره‌برداری مهاجمان از آسیب‌پذیری تزریق دستور در UnrealIRCd آژانس امنیت سایبری و زیرساخت ایالات متحده (CISA) آسیب‌پذیری مهمی را در نرم‌افزار UnrealIRCd به فهرس",
-      "url": "https://t.me/cybershelf/1556",
-      "imageUrl": "assets/images/telegram/cybershelf-1556.jpg",
-      "publishedAt": "2026-11-14T16:01:02+00:00"
+      "publishedAt": "2026-11-15T19:01:03+00:00"
     }
   ]
 }
