@@ -1,48 +1,48 @@
 {
-  "updatedAt": "2026-11-22T11:16:10.158Z",
+  "updatedAt": "2026-11-23T12:28:37.996Z",
   "source": "https://t.me/s/cybershelf",
   "posts": [
     {
-      "title": "🚀 💻 خبر برنامه‌نویسی — پشتیبانی از استنتاج GPU در AWS Lambda با قابلیت اشتراک‌",
-      "excerpt": "🚀 💻 خبر برنامه‌نویسی — پشتیبانی از استنتاج GPU در AWS Lambda با قابلیت اشتراک‌گذاری مدل سرویس AWS Lambda اکنون اجرای توابع رویداد را روی نمونه‌های GPU سری G در EC2 فعال می‌کند. ا",
-      "url": "https://t.me/cybershelf/1755",
-      "imageUrl": "assets/images/telegram/cybershelf-1755.jpg",
-      "publishedAt": "2026-11-22T09:01:03+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — سوءاستفاده از آسیب‌پذیری ابری GL.iNet برای نصب بدافزار روی ",
+      "excerpt": "🚀 🚨 هشدار امنیتی — سوءاستفاده از آسیب‌پذیری ابری GL.iNet برای نصب بدافزار روی روترها سازنده روترهای مسافرتی و سخت‌افزارهای KVM اعلام کرد که هکرها از یک آسیب‌پذیری در سرویس مدیریت",
+      "url": "https://t.me/cybershelf/1762",
+      "imageUrl": "assets/images/telegram/cybershelf-1762.jpg",
+      "publishedAt": "2026-11-23T12:01:05+00:00"
     },
     {
-      "title": "🚀 🚨 هشدار امنیتی — قطع همکاری OpenRouter با سه ارائه‌دهنده هوش مصنوعی پس از سر",
-      "excerpt": "🚀 🚨 هشدار امنیتی — قطع همکاری OpenRouter با سه ارائه‌دهنده هوش مصنوعی پس از سرقت چندماهه پرامپت‌ها به گفته شرکت امنیتی Dragos، مهاجمان توانسته‌اند برای ماه‌ها از درون سه ارائه‌ده",
-      "url": "https://t.me/cybershelf/1754",
-      "imageUrl": "assets/images/telegram/cybershelf-1754.jpg",
-      "publishedAt": "2026-11-22T08:01:14+00:00"
+      "title": "🚀 🚨 هشدار امنیتی — حملات سایبری با کمک هوش مصنوعی به بانک‌های هند تیم واکنش اض",
+      "excerpt": "🚀 🚨 هشدار امنیتی — حملات سایبری با کمک هوش مصنوعی به بانک‌های هند تیم واکنش اضطراری رایانه‌ای هند هشدار داد که مهاجمان با استفاده از هوش مصنوعی، زیرساخت‌های فناوری اطلاعات و ارتب",
+      "url": "https://t.me/cybershelf/1761",
+      "imageUrl": "assets/images/telegram/cybershelf-1761.jpg",
+      "publishedAt": "2026-11-23T12:01:02+00:00"
     },
     {
-      "title": "🚀 🚨 هشدار امنیتی — فرار از سندباکس Ghostscript و اجرای از راه دور کد یک آسیب‌پ",
-      "excerpt": "🚀 🚨 هشدار امنیتی — فرار از سندباکس Ghostscript و اجرای از راه دور کد یک آسیب‌پذیری اصلاح‌شده در Ghostscript به فایل‌های دستکاری‌شده اجازه می‌دهد از سندباکس امنیتی این نرم‌افزار خ",
-      "url": "https://t.me/cybershelf/1753",
-      "imageUrl": "assets/images/telegram/cybershelf-1753.jpg",
-      "publishedAt": "2026-11-22T08:01:11+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — نقش کلیدی واسط هوش مصنوعی در نشست QCon San Francisco 20",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — نقش کلیدی واسط هوش مصنوعی در نشست QCon San Francisco 2026 در کنفرانس QCon San Francisco 2026، منجو راجاسخار، بنیان‌گذار و مدیرعامل Mad Labs، عنوان کرد که س",
+      "url": "https://t.me/cybershelf/1760",
+      "imageUrl": "assets/images/telegram/cybershelf-1760.jpg",
+      "publishedAt": "2026-11-23T01:01:00+00:00"
     },
     {
-      "title": "🚀 ⚡ خبر تکنولوژی — بررسی فیلم Godzilla Minus Zero یک دنباله فوق‌العاده کارگردان",
-      "excerpt": "🚀 ⚡ خبر تکنولوژی — بررسی فیلم Godzilla Minus Zero یک دنباله فوق‌العاده کارگردان تاکاشی یامازاکی با قرار دادن گودزیلا در برابر یکی از بزرگ‌ترین دشمنانش، سطح فیلم را بالاتر برده است",
-      "url": "https://t.me/cybershelf/1752",
-      "imageUrl": "assets/images/telegram/cybershelf-1752.jpg",
-      "publishedAt": "2026-11-22T02:01:01+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — انتشار نسخه ۱۹ PostgreSQL با قابلیت بازآرایی آنلاین جدا",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — انتشار نسخه ۱۹ PostgreSQL با قابلیت بازآرایی آنلاین جداول گروه توسعه جهانی PostgreSQL نسخه ۱۹ این پایگاه داده را با تغییراتی در نگهداری، برنامه‌ریزی پرس‌وج",
+      "url": "https://t.me/cybershelf/1759",
+      "imageUrl": "assets/images/telegram/cybershelf-1759.jpg",
+      "publishedAt": "2026-11-22T17:01:08+00:00"
     },
     {
-      "title": "🚀 💻 خبر برنامه‌نویسی — انتشار نسخه Grafana 13.3 با قابلیت متغیرهای اشتراکی و N",
-      "excerpt": "🚀 💻 خبر برنامه‌نویسی — انتشار نسخه Grafana 13.3 با قابلیت متغیرهای اشتراکی و Notebooks نسخه جدید Grafana 13.3 امکان استفاده از متغیرهای مشترک در میان داشبوردهای مختلف را فراهم کر",
-      "url": "https://t.me/cybershelf/1751",
-      "imageUrl": "assets/images/telegram/cybershelf-1751.jpg",
-      "publishedAt": "2026-11-21T17:01:25+00:00"
+      "title": "🚀 ⚡ خبر تکنولوژی — GLP-1 drugs could have a surprisingly large environmental pa",
+      "excerpt": "🚀 ⚡ خبر تکنولوژی — GLP-1 drugs could have a surprisingly large environmental payoff GLP-1 drugs could cut food demand enough to free farmland larger than Italy. 📰 منبع: Ars Techn",
+      "url": "https://t.me/cybershelf/1758",
+      "imageUrl": "assets/images/telegram/cybershelf-1758.jpg",
+      "publishedAt": "2026-11-22T14:01:14+00:00"
     },
     {
-      "title": "🚀 💻 خبر برنامه‌نویسی — مقیاس‌پذیری فناوری با همسوسازی نیروی انسانی در QCon San",
-      "excerpt": "🚀 💻 خبر برنامه‌نویسی — مقیاس‌پذیری فناوری با همسوسازی نیروی انسانی در QCon San Francisco 2026 در کنفرانس QCon San Francisco 2026، اسکات برنز، مهندس ارشد امنیت در Netflix، نحوه تع",
-      "url": "https://t.me/cybershelf/1750",
-      "imageUrl": "assets/images/telegram/cybershelf-1750.jpg",
-      "publishedAt": "2026-11-21T17:01:21+00:00"
+      "title": "🚀 💻 خبر برنامه‌نویسی — Claude Code Has Been Leaking Secrets Through Its \"Don't",
+      "excerpt": "🚀 💻 خبر برنامه‌نویسی — Claude Code Has Been Leaking Secrets Through Its \"Don't Ask Again\" Feature Agentic security firm Apiiro found that Claude Code has been exposing secrets in",
+      "url": "https://t.me/cybershelf/1757",
+      "imageUrl": "assets/images/telegram/cybershelf-1757.jpg",
+      "publishedAt": "2026-11-22T13:01:02+00:00"
     }
   ]
 }
